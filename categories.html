@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5627RD3TF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-B5627RD3TF');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catégories d'Agents IA | Agents-IA.pro</title>
+    <meta name="description" content="Explorez toutes les catégories d'agents IA : vocal, vente, support, marketing, SEO, RH, finance, développement et plus.">
+    <link rel="canonical" href="https://agents-ia.pro/categories">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <span class="logo-icon">🤖</span>
+            <span class="logo-text">agents-ia<span class="logo-accent">.pro</span></span>
+        </a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html#explorer" class="nav-link">Explorer</a>
+            <a href="categories.html" class="nav-link">Catégories</a>
+            <a href="index.html#solutions" class="nav-link">Solutions IA</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+        </div>
+        <div class="nav-actions">
+            <a href="submit.html" class="btn-submit"><i class="fas fa-plus"></i> Soumettre un Agent</a>
+            <a href="#contact" class="btn-login">Connexion</a>
+            <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </div>
+</nav>
+
+<!-- CATEGORIES -->
+<section class="section categories-page">
+    <div class="container">
+        <div class="section-header">
+            <h1 class="section-title">📂 Toutes les Catégories</h1>
+            <p class="section-sub">Explorez +500 agents IA classés par besoin métier</p>
+        </div>
+
+        <div class="categories-grid" style="margin-bottom:60px;">
+            <a href="#" class="category-card" data-cat="vocal" onclick="filterByCat('vocal')">
+                <div class="cat-icon">🎙️</div>
+                <h3>Agents Vocaux</h3>
+                <span class="cat-count">47 agents</span>
+            </a>
+            <a href="#" class="category-card" data-cat="vente" onclick="filterByCat('vente')">
+                <div class="cat-icon">💰</div>
+                <h3>Vente & Closing</h3>
+                <span class="cat-count">63 agents</span>
+            </a>
+            <a href="#" class="category-card" data-cat="support" onclick="filterByCat('support')">
+                <div class="cat-icon">🎧</div>
+                <h3>Support Client</h3>
+                <span class="cat-count">89 agents</span>
+            </a>
+            <a href="#" class="category-card" data-cat="marketing" onclick="filterByCat('marketing')">
+                <div class="cat-icon">📊</div>
+                <h3>Marketing</h3>
+                <span class="cat-count">72 agents</span>
+            </a>
+            <a href="#" class="category-card" data-cat="email" onclick="filterByCat('email')">
+                <div class="cat-icon">📧</div>
+                <h3>Email & Outreach</h3>
+                <span class="cat-count">56 agents</span>
+            </a>
+            <a href="#" class="category-card" data-cat="seo" onclick="filterByCat('seo')">
+                <div class="cat-icon">🔍</div>
+                <h3>SEO & Contenu</h3>
+                <span class="cat-count">68 agents</span>
+            </a>
+            <a href="#" class="category-card" data-cat="rh" onclick="filterByCat('rh')">
+                <div class="cat-icon">👥</div>
+                <h3>RH & Recrutement</h3>
+                <span class="cat-count">34 agents</span>
+            </a>
+            <a href="#" class="category-card" data-cat="finance" onclick="filterByCat('finance')">
+                <div class="cat-icon">💼</div>
+                <h3>Finance & Compta</h3>
+                <span class="cat-count">41 agents</span>
+            </a>
+            <a href="#" class="category-card" data-cat="dev" onclick="filterByCat('dev')">
+                <div class="cat-icon">💻</div>
+                <h3>Développement</h3>
+                <span class="cat-count">52 agents</span>
+            </a>
+            <a href="#" class="category-card" data-cat="design" onclick="filterByCat('design')">
+                <div class="cat-icon">🎨</div>
+                <h3>Design & Créatif</h3>
+                <span class="cat-count">38 agents</span>
+            </a>
+            <a href="#" class="category-card" data-cat="juridique" onclick="filterByCat('juridique')">
+                <div class="cat-icon">⚖️</div>
+                <h3>Juridique</h3>
+                <span class="cat-count">25 agents</span>
+            </a>
+            <a href="index.html#contact" class="category-card special">
+                <div class="cat-icon">🔧</div>
+                <h3>Agent Sur Mesure</h3>
+                <span class="cat-count">Contactez-nous</span>
+            </a>
+        </div>
+
+        <div id="categoryTitle" style="display:none;">
+            <h2 class="section-title" id="catTitleText" style="text-align:left; font-size:1.8rem; margin-bottom:24px;"></h2>
+        </div>
+
+        <div class="agents-list" id="categoryAgents">
+            <!-- Populated by JS -->
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-bottom">
+            <p>© 2025-2026 Agents-IA.pro — Tous droits réservés | 🇨🇭 Basé en Suisse</p>
+            <div class="footer-legal">
+                <a href="/mentions-legales">Mentions légales</a>
+                <a href="/cgu">CGU</a>
+                <a href="/confidentialite">Politique de confidentialité</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a href="https://wa.me/41799394222?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20vos%20agents%20IA" class="whatsapp-widget" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a><div class="cookie-banner" id="cookieBanner"><div class="cookie-content"><p>🍪 Ce site utilise des cookies. <a href="/confidentialite" style="color:var(--primary-light);">En savoir plus</a>.</p><div class="cookie-actions"><button class="cookie-btn cookie-accept" id="cookieAccept">Accepter</button><button class="cookie-btn cookie-decline" id="cookieDecline">Refuser</button></div></div></div>
+<script src="js/app.js"></script>
+<script>
+const catNames = {
+    'vocal': '🎙️ Agents Vocaux',
+    'vente': '💰 Vente & Closing',
+    'support': '🎧 Support Client',
+    'marketing': '📊 Marketing',
+    'email': '📧 Email & Outreach',
+    'seo': '🔍 SEO & Contenu',
+    'rh': '👥 RH & Recrutement',
+    'finance': '💼 Finance & Compta',
+    'dev': '💻 Développement',
+    'design': '🎨 Design & Créatif',
+    'juridique': '⚖️ Juridique'
+};
+
+function filterByCat(cat) {
+    event.preventDefault();
+    const title = document.getElementById('categoryTitle');
+    const titleText = document.getElementById('catTitleText');
+    const list = document.getElementById('categoryAgents');
+
+    title.style.display = 'block';
+    titleText.textContent = catNames[cat] || cat;
+
+    const filtered = agentsData.filter(a => a.category === cat);
+
+    if (filtered.length === 0) {
+        list.innerHTML = '<p style="color:var(--gray); text-align:center; padding:40px;">Aucun agent trouvé dans cette catégorie. Bientôt disponible !</p>';
+        return;
+    }
+
+    list.innerHTML = filtered.map(agent => `
+        <div class="agent-list-item">
+            <div class="agent-avatar" style="background: linear-gradient(135deg, ${agent.color});">
+                <i class="${agent.icon}"></i>
+            </div>
+            <div class="agent-list-info">
+                <h3>${agent.name}</h3>
+                <p>${agent.desc}</p>
+            </div>
+            <div class="agent-list-tags">
+                ${agent.tags.map(t => `<span class="tag">${t}</span>`).join('')}
+            </div>
+            <div class="agent-list-actions">
+                <button class="btn-upvote" data-id="${agent.id}">
+                    <i class="fas fa-arrow-up"></i>
+                    <span class="upvote-count">${agent.upvotes}</span>
+                </button>
+                <a href="agent.html?id=${agent.id}" class="btn-try">Voir <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    `).join('');
+
+    list.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// Auto-filter from URL param
+document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const cat = params.get('cat');
+    if (cat && catNames[cat]) {
+        filterByCat(cat);
+    }
+});
+</script>
+</body>
+</html>

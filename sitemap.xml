@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Page d'accueil -->
+  <url>
+    <loc>https://agents-ia.pro/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agents-ia.pro/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://agents-ia.pro/en" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://agents-ia.pro/de" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agents-ia.pro/nl" />
+  </url>
+
+  <!-- Pages principales -->
+  <url>
+    <loc>https://agents-ia.pro/categories</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/blog</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/submit</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Pages agents par catégorie -->
+  <url>
+    <loc>https://agents-ia.pro/agent-commercial</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/agent-support</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/agent-email</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/agent-chatbot</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/agent-marketing</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/agent-seo</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/agent-rh</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/agent-finance</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/agent-design</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/agent-juridique</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/agent-dev</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/agent</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Articles de blog -->
+  <url>
+    <loc>https://agents-ia.pro/blog/choisir-agent-ia</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/blog/agent-vocal-cabinet-dentaire</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/blog/top-10-agents-ia-mars-2025</loc>
+    <lastmod>2026-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/blog/agent-ia-vs-employe</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/blog/rgpd-agents-ia</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/blog/deployer-agent-ia-30-minutes</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Pages légales -->
+  <url>
+    <loc>https://agents-ia.pro/cgu</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/confidentialite</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/mentions-legales</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Pages multilingues -->
+  <url>
+    <loc>https://agents-ia.pro/en</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agents-ia.pro/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://agents-ia.pro/en" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://agents-ia.pro/de" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agents-ia.pro/nl" />
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/de</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agents-ia.pro/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://agents-ia.pro/en" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://agents-ia.pro/de" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agents-ia.pro/nl" />
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/nl</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agents-ia.pro/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://agents-ia.pro/en" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://agents-ia.pro/de" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agents-ia.pro/nl" />
+  </url>
+
+</urlset>

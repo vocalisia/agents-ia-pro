@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Agents-IA.pro | Marketplace d'Agents IA</title>
+    <meta name="description" content="Contactez l'équipe Agents-IA.pro. Questions, partenariats, soumission d'agent IA — nous répondons sous 24h.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://agents-ia.pro/contact">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agents-ia.pro/contact">
+    <meta property="og:title" content="Contact — Agents-IA.pro">
+    <meta property="og:description" content="Contactez l'équipe Agents-IA.pro. Réponse sous 24h.">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Agents-IA.pro">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5627RD3TF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-B5627RD3TF');
+    </script>
+
+    <style>
+        /* Contact page specific styles — builds on css/style.css */
+
+        .contact-page {
+            padding-top: 100px;
+            min-height: calc(100vh - 80px);
+        }
+
+        .contact-hero {
+            text-align: center;
+            padding: 60px 0 40px;
+        }
+
+        .contact-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(108, 92, 231, 0.12);
+            border: 1px solid rgba(108, 92, 231, 0.25);
+            border-radius: var(--radius-full);
+            padding: 6px 16px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--primary-light);
+            margin-bottom: 1.25rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        .contact-hero h1 {
+            font-size: clamp(1.75rem, 4vw, 2.75rem);
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+            color: var(--white);
+        }
+
+        .contact-hero p {
+            color: var(--gray);
+            font-size: 1rem;
+            max-width: 500px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .info-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 1rem;
+            max-width: 700px;
+            margin: 2.5rem auto 3rem;
+        }
+
+        .info-card {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .info-card:hover {
+            border-color: rgba(108, 92, 231, 0.4);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .info-card .icon { font-size: 1.75rem; margin-bottom: 0.6rem; }
+        .info-card h4 { color: var(--white); font-size: 0.9rem; font-weight: 600; margin-bottom: 0.25rem; }
+        .info-card p { color: var(--gray); font-size: 0.8rem; }
+
+        .form-container {
+            max-width: 660px;
+            margin: 0 auto 80px;
+        }
+
+        .form-card {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 2.5rem;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .form-card h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 0.35rem;
+        }
+
+        .form-card .subtitle {
+            color: var(--gray);
+            font-size: 0.875rem;
+            margin-bottom: 2rem;
+        }
+
+        .form-group { margin-bottom: 1.25rem; }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--gray-light);
+            margin-bottom: 0.4rem;
+        }
+
+        .form-group label .req { color: var(--primary-light); }
+        .form-group label .opt { color: var(--gray); font-weight: 400; font-size: 0.8rem; }
+
+        .form-input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-sm);
+            padding: 0.8rem 1rem;
+            color: var(--white);
+            font-size: 0.9rem;
+            font-family: 'Inter', sans-serif;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .form-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.12);
+        }
+
+        .form-input::placeholder { color: var(--gray); opacity: 0.7; }
+        select.form-input option { background: var(--dark-2); color: var(--white); }
+        textarea.form-input { resize: vertical; }
+
+        .btn-submit-full {
+            width: 100%;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent2) 100%);
+            color: var(--white);
+            border: none;
+            border-radius: var(--radius-sm);
+            padding: 0.9rem 1.5rem;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 0.02em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-submit-full:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 30px rgba(108, 92, 231, 0.4);
+        }
+
+        .btn-submit-full:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .msg-success {
+            display: none;
+            margin-top: 1rem;
+            padding: 0.875rem 1.25rem;
+            background: rgba(0, 214, 143, 0.08);
+            border: 1px solid rgba(0, 214, 143, 0.25);
+            border-radius: var(--radius-sm);
+            color: var(--success);
+            font-size: 0.875rem;
+            text-align: center;
+        }
+
+        .msg-error {
+            display: none;
+            margin-top: 1rem;
+            padding: 0.875rem 1.25rem;
+            background: rgba(255, 107, 107, 0.08);
+            border: 1px solid rgba(255, 107, 107, 0.25);
+            border-radius: var(--radius-sm);
+            color: var(--danger);
+            font-size: 0.875rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ==================== NAVBAR ==================== -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="/" class="nav-logo">
+            <span class="logo-icon">🤖</span>
+            <span class="logo-text">agents-ia<span class="logo-accent">.pro</span></span>
+        </a>
+
+        <div class="nav-links" id="navLinks">
+            <a href="/#explorer" class="nav-link">Explorer</a>
+            <a href="categories.html" class="nav-link">Catégories</a>
+            <a href="/#solutions" class="nav-link">Solutions IA</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="/#pricing" class="nav-link">Tarifs</a>
+        </div>
+
+        <div class="nav-actions">
+            <div class="lang-switch" style="display:flex;gap:6px;align-items:center;margin-right:12px;">
+                <a href="/index.html" style="font-size:0.85rem;color:white;text-decoration:none;font-weight:600;">FR</a>
+                <a href="/en/index.html" style="opacity:0.6;font-size:0.85rem;color:var(--gray-light);text-decoration:none;">EN</a>
+                <a href="/de/index.html" style="opacity:0.6;font-size:0.85rem;color:var(--gray-light);text-decoration:none;">DE</a>
+            </div>
+            <a href="submit.html" class="btn-submit">
+                <i class="fas fa-plus"></i> Soumettre un Agent
+            </a>
+            <a href="contact.html" class="btn-login" style="color:var(--primary-light);">Contact</a>
+            <button class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- ==================== CONTACT PAGE ==================== -->
+<div class="contact-page">
+    <div class="container">
+
+        <!-- Hero -->
+        <div class="contact-hero">
+            <div class="contact-badge">
+                <i class="fas fa-envelope"></i> Contact
+            </div>
+            <h1>
+                Contactez <span class="gradient-text">notre équipe</span>
+            </h1>
+            <p>
+                Question sur la marketplace, soumission d'agent, demande de partenariat ou simple suggestion — nous lisons chaque message et répondons sous 24h.
+            </p>
+        </div>
+
+        <!-- Info cards -->
+        <div class="info-cards">
+            <div class="info-card">
+                <div class="icon">📧</div>
+                <h4>Email direct</h4>
+                <p>contact@vocalis.pro</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">🤝</div>
+                <h4>Partenariats</h4>
+                <p>Soumettez votre agent IA</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">🇨🇭</div>
+                <h4>Basé en Suisse</h4>
+                <p>Support francophone</p>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <div class="form-container">
+            <div class="form-card">
+                <h2>Envoyez-nous un message</h2>
+                <p class="subtitle">Remplissez le formulaire — nous vous répondrons rapidement.</p>
+
+                <form id="contact-form" novalidate>
+                    <input type="hidden" name="access_key" value="0ab0bb41-b3fc-46cd-9498-7007bb919de5">
+                    <input type="hidden" name="subject" value="agents-ai.pro - Nouveau message">
+                    <input type="hidden" name="from_site" value="agents-ai.pro">
+                    <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
+
+                    <!-- Nom -->
+                    <div class="form-group">
+                        <label for="fullname">
+                            Nom complet <span class="req">*</span>
+                        </label>
+                        <input type="text" id="fullname" name="name" required placeholder="Marie Dupont" class="form-input">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">
+                            Email <span class="req">*</span>
+                        </label>
+                        <input type="email" id="email" name="email" required placeholder="marie@entreprise.com" class="form-input">
+                    </div>
+
+                    <!-- Entreprise -->
+                    <div class="form-group">
+                        <label for="company">
+                            Entreprise <span class="opt">(optionnel)</span>
+                        </label>
+                        <input type="text" id="company" name="company" placeholder="Nom de votre entreprise" class="form-input">
+                    </div>
+
+                    <!-- Message -->
+                    <div class="form-group" style="margin-bottom:1.75rem;">
+                        <label for="message">
+                            Message <span class="req">*</span>
+                        </label>
+                        <textarea id="message" name="message" required rows="5" placeholder="Décrivez votre demande ou posez votre question..." class="form-input"></textarea>
+                    </div>
+
+                    <button type="submit" id="submit-btn" class="btn-submit-full">
+                        <i class="fas fa-paper-plane"></i>
+                        Envoyer le message
+                    </button>
+
+                    <div id="success-msg" class="msg-success">
+                        <i class="fas fa-check-circle"></i> Message envoyé ! Nous vous répondrons sous 24h.
+                    </div>
+                    <div id="error-msg" class="msg-error">
+                        <i class="fas fa-exclamation-circle"></i> Une erreur est survenue. Veuillez réessayer ou nous écrire à contact@vocalis.pro.
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <span class="logo-icon">🤖</span>
+                <span class="logo-text">agents-ia<span class="logo-accent">.pro</span></span>
+                <p>La marketplace #1 d'agents IA francophones. Trouvez, comparez et déployez l'IA dans votre business.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Marketplace</h4>
+                <a href="/#explorer">Explorer les agents</a>
+                <a href="categories.html">Catégories</a>
+                <a href="https://vocalis.pro" target="_blank" rel="noopener">Agent Vocal IA</a>
+                <a href="https://www.seo-true.ch" target="_blank" rel="noopener">Agent SEO IA</a>
+            </div>
+            <div class="footer-links">
+                <h4>Solutions</h4>
+                <a href="agent-commercial.html">Agent Commercial</a>
+                <a href="agent-support.html">Agent Support</a>
+                <a href="agent-email.html">Agent Email</a>
+                <a href="agent-chatbot.html">Agent Chatbot</a>
+                <a href="agent-rh.html">Agent RH</a>
+                <a href="agent-finance.html">Agent Finance</a>
+                <a href="agent-marketing.html">Agent Marketing</a>
+            </div>
+            <div class="footer-links">
+                <h4>Écosystème</h4>
+                <a href="https://vocalis.pro" target="_blank" rel="noopener">Vocalis.pro</a>
+                <a href="https://master-seller.fr" target="_blank" rel="noopener">Master-Seller.fr</a>
+                <a href="https://trust-vault.com" target="_blank" rel="noopener">Trust-Vault.com</a>
+                <a href="https://www.seo-true.ch" target="_blank" rel="noopener">SEO-True.ch</a>
+                <a href="https://vocalis.blog" target="_blank" rel="noopener">Vocalis.blog</a>
+                <a href="https://tesla-mag.ch" target="_blank" rel="noopener">Tesla-Mag.ch</a>
+            </div>
+            <div class="footer-links">
+                <h4>Ressources</h4>
+                <a href="blog.html">Blog</a>
+                <a href="/#newsletter">Newsletter</a>
+                <a href="contact.html">Contact</a>
+                <a href="submit.html">Soumettre un agent</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025-2026 Agents-IA.pro — Tous droits réservés | 🇨🇭 Basé en Suisse</p>
+            <div class="footer-legal">
+                <a href="/mentions-legales">Mentions légales</a>
+                <a href="/cgu">CGU</a>
+                <a href="/confidentialite">Politique de confidentialité</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- WhatsApp Widget -->
+<a href="https://wa.me/41799394222?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20vos%20agents%20IA" class="whatsapp-widget" target="_blank" rel="noopener" aria-label="Contactez-nous sur WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="js/app.js"></script>
+<script>
+    document.getElementById('contact-form').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const btn = document.getElementById('submit-btn');
+        const successMsg = document.getElementById('success-msg');
+        const errorMsg = document.getElementById('error-msg');
+
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
+        successMsg.style.display = 'none';
+        errorMsg.style.display = 'none';
+
+        const formData = new FormData(this);
+        const data = Object.fromEntries(formData);
+
+        try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+            const result = await response.json();
+
+            if (result.success) {
+                successMsg.style.display = 'block';
+                this.reset();
+            } else {
+                errorMsg.style.display = 'block';
+            }
+        } catch(err) {
+            errorMsg.style.display = 'block';
+        } finally {
+            btn.disabled = false;
+            btn.innerHTML = '<i class="fas fa-paper-plane"></i> Envoyer le message';
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5627RD3TF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-B5627RD3TF');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Déployer votre premier agent IA en 30 minutes (guide pas à pas) | Agents-IA.pro</title>
+    <meta name="description" content="Tutoriel complet pour déployer votre premier agent IA en 30 minutes : choix de l'agent, inscription, configuration, test et optimisation. Guide pas à pas pour débutants.">
+    <meta name="keywords" content="déployer agent IA, tutoriel agent IA, installer chatbot IA, configurer agent IA, guide débutant IA">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="canonical" href="https://agents-ia.pro/blog/deployer-agent-ia-30-minutes">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://agents-ia.pro/blog/deployer-agent-ia-30-minutes">
+    <meta property="og:title" content="Deployer votre premier agent IA en 30 minutes guide pas a pas - Agents-IA.pro">
+    <meta property="og:description" content="Tutoriel complet pour configurer et lancer un agent IA">
+    <meta property="og:image" content="https://agents-ia.pro/images/og-image.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Deployer votre premier agent IA en 30 minutes guide pas a pas">
+    <meta name="twitter:description" content="Tutoriel complet pour configurer et lancer un agent IA">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Article","headline":"Deployer votre premier agent IA en 30 minutes guide pas a pas","description":"Tutoriel complet pour configurer et lancer un agent IA","url":"https://agents-ia.pro/blog/deployer-agent-ia-30-minutes","datePublished":"2025-03-01","dateModified":"2025-03-01","inLanguage":"fr","author":{"@type":"Organization","name":"Agents-IA.pro","url":"https://agents-ia.pro"},"publisher":{"@type":"Organization","name":"Agents-IA.pro","url":"https://agents-ia.pro","logo":{"@type":"ImageObject","url":"https://agents-ia.pro/favicon.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://agents-ia.pro/blog/deployer-agent-ia-30-minutes"},"speakable":{"@type":"SpeakableSpecification","cssSelector":["h1",".article-content > p:first-of-type"]}}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://agents-ia.pro/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://agents-ia.pro/blog"},{"@type":"ListItem","position":3,"name":"Deployer votre premier agent IA en 30 minutes guide pas a pas","item":"https://agents-ia.pro/blog/deployer-agent-ia-30-minutes"}]}
+    </script>
+    <style>
+        .article-hero { padding: 160px 0 60px; background: linear-gradient(135deg, var(--dark) 0%, var(--dark-2) 100%); }
+        .article-hero .blog-tag { display: inline-block; background: rgba(108,92,231,0.2); color: var(--primary-light); padding: 6px 16px; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 600; margin-bottom: 16px; }
+        .article-hero h1 { font-size: 2.6rem; font-weight: 800; line-height: 1.25; margin-bottom: 20px; max-width: 800px; }
+        .article-meta { display: flex; gap: 24px; color: var(--gray); font-size: 0.9rem; flex-wrap: wrap; }
+        .article-meta span { display: flex; align-items: center; gap: 6px; }
+        .article-content { padding: 60px 0 40px; max-width: 820px; margin: 0 auto; }
+        .article-content h2 { font-size: 1.6rem; font-weight: 700; margin: 48px 0 16px; color: var(--white); }
+        .article-content h3 { font-size: 1.25rem; font-weight: 600; margin: 32px 0 12px; color: var(--gray-light); }
+        .article-content p { color: var(--gray-light); font-size: 1.05rem; line-height: 1.8; margin-bottom: 20px; }
+        .article-content ul, .article-content ol { color: var(--gray-light); font-size: 1.05rem; line-height: 1.8; margin: 0 0 20px 24px; }
+        .article-content li { margin-bottom: 8px; }
+        .article-content blockquote { border-left: 4px solid var(--primary); background: rgba(108,92,231,0.08); padding: 20px 24px; margin: 28px 0; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+        .article-content blockquote p { color: var(--primary-light); margin-bottom: 0; font-style: italic; }
+        .article-content strong { color: var(--white); }
+        .article-cta { background: linear-gradient(135deg, var(--primary), var(--accent2)); border-radius: var(--radius); padding: 40px; text-align: center; margin: 48px 0; }
+        .article-cta h3 { color: var(--white); font-size: 1.4rem; margin: 0 0 12px; }
+        .article-cta p { color: rgba(255,255,255,0.85); margin-bottom: 20px; }
+        .article-cta a { display: inline-block; background: var(--white); color: var(--primary-dark); padding: 14px 32px; border-radius: var(--radius-full); font-weight: 700; text-decoration: none; transition: var(--transition); }
+        .article-cta a:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+        .related-articles { padding: 60px 0 100px; }
+        .related-articles h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 32px; text-align: center; }
+        .step-box { background: var(--dark-2); border: 1px solid var(--glass-border); border-radius: var(--radius); padding: 28px 32px; margin: 24px 0; position: relative; }
+        .step-box .step-number { position: absolute; top: -14px; left: 24px; background: linear-gradient(135deg, var(--primary), var(--accent)); color: var(--white); width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.85rem; }
+        .step-box h3 { color: var(--white); margin-top: 4px; }
+        .step-box p:last-child { margin-bottom: 0; }
+        .time-badge { display: inline-block; background: rgba(0,210,255,0.15); color: var(--accent); padding: 4px 12px; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="../index.html" class="nav-logo">
+            <span class="logo-icon">🤖</span>
+            <span class="logo-text">agents-ia<span class="logo-accent">.pro</span></span>
+        </a>
+        <div class="nav-links" id="navLinks">
+            <a href="../index.html#explorer" class="nav-link">Explorer</a>
+            <a href="../categories.html" class="nav-link">Catégories</a>
+            <a href="../index.html#solutions" class="nav-link">Solutions IA</a>
+            <a href="../blog.html" class="nav-link">Blog</a>
+        </div>
+        <div class="nav-actions">
+            <a href="../submit.html" class="btn-submit"><i class="fas fa-plus"></i> Soumettre un Agent</a>
+            <a href="#contact" class="btn-login">Connexion</a>
+            <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </div>
+</nav>
+
+<!-- ARTICLE HERO -->
+<section class="article-hero">
+    <div class="container">
+        <span class="blog-tag">TUTORIEL</span>
+        <h1>Déployer votre premier agent IA en 30 minutes (guide pas à pas)</h1>
+        <div class="article-meta">
+            <span><i class="far fa-calendar"></i> 1 mars 2025</span>
+            <span><i class="far fa-clock"></i> 15 min de lecture</span>
+            <span><i class="far fa-user"></i> Rédaction Agents-IA.pro</span>
+        </div>
+    </div>
+</section>
+
+<!-- ARTICLE CONTENT -->
+<div class="container">
+    <div class="article-content">
+
+        <p>Vous entendez parler d'agents IA depuis des mois, mais vous n'avez jamais franchi le pas ? Ce tutoriel est fait pour vous. En 30 minutes chrono, vous allez déployer votre premier agent IA fonctionnel sur votre site web ou votre numéro de téléphone. Pas besoin de compétences techniques avancées : si vous savez copier-coller un bout de code, vous savez déployer un agent IA. Suivez le guide.</p>
+
+        <h2>Ce dont vous avez besoin avant de commencer</h2>
+
+        <p>Avant de lancer le chrono, assurez-vous d'avoir sous la main :</p>
+
+        <ul>
+            <li><strong>Un ordinateur</strong> avec une connexion internet (aucun logiciel spécifique à installer)</li>
+            <li><strong>Un accès administrateur</strong> à votre site web (WordPress, Shopify, Wix, ou accès au code HTML)</li>
+            <li><strong>Votre FAQ ou base de connaissances</strong> : les 20-30 questions les plus fréquentes de vos clients avec leurs réponses</li>
+            <li><strong>Votre carte bancaire</strong> : la plupart des agents offrent un essai gratuit, mais l'inscription demande souvent un moyen de paiement</li>
+            <li><strong>30 minutes de tranquillité</strong> : fermez les onglets inutiles, mettez votre téléphone en silencieux</li>
+        </ul>
+
+        <blockquote>
+            <p>Astuce : préparez votre FAQ dans un document texte (Word, Google Docs ou simple fichier .txt). C'est la base de connaissances de votre futur agent IA. Plus elle est complète, plus l'agent sera performant dès le premier jour.</p>
+        </blockquote>
+
+        <h2>Étape 1 : Choisir le bon agent IA (5 minutes)</h2>
+
+        <div class="step-box">
+            <span class="step-number">1</span>
+            <span class="time-badge">Minutes 0-5</span>
+            <h3>Sélectionnez votre agent sur la marketplace</h3>
+            <p>Rendez-vous sur <a href="../index.html" style="color: var(--primary-light);">Agents-IA.pro</a> et utilisez la barre de recherche pour trouver un agent adapté à votre besoin. Pour ce tutoriel, nous allons déployer un agent de <strong>support client</strong>, le cas d'usage le plus courant et le plus rapide à configurer.</p>
+            <p>Critères de sélection rapide pour un premier déploiement :</p>
+            <ul>
+                <li>Essai gratuit disponible (7 ou 14 jours)</li>
+                <li>Installation en "no-code" (pas de développement nécessaire)</li>
+                <li>Widget intégrable par simple copier-coller</li>
+                <li>Support en français</li>
+                <li>Note supérieure à 4.5/5 sur la marketplace</li>
+            </ul>
+        </div>
+
+        <p>Pour ce tutoriel, nous recommandons ChatBot Pro (dès 89 CHF/mois, essai gratuit 14 jours) qui coche toutes ces cases et offre une interface de configuration particulièrement intuitive. Mais les étapes qui suivent s'appliquent à la grande majorité des agents de support client disponibles sur notre marketplace.</p>
+
+        <h2>Étape 2 : Créer votre compte et configurer le profil (5 minutes)</h2>
+
+        <div class="step-box">
+            <span class="step-number">2</span>
+            <span class="time-badge">Minutes 5-10</span>
+            <h3>Inscription et personnalisation</h3>
+            <p>Une fois l'agent choisi, créez votre compte sur la plateforme du fournisseur. L'inscription prend généralement 2 minutes (email, mot de passe, nom de l'entreprise). Ensuite, personnalisez le profil de votre agent :</p>
+            <ul>
+                <li><strong>Nom de l'agent</strong> : choisissez un nom humain ou un nom de marque (ex: "Sophie", "Assistant MonEntreprise"). Évitez les noms trop robotiques.</li>
+                <li><strong>Avatar</strong> : uploadez votre logo ou choisissez un avatar dans la bibliothèque proposée</li>
+                <li><strong>Couleurs</strong> : alignez les couleurs du widget de chat avec la charte graphique de votre site</li>
+                <li><strong>Message d'accueil</strong> : rédigez un message court et engageant. Exemple : "Bonjour ! Je suis l'assistant virtuel de [Votre Entreprise]. Comment puis-je vous aider aujourd'hui ?"</li>
+                <li><strong>Mention IA obligatoire</strong> : ajoutez la mention de transparence RGPD, ex: "Je suis un assistant IA. Un humain peut prendre le relais si nécessaire."</li>
+            </ul>
+        </div>
+
+        <h2>Étape 3 : Alimenter la base de connaissances (10 minutes)</h2>
+
+        <div class="step-box">
+            <span class="step-number">3</span>
+            <span class="time-badge">Minutes 10-20</span>
+            <h3>Entraînez votre agent avec vos données</h3>
+            <p>C'est l'étape la plus importante. La qualité de votre agent dépend directement de la qualité de sa base de connaissances. Voici les trois méthodes les plus courantes :</p>
+        </div>
+
+        <h3>Méthode 1 : Import de FAQ (recommandé pour débuter)</h3>
+
+        <p>La plupart des plateformes permettent d'importer un fichier structuré (CSV, Excel, JSON) contenant vos questions-réponses. Structurez votre fichier avec deux colonnes :</p>
+
+        <ul>
+            <li><strong>Colonne A - Question</strong> : incluez les variantes de formulation ("Quels sont vos horaires ?", "Vous êtes ouverts quand ?", "Heures d'ouverture")</li>
+            <li><strong>Colonne B - Réponse</strong> : réponse complète et claire, avec les informations à jour</li>
+        </ul>
+
+        <p>Commencez avec 20 à 30 questions couvrant les thématiques suivantes :</p>
+
+        <ul>
+            <li>Horaires et localisation</li>
+            <li>Tarifs et modalités de paiement</li>
+            <li>Processus de commande et livraison</li>
+            <li>Politique de retour et garantie</li>
+            <li>Contact et assistance humaine</li>
+        </ul>
+
+        <h3>Méthode 2 : Crawl automatique de votre site web</h3>
+
+        <p>Certains agents IA proposent un crawler qui analyse automatiquement le contenu de votre site web pour construire sa base de connaissances. Il suffit d'entrer l'URL de votre site et l'agent indexe toutes les pages publiques. Cette méthode est rapide (5 minutes) mais moins précise que l'import manuel. Elle est idéale en complément de la FAQ.</p>
+
+        <h3>Méthode 3 : Upload de documents</h3>
+
+        <p>Vous pouvez charger vos documents internes (PDF, Word, PowerPoint) directement dans l'interface. L'agent IA en extrait les informations pertinentes. Utile pour les manuels produits, les conditions générales de vente, les catalogues. Attention à ne pas charger de documents confidentiels contenant des données sensibles.</p>
+
+        <h2>Étape 4 : Configurer les règles de comportement (5 minutes)</h2>
+
+        <div class="step-box">
+            <span class="step-number">4</span>
+            <span class="time-badge">Minutes 20-25</span>
+            <h3>Définissez les limites et le ton de votre agent</h3>
+            <p>Configurez les paramètres de comportement pour que l'agent reflète l'image de votre entreprise :</p>
+        </div>
+
+        <h3>Le ton et le style</h3>
+
+        <ul>
+            <li><strong>Niveau de formalité</strong> : tutoiement ou vouvoiement ? Style corporate ou décontracté ?</li>
+            <li><strong>Langue</strong> : français uniquement, ou multilingue (détection automatique) ?</li>
+            <li><strong>Longueur des réponses</strong> : réponses courtes et directes, ou explications détaillées ?</li>
+        </ul>
+
+        <h3>Les règles de sécurité</h3>
+
+        <ul>
+            <li><strong>Sujets interdits</strong> : configurez les thématiques que l'agent ne doit jamais aborder (concurrents, politique, sujets sensibles)</li>
+            <li><strong>Escalade humaine</strong> : définissez les conditions de transfert vers un agent humain (sentiment négatif détecté, demande de remboursement, réclamation, 3 questions sans réponse satisfaisante)</li>
+            <li><strong>Limites fonctionnelles</strong> : l'agent ne doit jamais inventer d'information. Configurez la réponse par défaut : "Je n'ai pas cette information. Souhaitez-vous que je vous mette en relation avec un collaborateur ?"</li>
+        </ul>
+
+        <h3>Les horaires et la disponibilité</h3>
+
+        <p>Décidez si votre agent est actif 24/7 ou uniquement pendant certaines plages horaires. Vous pouvez configurer un comportement différent en dehors des heures de bureau : par exemple, l'agent collecte les coordonnées du visiteur et promet un rappel le lendemain matin.</p>
+
+        <h2>Étape 5 : Intégrer l'agent à votre site web (5 minutes)</h2>
+
+        <div class="step-box">
+            <span class="step-number">5</span>
+            <span class="time-badge">Minutes 25-30</span>
+            <h3>Installez le widget sur votre site</h3>
+            <p>La dernière étape technique : intégrer le widget de chat sur votre site web. La méthode dépend de votre plateforme :</p>
+        </div>
+
+        <h3>WordPress</h3>
+
+        <p>La plupart des agents IA proposent un plugin WordPress dédié. Allez dans Extensions > Ajouter, recherchez le nom de l'agent, installez et activez le plugin. Entrez votre clé API (fournie dans votre espace client) et le widget apparaît automatiquement sur toutes les pages de votre site.</p>
+
+        <h3>Shopify / Wix / Squarespace</h3>
+
+        <p>Ces plateformes proposent généralement une intégration via leur marketplace d'applications. Recherchez l'agent dans le store d'applications de votre plateforme, installez-le et connectez votre compte.</p>
+
+        <h3>Site HTML personnalisé</h3>
+
+        <p>Copiez le snippet de code JavaScript fourni par la plateforme et collez-le juste avant la balise de fermeture de votre fichier HTML. Le code ressemble généralement à ceci (quelques lignes seulement) :</p>
+
+        <blockquote>
+            <p>Collez le script fourni par votre agent IA juste avant la balise &lt;/body&gt; de votre page HTML. C'est une opération de copier-coller, aucune compétence en programmation n'est requise.</p>
+        </blockquote>
+
+        <p>Rafraîchissez votre site : le widget de chat devrait apparaître dans le coin inférieur droit de votre page. Félicitations, votre agent IA est en ligne !</p>
+
+        <h2>Étape bonus : Testez et optimisez</h2>
+
+        <p>Votre agent est déployé, mais le travail ne s'arrête pas là. Voici comment l'optimiser dans les jours qui suivent :</p>
+
+        <h3>Les 5 premiers tests à effectuer immédiatement</h3>
+
+        <ol>
+            <li><strong>Question simple</strong> : "Quels sont vos horaires ?" -- vérifiez que la réponse est correcte et bien formulée</li>
+            <li><strong>Question hors sujet</strong> : "Quel est le sens de la vie ?" -- vérifiez que l'agent redirige poliment vers son domaine de compétence</li>
+            <li><strong>Demande de contact humain</strong> : "Je veux parler à quelqu'un" -- vérifiez que l'escalade fonctionne</li>
+            <li><strong>Question en anglais</strong> (si multilingue activé) : "What are your opening hours?" -- vérifiez la détection de langue</li>
+            <li><strong>Sentiment négatif</strong> : "Votre service est nul, je veux un remboursement" -- vérifiez la gestion des situations tendues</li>
+        </ol>
+
+        <h3>L'optimisation continue (semaines 1-4)</h3>
+
+        <p>Après une semaine d'utilisation, consultez le tableau de bord analytique de votre agent. Vous y trouverez :</p>
+
+        <ul>
+            <li><strong>Questions sans réponse</strong> : identifiez les questions que l'agent n'a pas pu traiter et enrichissez la base de connaissances</li>
+            <li><strong>Taux de satisfaction</strong> : si des utilisateurs notent négativement une interaction, analysez la conversation et corrigez</li>
+            <li><strong>Taux de conversion</strong> : combien de visiteurs ayant interagi avec l'agent ont effectué une action souhaitée (achat, rendez-vous, inscription) ?</li>
+            <li><strong>Temps de résolution</strong> : les conversations sont-elles trop longues ? Optimisez les réponses pour aller plus vite à l'essentiel</li>
+        </ul>
+
+        <blockquote>
+            <p>Les agents IA les plus performants sont ceux qui sont régulièrement mis à jour. Prévoyez 30 minutes par semaine pour enrichir la base de connaissances et analyser les conversations.</p>
+        </blockquote>
+
+        <h2>Les erreurs de débutant à éviter absolument</h2>
+
+        <p>Après avoir accompagné des centaines de premiers déploiements, voici les 5 erreurs les plus fréquentes :</p>
+
+        <ol>
+            <li><strong>Base de connaissances trop maigre</strong> : 5 questions-réponses ne suffisent pas. Visez au minimum 20-30 pour un lancement, puis enrichissez chaque semaine.</li>
+            <li><strong>Oublier le message de transparence</strong> : ne pas informer les visiteurs qu'ils parlent à une IA est une violation du RGPD et de l'AI Act. C'est aussi une mauvaise pratique qui détruit la confiance.</li>
+            <li><strong>Pas d'escalade humaine</strong> : un agent IA sans possibilité de transfert vers un humain frustre les clients qui ont des problèmes complexes. Configurez toujours une option de contact humain.</li>
+            <li><strong>Lancer en production sans tester</strong> : faites au moins 10 tests avec des scénarios variés avant de rendre l'agent accessible au public.</li>
+            <li><strong>Ignorer les analytics</strong> : les données de conversation sont une mine d'or pour comprendre vos clients. Analysez-les régulièrement.</li>
+        </ol>
+
+        <h2>Et après ? Les prochaines étapes</h2>
+
+        <p>Votre premier agent IA de support client est opérationnel. Voici comment aller plus loin :</p>
+
+        <ul>
+            <li><strong>Mois 1</strong> : optimisez la base de connaissances en fonction des conversations réelles. Ajoutez les intégrations avec votre CRM pour enrichir l'historique client.</li>
+            <li><strong>Mois 2</strong> : étendez l'agent à d'autres canaux (WhatsApp, Facebook Messenger, email) pour offrir une expérience omnicanale.</li>
+            <li><strong>Mois 3</strong> : envisagez un deuxième agent IA pour un autre cas d'usage (prospection commerciale, prise de rendez-vous, qualification de leads).</li>
+        </ul>
+
+        <p>L'automatisation par l'IA est un voyage progressif. Chaque étape renforce votre efficacité opérationnelle et libère du temps pour ce qui compte vraiment : la relation humaine avec vos clients et le développement stratégique de votre entreprise.</p>
+
+        <!-- CTA -->
+        <div class="article-cta">
+            <h3>Prêt à déployer votre premier agent IA ?</h3>
+            <p>Explorez notre catalogue et trouvez l'agent parfait pour commencer.</p>
+            <a href="../index.html#explorer">Trouver mon agent IA</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- ARTICLES SIMILAIRES -->
+<section class="related-articles">
+    <div class="container">
+        <h2>Articles similaires</h2>
+        <div class="blog-grid">
+            <a href="choisir-agent-ia.html" class="blog-card">
+                <div class="blog-card-img">🤖</div>
+                <div class="blog-card-body">
+                    <span class="blog-tag">GUIDE</span>
+                    <h3>Comment choisir le bon agent IA pour votre entreprise en 2025</h3>
+                    <p>Les critères essentiels pour sélectionner un agent IA adapté à vos besoins.</p>
+                    <div class="blog-card-meta">
+                        <span>15 mars 2025</span>
+                        <span>8 min de lecture</span>
+                    </div>
+                </div>
+            </a>
+            <a href="agent-vocal-cabinet-dentaire.html" class="blog-card">
+                <div class="blog-card-img">📞</div>
+                <div class="blog-card-body">
+                    <span class="blog-tag">CASE STUDY</span>
+                    <h3>Un cabinet dentaire économise 4'200 CHF/mois grâce à Vocalis AI</h3>
+                    <p>Retour d'expérience sur le déploiement d'un agent vocal en cabinet.</p>
+                    <div class="blog-card-meta">
+                        <span>12 mars 2025</span>
+                        <span>6 min de lecture</span>
+                    </div>
+                </div>
+            </a>
+            <a href="rgpd-agents-ia.html" class="blog-card">
+                <div class="blog-card-img">🔒</div>
+                <div class="blog-card-body">
+                    <span class="blog-tag">SÉCURITÉ</span>
+                    <h3>RGPD et agents IA : tout ce que vous devez savoir en 2025</h3>
+                    <p>Guide complet sur la conformité RGPD lors de l'utilisation d'agents IA.</p>
+                    <div class="blog-card-meta">
+                        <span>5 mars 2025</span>
+                        <span>12 min de lecture</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><span class="logo-icon">🤖</span><span class="logo-text">agents-ia<span class="logo-accent">.pro</span></span><p>La marketplace #1 d'agents IA francophones.</p></div><div class="footer-links"><h4>Écosystème</h4><a href="https://vocalis.pro" target="_blank" rel="noopener">Vocalis.pro</a><a href="https://master-seller.fr" target="_blank" rel="noopener">Master-Seller.fr</a><a href="https://trust-vault.com" target="_blank" rel="noopener">Trust-Vault.com</a><a href="https://www.seo-true.ch" target="_blank" rel="noopener">SEO-True.ch</a><a href="https://vocalis.blog" target="_blank" rel="noopener">Vocalis.blog</a><a href="https://tesla-mag.ch" target="_blank" rel="noopener">Tesla-Mag.ch</a><a href="https://agents-ia.pro" target="_blank" rel="noopener">Agents-IA.pro</a></div></div><div class="footer-bottom"><p>© 2025-2026 Agents-IA.pro — Tous droits réservés | 🇨🇭 Basé en Suisse</p><div class="footer-legal"><a href="/mentions-legales">Mentions légales</a><a href="/cgu">CGU</a><a href="/confidentialite">Politique de confidentialité</a></div></div></div></footer>
+
+<script src="../js/app.js"></script>
+</body>
+</html>

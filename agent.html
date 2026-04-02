@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5627RD3TF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-B5627RD3TF');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détail Agent | Agents-IA.pro</title>
+    <meta name="description" content="Découvrez cet agent IA en détail : fonctionnalités, avis, tarifs et démo.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <span class="logo-icon">🤖</span>
+            <span class="logo-text">agents-ia<span class="logo-accent">.pro</span></span>
+        </a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html#explorer" class="nav-link">Explorer</a>
+            <a href="categories.html" class="nav-link">Catégories</a>
+            <a href="index.html#solutions" class="nav-link">Solutions IA</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+        </div>
+        <div class="nav-actions">
+            <a href="submit.html" class="btn-submit"><i class="fas fa-plus"></i> Soumettre un Agent</a>
+            <a href="#contact" class="btn-login">Connexion</a>
+            <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </div>
+</nav>
+
+<!-- AGENT DETAIL -->
+<section class="section agent-detail">
+    <div class="container">
+        <div class="agent-detail-header">
+            <div class="agent-detail-info" id="agentInfo">
+                <!-- Populated by JS -->
+            </div>
+            <div class="agent-detail-sidebar" id="agentSidebar">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+
+        <div class="detail-section">
+            <h2>📖 Description complète</h2>
+            <p id="agentFullDesc">Chargement...</p>
+        </div>
+
+        <div class="detail-section">
+            <h2>⭐ Fonctionnalités clés</h2>
+            <ul class="solution-features" id="agentFeatures">
+                <!-- Populated by JS -->
+            </ul>
+        </div>
+
+        <div class="detail-section">
+            <h2>💬 Avis des utilisateurs</h2>
+            <div class="testimonials-grid" id="agentReviews">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-bottom">
+            <p>© 2025-2026 Agents-IA.pro — Tous droits réservés | 🇨🇭 Basé en Suisse</p>
+            <div class="footer-legal">
+                <a href="/mentions-legales">Mentions légales</a>
+                <a href="/cgu">CGU</a>
+                <a href="/confidentialite">Politique de confidentialité</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a href="https://wa.me/41799394222?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20vos%20agents%20IA" class="whatsapp-widget" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a><div class="cookie-banner" id="cookieBanner"><div class="cookie-content"><p>🍪 Ce site utilise des cookies. <a href="/confidentialite" style="color:var(--primary-light);">En savoir plus</a>.</p><div class="cookie-actions"><button class="cookie-btn cookie-accept" id="cookieAccept">Accepter</button><button class="cookie-btn cookie-decline" id="cookieDecline">Refuser</button></div></div></div>
+<script src="js/app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const agentId = params.get('id');
+
+    // Redirect to dedicated pages when they exist
+    const dedicatedPages = {
+        'chatbot-pro': 'agent-chatbot.html',
+        'email-genius': 'agent-email.html',
+        'seo-master': 'agent-seo.html',
+        'recruteur-ia': 'agent-rh.html',
+        'compta-bot': 'agent-finance.html',
+        'design-ai': 'agent-design.html',
+        'legal-assistant': 'agent-juridique.html',
+        'social-pilot': 'agent-marketing.html',
+        'code-assistant': 'agent-dev.html'
+    };
+    if (dedicatedPages[agentId]) {
+        window.location.replace(dedicatedPages[agentId]);
+        return;
+    }
+
+    const agentDetails = {
+        'vocalis': {
+            name: 'Vocalis AI',
+            creator: 'Vocalis.pro',
+            icon: 'fas fa-phone-volume',
+            color: '#667eea,#764ba2',
+            rating: 4.9,
+            users: '2.4K',
+            price: 'Essai gratuit',
+            link: 'https://vocalis.pro',
+            desc: 'Vocalis AI est un agent vocal intelligent qui gere l\'integralite de vos appels telephoniques. Il repond en moins d\'une seconde, dans 4 langues, et qualifie chaque appel pour maximiser vos conversions.',
+            fullDesc: 'Vocalis AI revolutionne la gestion telephonique de votre entreprise. Grace a une IA conversationnelle de derniere generation, il comprend le contexte, adapte son ton et guide naturellement vos appelants vers la bonne action : prise de rendez-vous, qualification de lead, transfert vers un humain si necessaire. Compatible avec tous les systemes telephoniques (VoIP, SIP), il s\'integre a votre CRM existant et fournit un dashboard analytics complet.',
+            features: ['Reponse en moins d\'1 seconde', 'Multilingue : FR, EN, DE, IT', 'Prise de RDV automatique', 'Qualification de leads intelligente', 'Transfert d\'appel contextuel', 'Dashboard analytics temps reel', 'Integration CRM (HubSpot, Salesforce...)', 'Voix naturelle premium HD'],
+            tags: ['🎙️ Vocal', '📞 Telephone', '🤖 Autonome', '🌍 Multilingue']
+        },
+        'master-seller': {
+            name: 'Master Seller AI',
+            creator: 'Master-Seller.fr',
+            icon: 'fas fa-hand-holding-dollar',
+            color: '#f093fb,#f5576c',
+            rating: 4.8,
+            users: '1.8K',
+            price: 'Des 49 CHF/mois',
+            link: 'https://master-seller.fr',
+            desc: 'Master Seller AI est votre commercial IA qui ne dort jamais. Il analyse vos prospects, genere des scripts de vente personnalises et automatise votre processus de closing.',
+            fullDesc: 'Master Seller AI utilise l\'intelligence artificielle pour transformer votre processus de vente. Il analyse le comportement de vos prospects, identifie les signaux d\'achat et genere des scripts de vente ultra-personnalises. Chaque interaction est optimisee par l\'IA pour maximiser votre taux de conversion.',
+            features: ['Analyse comportementale des prospects', 'Scripts de vente IA personnalises', 'Scoring predictif des leads', 'Suivi automatique des relances', 'A/B testing des approches', 'Reporting conversion detaille', 'Multi-canal : email, chat, telephone', 'Integration Pipedrive, HubSpot'],
+            tags: ['💰 Vente', '📊 Analytics', '🎯 Closing', '🤖 Automation']
+        },
+        'trust-vault': {
+            name: 'Trust Vault AI',
+            creator: 'Trust-Vault.com',
+            icon: 'fas fa-shield-halved',
+            color: '#4facfe,#00f2fe',
+            rating: 4.9,
+            users: '1.2K',
+            price: 'Gratuit',
+            link: 'https://trust-vault.com',
+            desc: 'Trust Vault AI verifie la fiabilite des entreprises en ligne, collecte et analyse les avis verifies et genere des rapports de confiance detailles.',
+            fullDesc: 'Trust Vault AI est votre bouclier de confiance numerique. Il agrege les donnees de multiples sources (registres commerciaux, avis clients, reseaux sociaux, medias) pour etablir un score de confiance fiable. Ideal pour verifier des partenaires, fournisseurs ou clients potentiels avant de s\'engager.',
+            features: ['Score de confiance 0-100', 'Verification registre commercial', 'Agregation avis multi-plateformes', 'Detection de faux avis', 'Rapports PDF exportables', 'Alertes changements', 'API disponible', 'Dashboard monitoring'],
+            tags: ['🔒 Securite', '⭐ Avis', '📋 Rapports', '🔍 Verification']
+        },
+        'translator-pro': {
+            name: 'TranslatePro AI',
+            creator: 'LinguaAI',
+            icon: 'fas fa-language',
+            color: '#f093fb,#f5576c',
+            rating: 4.7,
+            users: '1.8K',
+            price: 'Des 19\u20ac/mois',
+            link: '#contact',
+            desc: 'Traduction professionnelle en 50+ langues avec preservation du ton et du contexte metier.',
+            fullDesc: 'TranslatePro AI offre une traduction de niveau professionnel dans plus de 50 langues. Contrairement aux traducteurs generiques, il comprend le contexte metier, preserve le ton de votre marque et s\'adapte a votre terminologie specifique. Ideal pour les entreprises internationales, e-commerce et agences.',
+            features: ['50+ langues supportees', 'Preservation du ton et du style', 'Glossaire metier personnalisable', 'Traduction de sites web en temps reel', 'API d\'integration disponible', 'Relecture IA automatique', 'Export multi-formats', 'Memoire de traduction'],
+            tags: ['🌍 Traduction', '📝 Contenu', '🗣️ Multilingue']
+        },
+        'data-analyst': {
+            name: 'DataSense AI',
+            creator: 'AnalyticsLab',
+            icon: 'fas fa-chart-pie',
+            color: '#4facfe,#00f2fe',
+            rating: 4.8,
+            users: '1.4K',
+            price: 'Des 59\u20ac/mois',
+            link: '#contact',
+            desc: 'Analyse vos donnees, genere des rapports visuels et detecte les tendances automatiquement.',
+            fullDesc: 'DataSense AI transforme vos donnees brutes en insights actionnables. Connectez vos sources de donnees (CRM, ERP, Google Analytics, bases SQL) et obtenez des dashboards interactifs, des rapports automatises et des alertes predictives. Aucune competence technique requise.',
+            features: ['Connexion multi-sources de donnees', 'Dashboards interactifs automatiques', 'Rapports PDF/Excel programes', 'Detection d\'anomalies IA', 'Predictions et tendances', 'Alertes intelligentes', 'Langage naturel pour requetes', 'Partage securise en equipe'],
+            tags: ['📊 Data', '📈 Analytics', '🔮 Prediction']
+        },
+        'voice-clone': {
+            name: 'VoiceClone AI',
+            creator: 'AudioTech',
+            icon: 'fas fa-microphone',
+            color: '#a18cd1,#fbc2eb',
+            rating: 4.6,
+            users: '760',
+            price: 'Des 29\u20ac/mois',
+            link: '#contact',
+            desc: 'Clone votre voix et genere des audios naturels pour vos podcasts, videos et presentations.',
+            fullDesc: 'VoiceClone AI reproduit fidelement votre voix a partir de seulement 3 minutes d\'enregistrement. Generez ensuite du contenu audio illimite : podcasts, voix-off video, messages d\'accueil telephonique, e-learning. La qualite est indiscernable d\'un enregistrement reel.',
+            features: ['Clonage vocal en 3 minutes', 'Qualite studio professionnelle', '20+ langues avec votre voix', 'Export WAV, MP3, FLAC', 'API temps reel disponible', 'Controle emotionnel (ton, rythme)', 'Anti-deepfake watermark', 'Stockage cloud securise'],
+            tags: ['🎙️ Vocal', '🎧 Audio', '🎬 Video']
+        }
+    };
+
+    const agent = agentDetails[agentId];
+
+    if (!agent) {
+        document.getElementById('agentInfo').innerHTML = '<h1>Agent non trouve</h1><p>Cet agent n\'existe pas ou a ete retire.</p><a href="index.html" class="btn-primary">Retour a l\'accueil</a>';
+        return;
+    }
+
+    document.title = `${agent.name} | Agents-IA.pro`;
+
+    document.getElementById('agentInfo').innerHTML = `
+        <div class="agent-avatar" style="background: linear-gradient(135deg, ${agent.color}); width:80px; height:80px; font-size:2rem; border-radius:20px; display:flex; align-items:center; justify-content:center; margin-bottom:20px;">
+            <i class="${agent.icon}" style="color:white;"></i>
+        </div>
+        <h1>${agent.name}</h1>
+        <span class="agent-creator" style="font-size:1rem; margin-bottom:16px; display:block;">par ${agent.creator}</span>
+        <div class="agent-verified" style="margin-bottom:16px; font-size:0.9rem;"><i class="fas fa-check-circle"></i> Vérifié par Agents-IA.pro</div>
+        <p class="agent-desc" style="font-size:1.1rem; line-height:1.8;">${agent.desc}</p>
+        <div class="agent-tags" style="margin-top:20px;">
+            ${agent.tags.map(t => `<span class="tag">${t}</span>`).join('')}
+        </div>
+    `;
+
+    document.getElementById('agentSidebar').innerHTML = `
+        <div class="agent-metrics" style="flex-direction:column; gap:16px; border:none; padding:0; margin:0;">
+            <div style="display:flex; justify-content:space-between; width:100%;">
+                <span style="color:var(--gray);">Note</span>
+                <span><i class="fas fa-star" style="color:var(--warning);"></i> ${agent.rating}/5</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; width:100%;">
+                <span style="color:var(--gray);">Utilisateurs</span>
+                <span>${agent.users}</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; width:100%;">
+                <span style="color:var(--gray);">Prix</span>
+                <span style="color:var(--success); font-weight:600;">${agent.price}</span>
+            </div>
+        </div>
+        <hr style="border-color:var(--glass-border); margin:24px 0;">
+        <a href="${agent.link}" target="_blank" class="btn-primary btn-full" style="margin-bottom:12px;">Essayer maintenant</a>
+        <a href="index.html#contact" class="btn-solution" style="background:transparent; border:1px solid var(--glass-border); color:var(--gray-light);">Demander une demo</a>
+    `;
+
+    document.getElementById('agentFullDesc').textContent = agent.fullDesc;
+
+    document.getElementById('agentFeatures').innerHTML = agent.features.map(f =>
+        `<li><i class="fas fa-check"></i> ${f}</li>`
+    ).join('');
+
+    document.getElementById('agentReviews').innerHTML = `
+        <div class="testimonial-card">
+            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+            <p class="testimonial-text">"Incroyable ! ${agent.name} a transformé notre façon de travailler. ROI positif dès le premier mois."</p>
+            <div class="testimonial-author">
+                <div class="author-avatar">JD</div>
+                <div><strong>Jean D.</strong><span>Entrepreneur, Zurich</span></div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+            <p class="testimonial-text">"Simple à configurer, puissant en résultats. L'équipe support est réactive et professionnelle."</p>
+            <div class="testimonial-author">
+                <div class="author-avatar">ML</div>
+                <div><strong>Marie L.</strong><span>Directrice, Lyon</span></div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-stars">⭐⭐⭐⭐</div>
+            <p class="testimonial-text">"Très bon produit, je recommande. Quelques améliorations possibles sur l'interface mais le coeur est solide."</p>
+            <div class="testimonial-author">
+                <div class="author-avatar">TP</div>
+                <div><strong>Thomas P.</strong><span>CTO, Genève</span></div>
+            </div>
+        </div>
+    `;
+});
+</script>
+</body>
+</html>

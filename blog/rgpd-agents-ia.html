@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5627RD3TF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-B5627RD3TF');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGPD et agents IA : tout ce que vous devez savoir en 2025 | Agents-IA.pro</title>
+    <meta name="description" content="Guide complet sur la conformité RGPD et nLPD pour les agents IA en 2025 : données personnelles, hébergement, consentement, droits des utilisateurs et checklist pratique.">
+    <meta name="keywords" content="RGPD agents IA, conformité IA, protection données, nLPD Suisse, intelligence artificielle RGPD, DPO">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="canonical" href="https://agents-ia.pro/blog/rgpd-agents-ia">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://agents-ia.pro/blog/rgpd-agents-ia">
+    <meta property="og:title" content="RGPD et agents IA tout ce que vous devez savoir en 2025 - Agents-IA.pro">
+    <meta property="og:description" content="Guide conformite RGPD et nLPD pour agents IA en Suisse">
+    <meta property="og:image" content="https://agents-ia.pro/images/og-image.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RGPD et agents IA tout ce que vous devez savoir en 2025">
+    <meta name="twitter:description" content="Guide conformite RGPD et nLPD pour agents IA en Suisse">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Article","headline":"RGPD et agents IA tout ce que vous devez savoir en 2025","description":"Guide conformite RGPD et nLPD pour agents IA en Suisse","url":"https://agents-ia.pro/blog/rgpd-agents-ia","datePublished":"2025-03-05","dateModified":"2025-03-05","inLanguage":"fr","author":{"@type":"Organization","name":"Agents-IA.pro","url":"https://agents-ia.pro"},"publisher":{"@type":"Organization","name":"Agents-IA.pro","url":"https://agents-ia.pro","logo":{"@type":"ImageObject","url":"https://agents-ia.pro/favicon.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://agents-ia.pro/blog/rgpd-agents-ia"},"speakable":{"@type":"SpeakableSpecification","cssSelector":["h1",".article-content > p:first-of-type"]}}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://agents-ia.pro/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://agents-ia.pro/blog"},{"@type":"ListItem","position":3,"name":"RGPD et agents IA tout ce que vous devez savoir en 2025","item":"https://agents-ia.pro/blog/rgpd-agents-ia"}]}
+    </script>
+    <style>
+        .article-hero { padding: 160px 0 60px; background: linear-gradient(135deg, var(--dark) 0%, var(--dark-2) 100%); }
+        .article-hero .blog-tag { display: inline-block; background: rgba(108,92,231,0.2); color: var(--primary-light); padding: 6px 16px; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 600; margin-bottom: 16px; }
+        .article-hero h1 { font-size: 2.6rem; font-weight: 800; line-height: 1.25; margin-bottom: 20px; max-width: 800px; }
+        .article-meta { display: flex; gap: 24px; color: var(--gray); font-size: 0.9rem; flex-wrap: wrap; }
+        .article-meta span { display: flex; align-items: center; gap: 6px; }
+        .article-content { padding: 60px 0 40px; max-width: 820px; margin: 0 auto; }
+        .article-content h2 { font-size: 1.6rem; font-weight: 700; margin: 48px 0 16px; color: var(--white); }
+        .article-content h3 { font-size: 1.25rem; font-weight: 600; margin: 32px 0 12px; color: var(--gray-light); }
+        .article-content p { color: var(--gray-light); font-size: 1.05rem; line-height: 1.8; margin-bottom: 20px; }
+        .article-content ul, .article-content ol { color: var(--gray-light); font-size: 1.05rem; line-height: 1.8; margin: 0 0 20px 24px; }
+        .article-content li { margin-bottom: 8px; }
+        .article-content blockquote { border-left: 4px solid var(--primary); background: rgba(108,92,231,0.08); padding: 20px 24px; margin: 28px 0; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+        .article-content blockquote p { color: var(--primary-light); margin-bottom: 0; font-style: italic; }
+        .article-content strong { color: var(--white); }
+        .article-cta { background: linear-gradient(135deg, var(--primary), var(--accent2)); border-radius: var(--radius); padding: 40px; text-align: center; margin: 48px 0; }
+        .article-cta h3 { color: var(--white); font-size: 1.4rem; margin: 0 0 12px; }
+        .article-cta p { color: rgba(255,255,255,0.85); margin-bottom: 20px; }
+        .article-cta a { display: inline-block; background: var(--white); color: var(--primary-dark); padding: 14px 32px; border-radius: var(--radius-full); font-weight: 700; text-decoration: none; transition: var(--transition); }
+        .article-cta a:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+        .related-articles { padding: 60px 0 100px; }
+        .related-articles h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 32px; text-align: center; }
+        .checklist { background: var(--dark-2); border: 1px solid var(--glass-border); border-radius: var(--radius); padding: 32px; margin: 28px 0; }
+        .checklist h3 { color: var(--white); margin-top: 0; }
+        .checklist ul { list-style: none; margin-left: 0; padding-left: 0; }
+        .checklist li { padding: 8px 0; padding-left: 28px; position: relative; }
+        .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--primary-light); }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="../index.html" class="nav-logo">
+            <span class="logo-icon">🤖</span>
+            <span class="logo-text">agents-ia<span class="logo-accent">.pro</span></span>
+        </a>
+        <div class="nav-links" id="navLinks">
+            <a href="../index.html#explorer" class="nav-link">Explorer</a>
+            <a href="../categories.html" class="nav-link">Catégories</a>
+            <a href="../index.html#solutions" class="nav-link">Solutions IA</a>
+            <a href="../blog.html" class="nav-link">Blog</a>
+        </div>
+        <div class="nav-actions">
+            <a href="../submit.html" class="btn-submit"><i class="fas fa-plus"></i> Soumettre un Agent</a>
+            <a href="#contact" class="btn-login">Connexion</a>
+            <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </div>
+</nav>
+
+<!-- ARTICLE HERO -->
+<section class="article-hero">
+    <div class="container">
+        <span class="blog-tag">SÉCURITÉ</span>
+        <h1>RGPD et agents IA : tout ce que vous devez savoir en 2025</h1>
+        <div class="article-meta">
+            <span><i class="far fa-calendar"></i> 5 mars 2025</span>
+            <span><i class="far fa-clock"></i> 12 min de lecture</span>
+            <span><i class="far fa-user"></i> Rédaction Agents-IA.pro</span>
+        </div>
+    </div>
+</section>
+
+<!-- ARTICLE CONTENT -->
+<div class="container">
+    <div class="article-content">
+
+        <p>L'utilisation d'agents IA dans votre entreprise implique inévitablement le traitement de données personnelles. Qu'il s'agisse d'un chatbot qui collecte des adresses email, d'un agent vocal qui enregistre des conversations ou d'un outil d'analyse qui profile vos clients, la conformité réglementaire est une obligation légale. Ce guide vous explique tout ce que vous devez savoir pour utiliser des agents IA en toute légalité en 2025, que vous soyez basé en Suisse ou dans l'Union européenne.</p>
+
+        <h2>Le cadre juridique en 2025 : RGPD et nLPD</h2>
+
+        <h3>Le RGPD (Règlement Général sur la Protection des Données)</h3>
+
+        <p>Entré en vigueur en mai 2018, le RGPD reste le texte de référence pour toute entreprise qui traite des données de résidents européens. Même si votre entreprise est basée en Suisse, le RGPD s'applique dès que vous traitez les données d'un client ou prospect situé dans l'UE. Avec un agent IA accessible en ligne, c'est quasiment toujours le cas.</p>
+
+        <p>Les principes fondamentaux du RGPD qui s'appliquent aux agents IA sont :</p>
+
+        <ul>
+            <li><strong>Licéité, loyauté et transparence</strong> : l'utilisateur doit savoir qu'il interagit avec une IA et comment ses données sont utilisées</li>
+            <li><strong>Limitation des finalités</strong> : les données collectées par l'agent ne peuvent être utilisées que pour les finalités déclarées</li>
+            <li><strong>Minimisation des données</strong> : l'agent ne doit collecter que les données strictement nécessaires à sa mission</li>
+            <li><strong>Exactitude</strong> : les données traitées doivent être maintenues à jour et corrigées si nécessaire</li>
+            <li><strong>Limitation de la conservation</strong> : les données ne peuvent être conservées indéfiniment</li>
+            <li><strong>Intégrité et confidentialité</strong> : des mesures techniques et organisationnelles appropriées doivent protéger les données</li>
+        </ul>
+
+        <h3>La nLPD (nouvelle Loi fédérale sur la Protection des Données)</h3>
+
+        <p>Entrée en vigueur le 1er septembre 2023, la nLPD suisse s'aligne largement sur le RGPD tout en conservant des spécificités helvétiques. Pour les entreprises suisses, la nLPD impose des obligations similaires en matière de transparence, de sécurité et de droits des personnes concernées. La principale différence : les sanctions sont pénales et visent les personnes physiques responsables (amendes jusqu'à 250'000 CHF), contrairement au RGPD qui sanctionne les entreprises.</p>
+
+        <blockquote>
+            <p>En Suisse, ce n'est pas l'entreprise mais le responsable individuel (dirigeant, DPO, responsable IT) qui risque des sanctions pénales en cas de violation de la nLPD. La responsabilité est personnelle.</p>
+        </blockquote>
+
+        <h2>Les données personnelles traitées par les agents IA</h2>
+
+        <p>La première étape de mise en conformité consiste à identifier précisément quelles données personnelles votre agent IA traite. Voici les catégories les plus courantes :</p>
+
+        <h3>Données collectées directement</h3>
+
+        <ul>
+            <li><strong>Données d'identification</strong> : nom, prénom, adresse email, numéro de téléphone fournis lors d'une conversation</li>
+            <li><strong>Données de conversation</strong> : le contenu des échanges textuels ou vocaux avec l'agent</li>
+            <li><strong>Données transactionnelles</strong> : informations de paiement, historique des commandes</li>
+            <li><strong>Données de santé</strong> (cas spécifique) : pour un agent médical, informations sur les symptômes, les traitements</li>
+        </ul>
+
+        <h3>Données collectées indirectement</h3>
+
+        <ul>
+            <li><strong>Données techniques</strong> : adresse IP, type de navigateur, langue préférée</li>
+            <li><strong>Données comportementales</strong> : pages visitées avant de lancer le chat, durée de la conversation</li>
+            <li><strong>Données de géolocalisation</strong> : pays, ville (déduits de l'adresse IP)</li>
+            <li><strong>Métadonnées</strong> : horodatage des interactions, canal utilisé (web, WhatsApp, téléphone)</li>
+        </ul>
+
+        <p>Attention particulière aux <strong>données sensibles</strong> (données de santé, opinions politiques, données biométriques) qui bénéficient d'une protection renforcée et nécessitent un consentement explicite.</p>
+
+        <h2>L'hébergement des données : un enjeu stratégique</h2>
+
+        <p>Où sont physiquement stockées les données traitées par votre agent IA ? Cette question est devenue centrale depuis les arrêts Schrems I et II de la Cour de justice de l'UE, qui ont invalidé les mécanismes de transfert de données vers les États-Unis.</p>
+
+        <h3>Les options d'hébergement et leurs implications</h3>
+
+        <ul>
+            <li><strong>Hébergement en Suisse</strong> : le standard le plus sûr pour les entreprises suisses. La Suisse est reconnue par l'UE comme offrant un niveau de protection adéquat. Privilégiez les data centers certifiés (Infomaniak, Exoscale, Green.ch).</li>
+            <li><strong>Hébergement dans l'UE</strong> : conforme au RGPD par défaut. Les grands cloud providers proposent des régions européennes (AWS Frankfurt, Azure Amsterdam, Google Zurich).</li>
+            <li><strong>Hébergement aux États-Unis</strong> : possible uniquement sous le Data Privacy Framework (DPF) adopté en 2023, mais la pérennité de ce mécanisme reste incertaine. Préférez des alternatives européennes quand c'est possible.</li>
+        </ul>
+
+        <blockquote>
+            <p>Demandez systématiquement à votre fournisseur d'agent IA un document précisant la localisation exacte des serveurs de traitement et de stockage. Un flou sur ce point est un signal d'alarme.</p>
+        </blockquote>
+
+        <h3>Le cas particulier des modèles de langage</h3>
+
+        <p>La plupart des agents IA utilisent des modèles de langage (LLM) développés par des entreprises américaines (OpenAI, Anthropic, Google). Les données de vos utilisateurs sont-elles envoyées à ces fournisseurs pour être traitées ? Sont-elles utilisées pour entraîner les modèles ? Ces questions sont essentielles.</p>
+
+        <p>Les agents IA conformes au RGPD doivent garantir :</p>
+
+        <ul>
+            <li>Un accord de non-utilisation des données pour l'entraînement (opt-out garanti)</li>
+            <li>Un traitement des données dans des régions géographiques conformes</li>
+            <li>Un chiffrement des données en transit et au repos</li>
+            <li>La suppression des données de conversation après traitement (pas de rétention par le fournisseur LLM)</li>
+        </ul>
+
+        <h2>Le consentement : informer et respecter les choix</h2>
+
+        <h3>L'obligation de transparence</h3>
+
+        <p>Depuis l'entrée en vigueur de l'AI Act européen, l'obligation de transparence est renforcée. Concrètement, votre agent IA doit :</p>
+
+        <ol>
+            <li><strong>S'identifier comme une IA</strong> : avant toute interaction, l'utilisateur doit être clairement informé qu'il communique avec un système automatisé, pas un humain</li>
+            <li><strong>Expliquer la finalité</strong> : pourquoi l'agent collecte ces données et ce qu'il en fait</li>
+            <li><strong>Indiquer la durée de conservation</strong> : combien de temps les données de conversation sont conservées</li>
+            <li><strong>Mentionner les droits</strong> : droit d'accès, de rectification, d'effacement, de portabilité et d'opposition</li>
+        </ol>
+
+        <h3>Les bases légales du traitement</h3>
+
+        <p>Le consentement n'est pas la seule base légale pour traiter des données via un agent IA. Les six bases légales du RGPD sont :</p>
+
+        <ul>
+            <li><strong>Consentement</strong> : l'utilisateur accepte activement (opt-in) le traitement de ses données</li>
+            <li><strong>Exécution d'un contrat</strong> : le traitement est nécessaire pour fournir le service demandé (ex: prise de rendez-vous)</li>
+            <li><strong>Obligation légale</strong> : le traitement est imposé par la loi</li>
+            <li><strong>Intérêts vitaux</strong> : cas d'urgence médicale par exemple</li>
+            <li><strong>Mission d'intérêt public</strong> : rarement applicable aux entreprises privées</li>
+            <li><strong>Intérêts légitimes</strong> : l'entreprise a un intérêt légitime qui ne porte pas atteinte aux droits de la personne</li>
+        </ul>
+
+        <p>Pour la plupart des agents IA en contexte commercial, la base légale la plus appropriée est l'exécution d'un contrat (quand l'agent traite une commande, un rendez-vous) ou l'intérêt légitime (quand l'agent offre du support client). Le consentement est requis pour les actions de marketing (newsletters, relances commerciales).</p>
+
+        <h2>Les droits des utilisateurs face aux agents IA</h2>
+
+        <p>Votre agent IA doit permettre l'exercice effectif des droits des personnes concernées :</p>
+
+        <ul>
+            <li><strong>Droit d'accès</strong> : un utilisateur peut demander l'ensemble des données que votre agent a collectées à son sujet. Votre système doit pouvoir extraire ces données dans un format lisible.</li>
+            <li><strong>Droit de rectification</strong> : si l'agent a enregistré des informations incorrectes, l'utilisateur peut demander leur correction.</li>
+            <li><strong>Droit à l'effacement</strong> : sur demande, toutes les données personnelles d'un utilisateur doivent être supprimées de vos systèmes, y compris des logs et des sauvegardes.</li>
+            <li><strong>Droit à la portabilité</strong> : l'utilisateur peut demander ses données dans un format structuré et couramment utilisé (JSON, CSV).</li>
+            <li><strong>Droit d'opposition au profilage automatisé</strong> : si votre agent IA prend des décisions automatisées ayant un impact significatif (scoring, tarification dynamique), l'utilisateur a le droit de demander une intervention humaine.</li>
+        </ul>
+
+        <h2>Checklist de conformité RGPD pour votre agent IA</h2>
+
+        <div class="checklist">
+            <h3>Avant le déploiement</h3>
+            <ul>
+                <li>Réaliser une Analyse d'Impact (DPIA) si le traitement présente un risque élevé</li>
+                <li>Identifier et documenter la base légale du traitement pour chaque type de donnée</li>
+                <li>Signer un DPA (Data Processing Agreement) avec le fournisseur de l'agent IA</li>
+                <li>Vérifier la localisation des serveurs de traitement et de stockage</li>
+                <li>Confirmer que les données ne sont pas utilisées pour l'entraînement du modèle IA</li>
+                <li>Configurer les durées de conservation des données de conversation</li>
+                <li>Mettre en place le message d'identification IA obligatoire</li>
+                <li>Rédiger ou mettre à jour la politique de confidentialité</li>
+            </ul>
+        </div>
+
+        <div class="checklist">
+            <h3>Après le déploiement</h3>
+            <ul>
+                <li>Tenir à jour le registre des traitements incluant l'agent IA</li>
+                <li>Mettre en place une procédure de réponse aux demandes d'exercice de droits (délai : 30 jours max)</li>
+                <li>Configurer les alertes de violation de données (notification CNIL/PFPDT sous 72h)</li>
+                <li>Former les équipes internes à la gestion des données personnelles via l'agent</li>
+                <li>Auditer régulièrement les accès et les flux de données (trimestriel recommandé)</li>
+                <li>Vérifier la conformité des sous-traitants et prestataires tiers</li>
+                <li>Documenter tous les incidents et les mesures correctives prises</li>
+            </ul>
+        </div>
+
+        <h2>Les sanctions en cas de non-conformité</h2>
+
+        <p>Les enjeux financiers et juridiques sont considérables :</p>
+
+        <ul>
+            <li><strong>RGPD</strong> : amendes jusqu'à 20 millions d'euros ou 4% du chiffre d'affaires annuel mondial (le montant le plus élevé s'applique)</li>
+            <li><strong>nLPD suisse</strong> : amendes pénales jusqu'à 250'000 CHF visant les personnes physiques responsables</li>
+            <li><strong>AI Act</strong> : amendes jusqu'à 35 millions d'euros ou 7% du CA pour les violations les plus graves</li>
+            <li><strong>Dommage réputationnel</strong> : une violation de données peut coûter bien plus cher en perte de confiance client qu'en amendes</li>
+        </ul>
+
+        <p>En 2024, les autorités de protection des données ont infligé plus de 2 milliards d'euros d'amendes au total dans l'UE. Les PME ne sont pas épargnées : plusieurs entreprises de moins de 50 employés ont été sanctionnées pour des manquements liés à des outils d'IA non conformes.</p>
+
+        <h2>Conclusion : la conformité comme avantage concurrentiel</h2>
+
+        <p>Loin d'être une contrainte, la conformité RGPD/nLPD peut devenir un véritable avantage concurrentiel. En 2025, les consommateurs et les entreprises sont de plus en plus sensibles à la protection de leurs données. Afficher clairement votre conformité (certification, badges, documentation accessible) renforce la confiance et peut faire la différence face à un concurrent moins transparent.</p>
+
+        <p>Sur Agents-IA.pro, tous les agents référencés sont évalués sur leur conformité RGPD. Un badge "RGPD Conforme" est attribué aux agents qui répondent à l'ensemble des critères de notre grille d'évaluation. Utilisez ce critère dans votre processus de sélection.</p>
+
+        <!-- CTA -->
+        <div class="article-cta">
+            <h3>Trouvez des agents IA conformes RGPD</h3>
+            <p>Filtrez notre marketplace par conformité et hébergement pour trouver des agents respectueux de vos données.</p>
+            <a href="../index.html#explorer">Explorer les agents conformes</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- ARTICLES SIMILAIRES -->
+<section class="related-articles">
+    <div class="container">
+        <h2>Articles similaires</h2>
+        <div class="blog-grid">
+            <a href="choisir-agent-ia.html" class="blog-card">
+                <div class="blog-card-img">🤖</div>
+                <div class="blog-card-body">
+                    <span class="blog-tag">GUIDE</span>
+                    <h3>Comment choisir le bon agent IA pour votre entreprise en 2025</h3>
+                    <p>Les critères essentiels pour sélectionner un agent IA adapté à vos besoins.</p>
+                    <div class="blog-card-meta">
+                        <span>15 mars 2025</span>
+                        <span>8 min de lecture</span>
+                    </div>
+                </div>
+            </a>
+            <a href="top-10-agents-ia-mars-2025.html" class="blog-card">
+                <div class="blog-card-img">🚀</div>
+                <div class="blog-card-body">
+                    <span class="blog-tag">TENDANCES</span>
+                    <h3>Top 10 des agents IA les plus populaires en mars 2025</h3>
+                    <p>Classement mensuel des agents IA les plus votés et utilisés sur notre marketplace.</p>
+                    <div class="blog-card-meta">
+                        <span>10 mars 2025</span>
+                        <span>5 min de lecture</span>
+                    </div>
+                </div>
+            </a>
+            <a href="agent-ia-vs-employe.html" class="blog-card">
+                <div class="blog-card-img">💰</div>
+                <div class="blog-card-body">
+                    <span class="blog-tag">BUSINESS</span>
+                    <h3>Agent IA vs employé : le comparatif complet pour les PME suisses</h3>
+                    <p>Coûts, performances, disponibilité et ROI comparés en détail.</p>
+                    <div class="blog-card-meta">
+                        <span>8 mars 2025</span>
+                        <span>10 min de lecture</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><span class="logo-icon">🤖</span><span class="logo-text">agents-ia<span class="logo-accent">.pro</span></span><p>La marketplace #1 d'agents IA francophones.</p></div><div class="footer-links"><h4>Écosystème</h4><a href="https://vocalis.pro" target="_blank" rel="noopener">Vocalis.pro</a><a href="https://master-seller.fr" target="_blank" rel="noopener">Master-Seller.fr</a><a href="https://trust-vault.com" target="_blank" rel="noopener">Trust-Vault.com</a><a href="https://www.seo-true.ch" target="_blank" rel="noopener">SEO-True.ch</a><a href="https://vocalis.blog" target="_blank" rel="noopener">Vocalis.blog</a><a href="https://tesla-mag.ch" target="_blank" rel="noopener">Tesla-Mag.ch</a><a href="https://agents-ia.pro" target="_blank" rel="noopener">Agents-IA.pro</a></div></div><div class="footer-bottom"><p>© 2025-2026 Agents-IA.pro — Tous droits réservés | 🇨🇭 Basé en Suisse</p><div class="footer-legal"><a href="/mentions-legales">Mentions légales</a><a href="/cgu">CGU</a><a href="/confidentialite">Politique de confidentialité</a></div></div></div></footer>
+
+<script src="../js/app.js"></script>
+</body>
+</html>
