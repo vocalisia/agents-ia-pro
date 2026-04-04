@@ -13,7 +13,9 @@
     <meta property="og:url" content="https://agents-ia.pro/">
     <meta property="og:title" content="Agents-IA.pro | La Marketplace #1 d'Agents IA Francophones">
     <meta property="og:description" content="Trouvez, comparez et déployez les meilleurs agents IA pour votre business. +500 agents IA vérifiés.">
-    <meta property="og:image" content="https://agents-ia.pro/images/og-image.png">
+    <meta property="og:image" content="https://agents-ia.pro/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="Agents-IA.pro">
 
@@ -21,7 +23,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Agents-IA.pro | Marketplace d'Agents IA">
     <meta name="twitter:description" content="Trouvez, comparez et déployez les meilleurs agents IA pour votre business.">
-    <meta name="twitter:image" content="https://agents-ia.pro/images/og-image.png">
+    <meta name="twitter:image" content="https://agents-ia.pro/og-image.png">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -31,6 +33,7 @@
     {
       "@context": "https://schema.org",
       "@type": "Organization",
+      "@id": "https://agents-ia.pro/#organization",
       "name": "Agents-IA.pro",
       "alternateName": "Agents IA Pro",
       "url": "https://agents-ia.pro",
@@ -70,23 +73,26 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "Agents-IA.pro",
+      "name": "Agents IA Pro",
       "url": "https://agents-ia.pro",
-      "description": "La marketplace #1 d'agents IA francophones. +500 agents IA verifies.",
-      "inLanguage": "fr",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Agents-IA.pro",
-        "url": "https://agents-ia.pro"
-      },
       "potentialAction": {
         "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://agents-ia.pro/categories.html?q={search_term_string}"
-        },
+        "target": "https://agents-ia.pro/?s={search_term_string}",
         "query-input": "required name=search_term_string"
       }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Agents IA Professionnels",
+      "url": "https://agents-ia.pro",
+      "provider": {
+        "@id": "https://agents-ia.pro/#organization"
+      },
+      "serviceType": "Intelligence Artificielle",
+      "areaServed": "FR"
     }
     </script>
 
