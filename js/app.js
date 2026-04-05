@@ -494,20 +494,22 @@ function initCookieBanner() {
     if (!banner) return;
 
     // Check if already accepted/declined
-    if (localStorage.getItem('cookieConsent')) {
+    if (localStorage.getItem('ai_cookies')) {
         banner.classList.add('hidden');
         return;
     }
 
     acceptBtn.addEventListener('click', () => {
-        localStorage.setItem('cookieConsent', 'accepted');
+        localStorage.setItem('ai_cookies', 'accepted');
         banner.classList.add('hidden');
+        if (typeof gtag === 'function') {
+            gtag('consent', 'update', { analytics_storage: 'granted' });
+        }
     });
 
     declineBtn.addEventListener('click', () => {
-        localStorage.setItem('cookieConsent', 'declined');
+        localStorage.setItem('ai_cookies', 'declined');
         banner.classList.add('hidden');
-        // Disable GA if declined
         window['ga-disable-G-B5627RD3TF'] = true;
     });
 }

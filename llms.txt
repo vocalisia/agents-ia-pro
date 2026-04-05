@@ -26,7 +26,7 @@
 - [Vocalis.pro](https://vocalis.pro): Agent vocal IA conversationnel
 - [Master-Seller.fr](https://master-seller.fr): Agent commercial IA et formation vente
 - [Trust-Vault.com](https://trust-vault.com): Verification fiabilite entreprises
-- [SEO-True.ch](https://www.seo-true.ch): Agent SEO et contenu optimise
+- [SEO-True.ch](https://seo-true.com): Agent SEO et contenu optimise
 - [Vocalis.blog](https://vocalis.blog): Blog IA et automatisation
 - [Tesla-Mag.ch](https://tesla-mag.ch): Magazine digital Tesla et IA
 
