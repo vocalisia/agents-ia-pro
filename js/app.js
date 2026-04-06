@@ -27,7 +27,7 @@ const agentsData = [
         rating: 4.6,
         users: '890',
         price: 'paid',
-        priceLabel: 'Dès 29€/mois',
+        priceLabel: 'Dès 29CHF/mois',
         upvotes: 312,
         category: 'email',
         isNew: false
@@ -43,7 +43,7 @@ const agentsData = [
         rating: 4.8,
         users: '2.1K',
         price: 'paid',
-        priceLabel: 'Dès 39€/mois',
+        priceLabel: 'Dès 39CHF/mois',
         upvotes: 567,
         category: 'seo',
         isNew: false
@@ -59,7 +59,7 @@ const agentsData = [
         rating: 4.5,
         users: '650',
         price: 'paid',
-        priceLabel: 'Dès 79€/mois',
+        priceLabel: 'Dès 79CHF/mois',
         upvotes: 245,
         category: 'rh',
         isNew: true
@@ -75,7 +75,7 @@ const agentsData = [
         rating: 4.4,
         users: '430',
         price: 'paid',
-        priceLabel: 'Dès 49€/mois',
+        priceLabel: 'Dès 49CHF/mois',
         upvotes: 198,
         category: 'finance',
         isNew: false
@@ -107,7 +107,7 @@ const agentsData = [
         rating: 4.6,
         users: '320',
         price: 'paid',
-        priceLabel: 'Dès 99€/mois',
+        priceLabel: 'Dès 99CHF/mois',
         upvotes: 276,
         category: 'juridique',
         isNew: false
@@ -155,7 +155,7 @@ const agentsData = [
         rating: 4.7,
         users: '1.8K',
         price: 'paid',
-        priceLabel: 'Dès 19€/mois',
+        priceLabel: 'Dès 19CHF/mois',
         upvotes: 445,
         category: 'marketing',
         isNew: false
@@ -171,7 +171,7 @@ const agentsData = [
         rating: 4.8,
         users: '1.4K',
         price: 'paid',
-        priceLabel: 'Dès 59€/mois',
+        priceLabel: 'Dès 59CHF/mois',
         upvotes: 534,
         category: 'dev',
         isNew: false
@@ -187,7 +187,7 @@ const agentsData = [
         rating: 4.6,
         users: '760',
         price: 'paid',
-        priceLabel: 'Dès 29€/mois',
+        priceLabel: 'Dès 29CHF/mois',
         upvotes: 387,
         category: 'vocal',
         isNew: true
@@ -199,6 +199,7 @@ let displayedAgents = 6;
 
 // ==================== DOM READY ====================
 document.addEventListener('DOMContentLoaded', () => {
+    initDynamicCounts();
     initNavbar();
     initSearch();
     initStats();
@@ -511,5 +512,23 @@ function initCookieBanner() {
         localStorage.setItem('ai_cookies', 'declined');
         banner.classList.add('hidden');
         window['ga-disable-G-B5627RD3TF'] = true;
+    });
+}
+// ==================== DYNAMIC COUNTS (agents + categories) ====================
+function initDynamicCounts() {
+    // Hero: total agents
+    const statAgents = document.getElementById('statAgents');
+    if (statAgents && typeof agentsData !== 'undefined') {
+        statAgents.textContent = agentsData.length + '+';
+    }
+    // Categories: count per category (only if data-cat exists)
+    document.querySelectorAll('.category-card[data-cat]').forEach(card => {
+        const cat = card.getAttribute('data-cat');
+        if (!cat || typeof agentsData === 'undefined') return;
+        const count = agentsData.filter(a => a.category === cat).length;
+        const countEl = card.querySelector('.cat-count');
+        if (countEl && count > 0) {
+            countEl.innerHTML = count + ' agent' + (count > 1 ? 's' : '') + ' <i class="fas fa-arrow-right"></i>';
+        }
     });
 }
