@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /en/
+Disallow: /de/
+Disallow: /nl/
 Sitemap: https://agents-ia.pro/sitemap.xml
 
 User-agent: Googlebot
