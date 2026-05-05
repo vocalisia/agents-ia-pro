@@ -2,9 +2,93 @@
   "cleanUrls": true,
   "redirects": [
     {
+      "source": "/",
+      "has": [{"type": "host", "value": "www.agents-ia.pro"}],
+      "destination": "https://agents-ia.pro/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{"type": "host", "value": "www.agents-ia.pro"}],
+      "destination": "https://agents-ia.pro/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [{"type": "host", "value": "www.agents-ai.pro"}],
+      "destination": "https://agents-ai.pro/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{"type": "host", "value": "www.agents-ai.pro"}],
+      "destination": "https://agents-ai.pro/:path*",
+      "permanent": true
+    },
+    {
       "source": "/dashboard",
       "destination": "/",
       "statusCode": 301
+    },
+    {
+      "source": "/:lang(en|de|nl|es|it|pt)/blog",
+      "destination": "/blog",
+      "statusCode": 302
+    },
+    {
+      "source": "/:lang(en|de|nl|es|it|pt)/categories",
+      "destination": "/categories",
+      "statusCode": 302
+    },
+    {
+      "source": "/:lang(en|de|nl|es|it|pt)/submit",
+      "destination": "/submit",
+      "statusCode": 302
+    },
+    {
+      "source": "/:lang(en|de|nl|es|it|pt)/contact",
+      "destination": "/contact",
+      "statusCode": 302
+    },
+    {
+      "source": "/:lang(en|de|nl|es|it|pt)/mentions-legales",
+      "destination": "/mentions-legales",
+      "statusCode": 302
+    },
+    {
+      "source": "/:lang(en|de|nl|es|it|pt)/cgu",
+      "destination": "/cgu",
+      "statusCode": 302
+    },
+    {
+      "source": "/:lang(en|de|nl|es|it|pt)/confidentialite",
+      "destination": "/confidentialite",
+      "statusCode": 302
+    },
+    {
+      "source": "/:lang(es|it|pt)/agence",
+      "destination": "/agence",
+      "statusCode": 302
+    },
+    {
+      "source": "/:lang(es|it|pt)/a-propos",
+      "destination": "/a-propos",
+      "statusCode": 302
+    },
+    {
+      "source": "/:lang(en|de|nl)/agence",
+      "destination": "/agence",
+      "statusCode": 302
+    },
+    {
+      "source": "/:lang(en|de|nl)/a-propos",
+      "destination": "/a-propos",
+      "statusCode": 302
+    },
+    {
+      "source": "/:lang(en|de|nl|es|it|pt)/agent-:type",
+      "destination": "/agent-:type",
+      "statusCode": 302
     }
   ],
   "headers": [
