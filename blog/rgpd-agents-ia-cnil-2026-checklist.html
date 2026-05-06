@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  var _c = (typeof localStorage !== 'undefined') ? localStorage.getItem('ai_cookies') : null;
+  gtag('consent', 'default', { analytics_storage: _c === 'accepted' ? 'granted' : 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500 });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B5627RD3TF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-B5627RD3TF');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agents IA & RGPD : checklist conformité CNIL mise à jour 2026 | Agents-IA.pro</title>
+    <meta name="description" content="Guide CNIL 2026 : déployer un agent IA conforme RGPD. Mentions obligatoires, DPA, consentement, AI Act européen.">
+    <meta name="keywords" content="RGPD agent IA 2026, CNIL chatbot conformité, AI Act PME">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="author" content="Laurent Duplat">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="canonical" href="https://agents-ia.pro/blog/rgpd-agents-ia-cnil-2026-checklist.html">
+    <link rel="alternate" hreflang="fr" href="https://agents-ia.pro/blog/rgpd-agents-ia-cnil-2026-checklist.html">
+    <link rel="alternate" hreflang="en" href="https://agents-ia.pro/en/blog/rgpd-agents-ia-cnil-2026-checklist.html">
+    <link rel="alternate" hreflang="de" href="https://agents-ia.pro/de/blog/rgpd-agents-ia-cnil-2026-checklist.html">
+    <link rel="alternate" hreflang="nl" href="https://agents-ia.pro/nl/blog/rgpd-agents-ia-cnil-2026-checklist.html">
+    <link rel="alternate" hreflang="x-default" href="https://agents-ia.pro/blog/rgpd-agents-ia-cnil-2026-checklist.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Agents IA & RGPD : checklist conformité CNIL mise à jour 2026">
+    <meta property="og:description" content="Guide CNIL 2026 : déployer un agent IA conforme RGPD. Mentions obligatoires, DPA, consentement, AI Act européen.">
+    <meta property="og:url" content="https://agents-ia.pro/blog/rgpd-agents-ia-cnil-2026-checklist.html">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="article:author" content="Laurent Duplat">
+    <meta property="article:published_time" content="2026-04-24">
+    <meta property="article:section" content="Conformité & RGPD">
+
+    <!-- Schema Article + Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Agents IA & RGPD : checklist conformité CNIL mise à jour 2026",
+      "description": "Guide CNIL 2026 : déployer un agent IA conforme RGPD. Mentions obligatoires, DPA, consentement, AI Act européen.",
+      "datePublished": "2026-04-24",
+      "dateModified": "2026-04-24",
+      "author": {
+        "@type": "Person",
+        "@id": "https://agents-ia.pro/#founder",
+        "name": "Laurent Duplat",
+        "url": "https://agents-ia.pro/a-propos.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://agents-ia.pro/#organization",
+        "name": "Agents-IA.pro",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://agents-ia.pro/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://agents-ia.pro/blog/rgpd-agents-ia-cnil-2026-checklist.html"
+      },
+      "inLanguage": "fr",
+      "articleSection": "Conformité & RGPD",
+      "keywords": "RGPD agent IA 2026, CNIL chatbot conformité, AI Act PME"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://agents-ia.pro/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://agents-ia.pro/blog.html" },
+        { "@type": "ListItem", "position": 3, "name": "Agents IA & RGPD : checklist conformité CNIL mise à jour 2026", "item": "https://agents-ia.pro/blog/rgpd-agents-ia-cnil-2026-checklist.html" }
+      ]
+    }
+    </script>
+
+<style id="brand-logo-patch">
+.nav-logo { text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+.nav-logo .logo-icon { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; }
+.nav-logo .logo-icon svg { width: 32px; height: 32px; }
+.footer-brand .logo-icon { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; }
+.footer-brand .logo-icon svg { width: 32px; height: 32px; }
+.logo-text { font-weight: 800; letter-spacing: -0.3px; font-size: 18px; }
+.logo-accent { background: linear-gradient(90deg, #6366f1, #ec4899); -webkit-background-clip: text; background-clip: text; color: transparent; }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="../index.html" class="nav-logo">
+            <span class="logo-icon"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" style="width:32px;height:32px;vertical-align:middle;"><defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366f1"/><stop offset="0.5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#ec4899"/></linearGradient></defs><path d="M20 3 L35 12 L35 28 L20 37 L5 28 L5 12 Z" fill="rgba(139,92,246,0.15)" stroke="url(#lg1)" stroke-width="1.8"/><path d="M12 28 L20 12 L28 28 M15.5 22 L24.5 22" stroke="url(#lg1)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="20" cy="12" r="2.2" fill="url(#lg1)"/><circle cx="12" cy="28" r="1.6" fill="#ec4899"/><circle cx="28" cy="28" r="1.6" fill="#6366f1"/></svg></span>
+            <span class="logo-text">agents-ia<span class="logo-accent">.pro</span></span>
+        </a>
+        <div class="nav-links" id="navLinks">
+            <a href="../index.html#explorer" class="nav-link">Explorer</a>
+            <a href="../categories.html" class="nav-link">Catégories</a>
+            <a href="../index.html#solutions" class="nav-link">Solutions IA</a>
+            <a href="../blog.html" class="nav-link">Blog</a>
+            <a href="../a-propos.html" class="nav-link">À propos</a>
+        </div>
+        <div class="nav-actions">
+            <a href="../submit.html" class="btn-submit"><i class="fas fa-plus"></i> Soumettre un Agent</a>
+            <a href="../index.html#contact" class="btn-login">Démo gratuite</a>
+            <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </div>
+</nav>
+
+<!-- ARTICLE -->
+<section class="section" style="padding-top:120px;">
+    <div class="container">
+        <div class="article-content" style="max-width:820px; margin:0 auto;">
+            <nav aria-label="Fil d'Ariane" style="margin-bottom:24px; font-size:14px; color:var(--text-secondary);">
+                <a href="../index.html" style="color:var(--primary-light);">Accueil</a> &rsaquo;
+                <a href="../blog.html" style="color:var(--primary-light);">Blog</a> &rsaquo;
+                Conformité & RGPD
+            </nav>
+
+            <span style="display:inline-block; padding:6px 14px; background:rgba(99,102,241,0.15); color:var(--primary-light); border-radius:999px; font-size:12px; font-weight:600; margin-bottom:16px;">Conformité & RGPD</span>
+            <h1 class="section-title" style="text-align:left; margin-bottom:16px;">Agents IA & RGPD : checklist conformité CNIL mise à jour 2026</h1>
+
+            <div style="display:flex; gap:16px; align-items:center; margin-bottom:40px; color:var(--text-secondary); font-size:14px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <div style="width:32px; height:32px; border-radius:50%; background:linear-gradient(135deg,#6366f1,#a855f7); display:flex; align-items:center; justify-content:center; color:white;"><i class="fas fa-user-tie"></i></div>
+                    <a href="../a-propos.html" style="color:var(--primary-light); font-weight:600;">Laurent Duplat</a>
+                </div>
+                <span>&bull;</span>
+                <time datetime="2026-04-24">2026-04-24</time>
+                <span>&bull;</span>
+                <span><i class="fas fa-clock"></i> 8 min de lecture</span>
+            </div>
+
+            <p>
+En 2026, la réglementation européenne sur l’intelligence artificielle (AI Act) vient s’ajouter au RGPD pour encadrer l’usage des agents IA en entreprise, notamment les chatbots et assistants automatisés. Les PME françaises et suisses font face à une double exigence : garantir la conformité CNIL tout en exploitant les puissances de l’IA pour leurs clients et collaborateurs. Les contrôles CNIL se sont intensifiés (nombre de contrôles IA multiplié par <strong>2,3 en 2025</strong>, source CNIL), et les sanctions pour non-conformité RGPD/IA dépassent désormais <strong>1,5% du CA</strong> en cas de manquements graves. Dans ce contexte, voici la checklist de conformité CNIL 2026 pour déployer un agent IA RGPD-compliant, avec exemples, chiffres et tableaux comparatifs.
+</p>
+
+<h2>Mentions Obligatoires pour Agents IA : Checklist CNIL 2026</h2>
+<h3>Quelles informations doivent être accessibles à l’utilisateur ?</h3>
+<ul>
+  <li><strong>Identité du responsable du traitement</strong> : raison sociale, contact DPO.</li>
+  <li><strong>Finalités</strong> du traitement : pourquoi l’agent IA collecte-t-il les données ?</li>
+  <li>Nature des données collectées (ex : nom, email, historique conversationnel).</li>
+  <li>Base légale du traitement (consentement, intérêt légitime, contrat).</li>
+  <li>Durée de conservation des données (<strong>max. 12 mois pour logs conversationnels</strong> selon CNIL 2026).</li>
+  <li>Droits des utilisateurs (accès, rectification, effacement, opposition).</li>
+  <li>Information sur transferts hors UE (ex : cloud US ou APIs tierces).</li>
+</ul>
+<h3>Exemple de mention conforme pour un chatbot RH</h3>
+<p>
+Votre conversation est traitée par [Nom de la société], DPO : dpo@exemple.com. Les données servent à répondre à vos demandes RH et sont conservées 12 mois. Vous pouvez exercer vos droits RGPD à tout moment. Données stockées en UE, aucune transmission hors Europe.
+</p>
+
+<h2>Consentement & Paramétrage : Exigences 2026</h2>
+<h3>Quand le consentement est-il obligatoire ?</h3>
+<ul>
+  <li>Données sensibles (santé, orientation, opinions) : <strong>consentement explicite</strong> requis avant tout traitement.</li>
+  <li>Enregistrement audio/vidéo des conversations : pop-up consentement obligatoire.</li>
+  <li>Profilage automatique à des fins commerciales : opt-in préalable.</li>
+</ul>
+<h3>Exemples concrets dans l’interface</h3>
+<ul>
+  <li>Checkbox « J’accepte le traitement de mes données » avant démarrage du chatbot.</li>
+  <li>Paramètre « refuser l’analyse automatisée » dans le menu utilisateur.</li>
+</ul>
+<p>
+En 2026, la CNIL exige que <strong>100%</strong> des agents IA pour les PME disposent d’un système de consentement clair, traçable et réversible, avec logs de consentement accessibles par l’utilisateur (source : CNIL Guide IA 2026).
+</p>
+
+<h2>Contrats & DPA : Comment sécuriser vos fournisseurs IA</h2>
+<h3>Le DPA (Data Processing Agreement) est-il obligatoire ?</h3>
+<ul>
+  <li>Tout fournisseur SaaS IA (ex : API GPT, moteurs conversationnels) doit signer un DPA conforme RGPD.</li>
+  <li>Le DPA précise : type de données, durée, mesures de sécurité, sous-traitants, audits possibles.</li>
+  <li>En cas de sous-traitance hors UE, le DPA doit inclure les clauses SCC (Standard Contractual Clauses).</li>
+</ul>
+<table border="1" cellpadding="6">
+  <thead>
+    <tr>
+      <th>Critère</th>
+      <th>Obligation CNIL 2026</th>
+      <th>Non-conforme</th>
+      <th>Conforme</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DPA signé</td>
+      <td>Oui pour tout fournisseur IA</td>
+      <td>Pas de DPA ou version obsolète</td>
+      <td>DPA CNIL 2026 signé</td>
+    </tr>
+    <tr>
+      <td>Audit sécurité</td>
+      <td>Audit annuel minimum</td>
+      <td>Pas d’audit ou auto-déclaration</td>
+      <td>Rapport d’audit joint au DPA</td>
+    </tr>
+    <tr>
+      <td>Transfert hors UE</td>
+      <td>SCC ou équivalent</td>
+      <td>Rien ou Privacy Shield (obsolète)</td>
+      <td>SCC version 2025</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>AI Act : Points de vigilance pour PME en 2026</h2>
+<h3>Obligations AI Act pour agents IA « à risque limité »</h3>
+<ul>
+  <li>Déclaration du système IA auprès de la CNIL ou autorité nationale (France/Suisse).</li>
+  <li>Documentation technique : architecture, dataset, logs d’apprentissage.</li>
+  <li>Test de robustesse et biais (<strong>score de biais max. 0,03</strong> sur l’échelle Stanford AI Index).</li>
+  <li>Procédure d’arrêt d’urgence (« kill switch ») accessible à l’administrateur.</li>
+</ul>
+<h3>Comparaison RGPD vs AI Act pour chatbots PME</h3>
+<table border="1" cellpadding="6">
+  <thead>
+    <tr>
+      <th>Point</th>
+      <th>RGPD</th>
+      <th>AI Act</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Consentement</td>
+      <td>Obligatoire pour données personnelles</td>
+      <td>Obligatoire si profilage ou décision automatisée</td>
+    </tr>
+    <tr>
+      <td>Documentation</td>
+      <td>Registre des traitements</td>
+      <td>Documentation technique + explications</td>
+    </tr>
+    <tr>
+      <td>Audit</td>
+      <td>Audit RGPD (annuel)</td>
+      <td>Audit IA (robustesse, biais, sécurité)</td>
+    </tr>
+    <tr>
+      <td>Signalement incident</td>
+      <td>72h à la CNIL</td>
+      <td>Immédiat à l’autorité IA</td>
+    </tr>
+  </tbody>
+</table>
+<p>
+Pour les PME, le cumul RGPD + AI Act impose une documentation renforcée et un reporting incident plus rapide. Pour optimiser vos workflows IA, découvrez aussi <a href="https://vocalis.pro" rel="nofollow">Vocalis.pro</a> (solution IA conversationnelle documentée).
+</p>
+
+<h2>Gestion des droits utilisateurs : Accès, effacement, opposition</h2>
+<h3>Processus obligatoire en 2026</h3>
+<ul>
+  <li>Formulaire RGPD dans l’interface agent IA (ex : bouton « exercer mes droits »).</li>
+  <li>Délai de réponse <strong>max. 30 jours</strong> (source CNIL).</li>
+  <li>Effacement des logs conversationnels à la demande.</li>
+  <li>Export des données dans un format lisible (ex : CSV, JSON).</li>
+</ul>
+<h3>Exemple workflow pour un chatbot commercial</h3>
+<ul>
+  <li>L’utilisateur clique « exporter mes données ».</li>
+  <li>L’administrateur reçoit une notification.</li>
+  <li>Les données sont exportées et transmises sous 7 jours.</li>
+  <li>Log de l’opération conservé pendant 24 mois.</li>
+</ul>
+<p>
+Un agent IA RGPD doit prouver la traçabilité de chaque demande utilisateur. Pour optimiser vos process, explorez les outils de gestion des logs sur <a href="https://seo-true.com" rel="nofollow">SEO-True.com</a>.
+</p>
+
+<h2>Audit & Documentation : Ce qu’attend la CNIL en 2026</h2>
+<h3>Checklist d’audit pour un agent IA conforme</h3>
+<ul>
+  <li>Liste exhaustive des traitements IA (registre RGPD + registre IA Act).</li>
+  <li>Logs d’apprentissage et de fonctionnement (ex : logs conversations, logs erreurs).</li>
+  <li>Documentation des datasets utilisés, y compris sources et nettoyage.</li>
+  <li>Rapport annuel sur sécurité, biais, incidents.</li>
+  <li>Mise à jour du registre à chaque évolution de l’agent IA.</li>
+</ul>
+<p>
+La CNIL exige en 2026 un <strong>rapport annuel spécifique IA</strong> pour toute PME déployant un agent IA, incluant score de biais, incidents, et mesures correctives. Les agents IA non documentés seront considérés comme non conformes par défaut.
+</p>
+<h3>Exemple de rapport IA conforme (extraits)</h3>
+<ul>
+  <li>Score de biais Stanford : 0,025</li>
+  <li>Incident sécurité 2026 Q1 : 1 fuite de données, notification sous 24h</li>
+  <li>Mise à jour du dataset : suppression des données sensibles en 2026 Q2</li>
+</ul>
+<p>
+Pour automatiser vos rapports RGPD/IA, découvrez les solutions de gestion de conformité sur <a href="https://master-seller.fr" rel="nofollow">Master-seller.fr</a>.
+</p>
+
+<h2>FAQ</h2>
+
+<h3>Mon agent IA doit-il afficher une mention RGPD à chaque interaction ?</h3>
+<p>
+Oui. La CNIL 2026 exige une mention RGPD visible dès la première interaction et accessible en permanence (ex : bouton « RGPD » dans le menu chatbot).
+</p>
+
+<h3>Un agent IA peut-il traiter des données sensibles sans consentement ?</h3>
+<p>
+Non. Le consentement explicite est obligatoire pour toute donnée sensible (santé, orientation, opinions). Le refus doit bloquer le traitement automatisé.
+</p>
+
+<h3>Comment prouver la conformité lors d’un contrôle CNIL ?</h3>
+<p>
+Vous devez fournir : registre des traitements, DPA signé, logs de consentement, rapport d’audit IA, documentation technique, logs d’incidents. Toute absence est motif de sanction.
+</p>
+
+<h3>Quelles sanctions en cas de non-conformité RGPD/AI Act ?</h3>
+<p>
+En 2026, la CNIL peut infliger <strong>jusqu’à 1,5% du CA annuel</strong> en cas de manquement grave, cumulable avec les sanctions AI Act (jusqu’à <strong>2% du CA</strong> pour non-signalement d’incident).
+</p>
+
+<h3>Dois-je mettre à jour le DPA à chaque évolution du chatbot ?</h3>
+<p>
+Oui. Toute modification du traitement, dataset ou fournisseur IA nécessite une mise à jour du DPA et du registre RGPD, sous 30 jours.
+</p>
+
+<h2>Conclusion : Checklist opérationnelle & Call to Action</h2>
+<p>
+Déployer un agent IA conforme RGPD et AI Act en 2026 exige une documentation complète, des mentions visibles, un DPA à jour, une gestion stricte des consentements et des droits utilisateurs. Les PME doivent anticiper les audits CNIL et optimiser leur workflow pour éviter sanctions et blocages.
+</p>
+<ul>
+  <li>Checklist à suivre : mentions RGPD, consentement explicite, DPA signé, logs accessibles, rapport IA annuel.</li>
+  <li>Testez la conformité de votre agent IA avant tout déploiement.</li>
+  <li>Automatisez la documentation et la gestion des droits pour gagner du temps.</li>
+</ul>
+<p>
+Besoin d’un audit ou d’une solution de conformité IA ? Contactez un expert sur <a href="https://vocalis.pro" rel="nofollow">Vocalis.pro</a> ou <a href="https://seo-true.com" rel="nofollow">SEO-True.com</a> pour sécuriser votre déploiement en 2026.
+</p>
+
+            
+<!-- ====== STACK IA RECOMMANDÉE (affiliate) ====== -->
+<div style="margin:48px 0; padding:32px; background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.08); border-radius:16px;">
+    <span style="display:inline-block; padding:4px 12px; background:rgba(251,146,60,0.2); color:#fdba74; border-radius:999px; font-size:11px; font-weight:700; letter-spacing:1px; margin-bottom:12px;">💡 STACK RECOMMANDÉE</span>
+    <h3 style="margin:0 0 8px;">Les outils IA qu'on utilise réellement chez Agents-IA.pro</h3>
+    <p style="color:var(--text-secondary); font-size:14px; margin:0 0 20px;">Sélection personnelle, testée en production. <em>Liens partenaires</em> — le prix pour vous est identique, on touche une commission si vous vous abonnez.</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px;">
+        <a href="https://elevenlabs.io/?from=partnerduplat" target="_blank" rel="noopener sponsored" onclick="gtag('event','affiliate_click',{partner:'elevenlabs'});" style="padding:14px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:10px; text-decoration:none; color:white; display:block;">
+            <div style="font-weight:700; margin-bottom:4px;">🎙️ ElevenLabs</div>
+            <div style="font-size:12px; color:var(--text-secondary);">Voix IA multilingues premium</div>
+        </a>
+        <a href="https://www.make.com/en/register?pc=duplat" target="_blank" rel="noopener sponsored" onclick="gtag('event','affiliate_click',{partner:'make'});" style="padding:14px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:10px; text-decoration:none; color:white; display:block;">
+            <div style="font-weight:700; margin-bottom:4px;">⚙️ Make.com</div>
+            <div style="font-size:12px; color:var(--text-secondary);">Automatisation no-code</div>
+        </a>
+        <a href="https://www.apify.com/sign-up?fpr=duplat" target="_blank" rel="noopener sponsored" onclick="gtag('event','affiliate_click',{partner:'apify'});" style="padding:14px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:10px; text-decoration:none; color:white; display:block;">
+            <div style="font-weight:700; margin-bottom:4px;">🕷️ Apify</div>
+            <div style="font-size:12px; color:var(--text-secondary);">Web scraping + data IA</div>
+        </a>
+        <a href="https://www.perplexity.ai/?referral=DUPLAT" target="_blank" rel="noopener sponsored" onclick="gtag('event','affiliate_click',{partner:'perplexity'});" style="padding:14px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:10px; text-decoration:none; color:white; display:block;">
+            <div style="font-weight:700; margin-bottom:4px;">🔍 Perplexity Pro</div>
+            <div style="font-size:12px; color:var(--text-secondary);">Recherche IA sourcée</div>
+        </a>
+        <a href="https://www.beehiiv.com/?via=duplat" target="_blank" rel="noopener sponsored" onclick="gtag('event','affiliate_click',{partner:'beehiiv'});" style="padding:14px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:10px; text-decoration:none; color:white; display:block;">
+            <div style="font-weight:700; margin-bottom:4px;">📬 Beehiiv</div>
+            <div style="font-size:12px; color:var(--text-secondary);">Newsletter SaaS pro</div>
+        </a>
+        <a href="https://vocalis.pro/?ref=agents-ia" target="_blank" rel="noopener" onclick="gtag('event','affiliate_click',{partner:'vocalis'});" style="padding:14px; background:linear-gradient(135deg, rgba(99,102,241,0.2), rgba(168,85,247,0.15)); border:1px solid rgba(99,102,241,0.4); border-radius:10px; text-decoration:none; color:white; display:block;">
+            <div style="font-weight:700; margin-bottom:4px;">🤖 Vocalis.pro</div>
+            <div style="font-size:12px; color:var(--text-secondary);">Notre agent vocal IA (interne)</div>
+        </a>
+    </div>
+</div>
+<!-- ====== /STACK IA RECOMMANDÉE ====== -->
+
+
+            <div style="margin-top:48px; padding:32px; background:linear-gradient(135deg, rgba(99,102,241,0.1), rgba(168,85,247,0.1)); border-radius:16px; text-align:center;">
+                <h3 style="margin-bottom:12px;">Besoin d'un agent IA pour votre business ?</h3>
+                <p style="color:var(--text-secondary); margin-bottom:24px;">Audit gratuit 30 minutes — on regarde votre cas, sans slides marketing.</p>
+                <a href="../index.html#contact" class="btn-login" style="padding:14px 32px; font-size:16px; display:inline-block;">Réserver mon audit <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand"><span class="logo-icon"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" style="width:32px;height:32px;vertical-align:middle;"><defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366f1"/><stop offset="0.5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#ec4899"/></linearGradient></defs><path d="M20 3 L35 12 L35 28 L20 37 L5 28 L5 12 Z" fill="rgba(139,92,246,0.15)" stroke="url(#lg1)" stroke-width="1.8"/><path d="M12 28 L20 12 L28 28 M15.5 22 L24.5 22" stroke="url(#lg1)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="20" cy="12" r="2.2" fill="url(#lg1)"/><circle cx="12" cy="28" r="1.6" fill="#ec4899"/><circle cx="28" cy="28" r="1.6" fill="#6366f1"/></svg></span><span class="logo-text">agents-ia<span class="logo-accent">.pro</span></span><p>La marketplace #1 d'agents IA francophones.</p></div>
+            <div class="footer-links"><h4>Écosystème</h4><a href="https://vocalis.pro" target="_blank" rel="noopener nofollow">Vocalis.pro</a><a href="https://vocalis.blog" target="_blank" rel="noopener nofollow">Vocalis.blog</a><a href="https://vocalis-ai.org" target="_blank" rel="noopener nofollow">Vocalis-AI.org</a><a href="https://ai-due.com" target="_blank" rel="noopener nofollow">AI-DUE.com</a><a href="https://tesla-mag.ch" target="_blank" rel="noopener nofollow">Tesla-Mag.ch</a><a href="https://master-seller.fr" target="_blank" rel="noopener nofollow">Master-Seller.fr</a><a href="https://iapmesuisse.ch" target="_blank" rel="noopener nofollow">IAPMESuisse.ch</a></div>
+            <div class="footer-links"><h4>Services IA</h4><a href="https://seo-true.com" target="_blank" rel="noopener nofollow">SEO-True.com</a><a href="https://trustly-ai.com" target="_blank" rel="noopener nofollow">Trustly-AI.com</a><a href="https://trust-vault.com" target="_blank" rel="noopener nofollow">Trust-Vault.com</a><a href="https://agentic-whatsup.com" target="_blank" rel="noopener nofollow">Agentic-WhatsUp.com</a><a href="https://lead-gene.com" target="_blank" rel="noopener nofollow">Lead-Gene.com</a><a href="https://xn--factureimpaye-6ya.fr" target="_blank" rel="noopener nofollow">Factureimpayée.fr</a></div>
+            <div class="footer-links">
+                <h4>Ressources</h4>
+                <a href="../blog.html">Blog</a>
+                <a href="../a-propos.html">À propos</a>
+                <a href="../index.html#contact">Contact</a>
+                <a href="../submit.html">Soumettre un agent</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025-2026 Agents-IA.pro — Tous droits réservés | 🇨🇭 Basé en Suisse</p>
+            <div class="footer-legal">
+                <a href="../mentions-legales.html">Mentions légales</a>
+                <a href="../cgu.html">CGU</a>
+                <a href="../confidentialite.html">Politique de confidentialité</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a href="https://wa.me/41799394222" class="whatsapp-widget" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<div class="cookie-banner" id="cookieBanner"><div class="cookie-content"><p>🍪 Ce site utilise des cookies. <a href="../confidentialite.html" style="color:var(--primary-light);">Politique de confidentialité</a>.</p><div class="cookie-actions"><button class="cookie-btn cookie-accept" id="cookieAccept">Accepter</button><button class="cookie-btn cookie-decline" id="cookieDecline">Refuser</button></div></div></div>
+<script src="../js/app.js"></script>
+</body>
+</html>
