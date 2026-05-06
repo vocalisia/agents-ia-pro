@@ -18,8 +18,8 @@ export default function CookieBanner() {
   }, [])
 
   function updateConsent(granted: boolean) {
-    if (typeof window !== 'undefined' && typeof (window as { gtag?: (...a: unknown[]) => void }).gtag === 'function') {
-      ;(window as { gtag: (...a: unknown[]) => void }).gtag('consent', 'update', {
+    if (typeof window !== 'undefined' && typeof (window as unknown as { gtag?: (...a: unknown[]) => void }).gtag === 'function') {
+      ;(window as unknown as { gtag: (...a: unknown[]) => void }).gtag('consent', 'update', {
         analytics_storage: granted ? 'granted' : 'denied',
         ad_storage: 'denied',
         ad_user_data: 'denied',
