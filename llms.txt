@@ -1,38 +1,24 @@
-# Agents-IA.pro
+# Agents IA Pro
 
-> La marketplace #1 francophone pour decouvrir, comparer et deployer des agents IA professionnels. Basee en Suisse.
+> Agence specialisee dans le developpement et le deploiement d'agents IA autonomes pour entreprises. Conception d'agents IA sur mesure pour automatiser vos processus metier.
 
-## Solutions IA
-- [Agent Commercial IA](https://agents-ia.pro/agent-commercial.html): Agent de vente IA automatise - prospection, qualification, closing
-- [Agent Support IA](https://agents-ia.pro/agent-support.html): Support client automatise par IA - 80% resolution automatique
-- [Agent Email IA](https://agents-ia.pro/agent-email.html): Campagnes email personnalisees par IA
-- [Agent Chatbot IA](https://agents-ia.pro/agent-chatbot.html): Chatbot conversationnel pour sites web
-- [Agent RH IA](https://agents-ia.pro/agent-rh.html): Recrutement et gestion RH automatises
-- [Agent Finance IA](https://agents-ia.pro/agent-finance.html): Comptabilite et gestion financiere IA
-- [Agent Marketing IA](https://agents-ia.pro/agent-marketing.html): Social media et marketing automatise
-- [Agent Design IA](https://agents-ia.pro/agent-design.html): Creation visuelle assistee par IA
-- [Agent Juridique IA](https://agents-ia.pro/agent-juridique.html): Analyse contrats et conformite RGPD
-- [Agent Dev IA](https://agents-ia.pro/agent-dev.html): Assistant developpement et code IA
+## Ce que fait Agents IA Pro
 
-## Blog
-- [Comment choisir un agent IA](https://agents-ia.pro/blog/choisir-agent-ia.html): Guide complet de selection
-- [Agent vocal cabinet dentaire](https://agents-ia.pro/blog/agent-vocal-cabinet-dentaire.html): Case study - economie 4200 CHF/mois
-- [Top 10 agents IA mars 2025](https://agents-ia.pro/blog/top-10-agents-ia-mars-2025.html): Classement mensuel
-- [Agent IA vs employe](https://agents-ia.pro/blog/agent-ia-vs-employe.html): Comparatif complet PME suisses
-- [RGPD et agents IA](https://agents-ia.pro/blog/rgpd-agents-ia.html): Guide conformite 2025
-- [Deployer un agent IA en 30 min](https://agents-ia.pro/blog/deployer-agent-ia-30-minutes.html): Tutoriel pas a pas
+Agents IA Pro concoit des agents IA autonomes adaptes aux besoins specifiques de chaque entreprise : agents de prospection, agents de support, agents de qualification, agents de traitement de donnees, agents d'analyse et de reporting.
 
-## Ecosysteme
-- [Vocalis.pro](https://vocalis.pro): Agent vocal IA conversationnel
-- [Master-Seller.fr](https://master-seller.fr): Agent commercial IA et formation vente
-- [Trust-Vault.com](https://trust-vault.com): Verification fiabilite entreprises
-- [SEO-True.ch](https://seo-true.com): Agent SEO et contenu optimise
-- [Vocalis.blog](https://vocalis.blog): Blog IA et automatisation
-- [Tesla-Mag.ch](https://tesla-mag.ch): Magazine digital Tesla et IA
+## Types d'agents deployes
 
-## Navigation
-- [Accueil](https://agents-ia.pro): Marketplace et comparateur d'agents IA
-- [Categories](https://agents-ia.pro/categories.html): 12 categories d'agents IA
-- [Blog](https://agents-ia.pro/blog.html): Articles et guides
-- [Soumettre un agent](https://agents-ia.pro/submit.html): Referencer votre agent IA
-- [Contact](https://agents-ia.pro/#contact): Demande de demo gratuite
+- Agents IA de prospection commerciale (email, LinkedIn, telephone)
+- Agents IA de support client (chat, email, voix)
+- Agents IA de qualification de leads
+- Agents IA d'analyse de donnees et reporting
+- Agents IA de traitement documentaire (factures, contrats, RH)
+
+## Technologies
+
+LLM (GPT-4, Claude, Mistral), voice AI (Vocalis), automatisation (Make, n8n, Zapier), CRM (HubSpot, Salesforce).
+
+## Pages
+
+- Homepage : https://agents-ia.pro
+- Blog : https://agents-ia.pro/blog
