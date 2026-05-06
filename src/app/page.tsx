@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Link from 'next/link'
 import { getAllPosts, formatDate } from '@/lib/mdx'
@@ -262,6 +262,7 @@ export default function HomePage() {
           <div style={{ position: 'relative', aspectRatio: '1/1', maxWidth: 520, marginLeft: 'auto' }}>
             <NetworkGraph />
           </div>
+        </div>
       </section>
 
       {/* ===== FEATURED AGENTS ===== */}
