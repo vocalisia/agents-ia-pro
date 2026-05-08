@@ -24,6 +24,16 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style id="brand-logo-patch">
+.nav-logo { text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+.nav-logo .logo-icon { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; }
+.nav-logo .logo-icon svg { width: 32px; height: 32px; }
+.footer-brand .logo-icon { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; }
+.footer-brand .logo-icon svg { width: 32px; height: 32px; }
+.logo-text { font-weight: 800; letter-spacing: -0.3px; font-size: 18px; }
+.logo-accent { background: linear-gradient(90deg, #6366f1, #ec4899); -webkit-background-clip: text; background-clip: text; color: transparent; }
+</style>
 </head>
 <body>
 
@@ -31,7 +41,7 @@
 <nav class="navbar" id="navbar">
     <div class="nav-container">
         <a href="index.html" class="nav-logo">
-            <span class="logo-icon">🤖</span>
+            <span class="logo-icon"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" style="width:32px;height:32px;vertical-align:middle;"><defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366f1"/><stop offset="0.5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#ec4899"/></linearGradient></defs><path d="M20 3 L35 12 L35 28 L20 37 L5 28 L5 12 Z" fill="rgba(139,92,246,0.15)" stroke="url(#lg1)" stroke-width="1.8"/><path d="M12 28 L20 12 L28 28 M15.5 22 L24.5 22" stroke="url(#lg1)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="20" cy="12" r="2.2" fill="url(#lg1)"/><circle cx="12" cy="28" r="1.6" fill="#ec4899"/><circle cx="28" cy="28" r="1.6" fill="#6366f1"/></svg></span>
             <span class="logo-text">agents-ia<span class="logo-accent">.pro</span></span>
         </a>
         <div class="nav-links" id="navLinks">
@@ -39,6 +49,8 @@
             <a href="categories.html" class="nav-link">Catégories</a>
             <a href="index.html#solutions" class="nav-link">Solutions IA</a>
             <a href="blog.html" class="nav-link">Blog</a>
+            <a href="editeurs.html" class="nav-link">Éditeurs</a>
+            <a href="a-propos.html" class="nav-link">À propos</a>
         </div>
         <div class="nav-actions">
             <a href="#contact" class="btn-login">Démo gratuite</a>
@@ -53,6 +65,30 @@
         <div class="submit-form-container">
             <h1>🚀 Soumettre un Agent IA</h1>
             <p class="subtitle">Référencez votre agent IA sur la marketplace #1 francophone et touchez +12'000 utilisateurs.</p>
+
+            <!-- PRICING TABS -->
+            <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin:32px 0;">
+                <div style="padding:20px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:14px;">
+                    <div style="font-size:11px; font-weight:700; letter-spacing:1px; color:var(--text-secondary); margin-bottom:4px;">SOUMISSION STANDARD</div>
+                    <div style="font-size:26px; font-weight:800; color:white;">Gratuit</div>
+                    <p style="color:var(--text-secondary); font-size:13px; margin:8px 0 0;">Review sous 10-14 jours. Publication si validé par notre équipe.</p>
+                </div>
+                <div style="padding:20px; background:linear-gradient(135deg, rgba(99,102,241,0.15), rgba(168,85,247,0.1)); border:1px solid rgba(99,102,241,0.35); border-radius:14px; position:relative;">
+                    <div style="position:absolute; top:-10px; right:16px; padding:3px 10px; background:linear-gradient(90deg,#6366f1,#a855f7); color:white; font-size:10px; font-weight:700; letter-spacing:1px; border-radius:999px;">RECOMMANDÉ</div>
+                    <div style="font-size:11px; font-weight:700; letter-spacing:1px; color:var(--primary-light); margin-bottom:4px;">FAST-TRACK</div>
+                    <div style="font-size:26px; font-weight:800; color:white;">149€ HT</div>
+                    <p style="color:var(--text-secondary); font-size:13px; margin:8px 0 12px;">Review prioritaire sous 48h. Publication sous 5 jours ouvrés. Review SEO incluse.</p>
+                    <a href="https://buy.stripe.com/dRm4gy1QKaVa8cQgWaco00Q" style="display:block; text-align:center; padding:10px; background:linear-gradient(90deg,#6366f1,#a855f7); color:white; border-radius:8px; font-size:13px; font-weight:600; text-decoration:none;" onclick="gtag('event','submit_checkout',{plan:'fasttrack',value:149,currency:'EUR'});">Payer 149€ → Fast-track</a>
+                </div>
+                <div style="padding:20px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:14px;">
+                    <div style="font-size:11px; font-weight:700; letter-spacing:1px; color:var(--text-secondary); margin-bottom:4px;">FEATURED LISTING</div>
+                    <div style="font-size:26px; font-weight:800; color:white;">299€/mois</div>
+                    <p style="color:var(--text-secondary); font-size:13px; margin:8px 0 12px;">Top 3 catégorie + article dédié + badge + newsletter.</p>
+                    <a href="editeurs.html" style="display:block; text-align:center; padding:10px; background:rgba(255,255,255,0.08); color:white; border-radius:8px; font-size:13px; font-weight:600; text-decoration:none;">Voir les plans éditeurs →</a>
+                </div>
+            </div>
+            <p style="text-align:center; color:var(--text-secondary); font-size:13px; margin-bottom:24px;">La soumission reste 100% gratuite. Les options payantes accélèrent la review ou améliorent votre visibilité.</p>
+
 
             <form class="submit-form" id="submitAgentForm" action="https://formsubmit.co/contact@vocalis.pro" method="POST"><input type="hidden" name="_subject" value="Nouvel agent soumis - Agents-IA.pro"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_next" value="https://agents-ia.pro/merci.html"><input type="hidden" name="_template" value="box"><input type="text" name="_honey" style="display:none">
                 <div class="form-group">
@@ -128,7 +164,7 @@
 <!-- FOOTER -->
 <footer class="footer">
     <div class="container">
-        <div class="footer-bottom">
+        <div class="footer-grid"><div class="footer-links"><h4>Écosystème</h4><a href="https://vocalis.pro" target="_blank" rel="noopener nofollow">Vocalis.pro</a><a href="https://vocalis.blog" target="_blank" rel="noopener nofollow">Vocalis.blog</a><a href="https://vocalis-ai.org" target="_blank" rel="noopener nofollow">Vocalis-AI.org</a><a href="https://ai-due.com" target="_blank" rel="noopener nofollow">AI-DUE.com</a><a href="https://tesla-mag.ch" target="_blank" rel="noopener nofollow">Tesla-Mag.ch</a><a href="https://master-seller.fr" target="_blank" rel="noopener nofollow">Master-Seller.fr</a><a href="https://iapmesuisse.ch" target="_blank" rel="noopener nofollow">IAPMESuisse.ch</a></div><div class="footer-links"><h4>Services IA</h4><a href="https://seo-true.com" target="_blank" rel="noopener nofollow">SEO-True.com</a><a href="https://trustly-ai.com" target="_blank" rel="noopener nofollow">Trustly-AI.com</a><a href="https://trust-vault.com" target="_blank" rel="noopener nofollow">Trust-Vault.com</a><a href="https://agentic-whatsup.com" target="_blank" rel="noopener nofollow">Agentic-WhatsUp.com</a><a href="https://lead-gene.com" target="_blank" rel="noopener nofollow">Lead-Gene.com</a><a href="https://xn--factureimpaye-6ya.fr" target="_blank" rel="noopener nofollow">Factureimpayée.fr</a></div></div><div class="footer-bottom">
             <p>© 2025-2026 Agents-IA.pro — Tous droits réservés | 🇨🇭 Basé en Suisse</p>
             <div class="footer-legal">
                 <a href="/mentions-legales">Mentions légales</a>

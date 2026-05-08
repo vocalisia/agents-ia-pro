@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none">
+  <defs>
+    <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="0.5" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="logoGradSoft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#ec4899" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+  <!-- Mark: hexagonal "A" with neural nodes -->
+  <g transform="translate(4,4)">
+    <!-- Hex frame -->
+    <path d="M20 2 L36 12 L36 28 L20 38 L4 28 L4 12 Z" fill="url(#logoGradSoft)" stroke="url(#logoGrad)" stroke-width="1.6"/>
+    <!-- Stylized A inside -->
+    <path d="M12 28 L20 12 L28 28 M15.5 22 L24.5 22" stroke="url(#logoGrad)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- Neural nodes -->
+    <circle cx="20" cy="12" r="2.2" fill="url(#logoGrad)"/>
+    <circle cx="12" cy="28" r="1.8" fill="#ec4899"/>
+    <circle cx="28" cy="28" r="1.8" fill="#6366f1"/>
+  </g>
+  <!-- Wordmark -->
+  <g transform="translate(50,0)">
+    <text x="0" y="22" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="18" font-weight="800" fill="currentColor" letter-spacing="-0.3">agents-ia</text>
+    <text x="0" y="40" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="url(#logoGrad)" letter-spacing="1" text-transform="uppercase">.PRO · MARKETPLACE</text>
+  </g>
+</svg>
