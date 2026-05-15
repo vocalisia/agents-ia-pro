@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Agents-IA.pro | La Marketplace #1 d'Agents IA Francophones",
   description:
     "La marketplace #1 d'agents IA francophones. Trouvez, comparez et déployez +500 agents IA vérifiés pour automatiser votre entreprise. 98% de satisfaction, 12 840+ utilisateurs.",
-  alternates: { canonical: 'https://agents-ia.pro/' },
+  // canonical defined in layout.tsx — removing here to prevent duplicate <link rel="canonical">
   openGraph: {
     title: "Agents-IA.pro | La Marketplace #1 d'Agents IA Francophones",
     description:
