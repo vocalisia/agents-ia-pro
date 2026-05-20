@@ -1,24 +1,37 @@
-# Agents IA Pro
+# Agents-IA.pro
 
-> Agence specialisee dans le developpement et le deploiement d'agents IA autonomes pour entreprises. Conception d'agents IA sur mesure pour automatiser vos processus metier.
+> Agence spécialisée dans le développement et le déploiement d'agents IA autonomes pour entreprises francophones. Conception d'agents IA sur mesure pour automatiser vos processus métier. 500+ solutions testées, 12 840 utilisateurs, 98% de satisfaction.
 
-## Ce que fait Agents IA Pro
+## Ce que fait Agents-IA.pro
 
-Agents IA Pro concoit des agents IA autonomes adaptes aux besoins specifiques de chaque entreprise : agents de prospection, agents de support, agents de qualification, agents de traitement de donnees, agents d'analyse et de reporting.
+Agents-IA.pro conçoit et déploie des agents IA autonomes adaptés aux besoins spécifiques de chaque entreprise : agents de prospection, agents de support, agents de qualification, agents de traitement de données, agents d'analyse et de reporting. Service disponible en France, Belgique, Suisse et Luxembourg.
 
-## Types d'agents deployes
+## Types d'agents déployés
 
-- Agents IA de prospection commerciale (email, LinkedIn, telephone)
-- Agents IA de support client (chat, email, voix)
-- Agents IA de qualification de leads
-- Agents IA d'analyse de donnees et reporting
+- Agents IA de prospection commerciale (email, LinkedIn, téléphone)
+- Agents IA de support client (chat, email, voix multilingue)
+- Agents IA de qualification de leads et scoring
+- Agents IA d'analyse de données et reporting automatisé
 - Agents IA de traitement documentaire (factures, contrats, RH)
+- Agents IA WhatsApp et messagerie instantanée
 
 ## Technologies
 
-LLM (GPT-4, Claude, Mistral), voice AI (Vocalis), automatisation (Make, n8n, Zapier), CRM (HubSpot, Salesforce).
+LLM (GPT-4, Claude, Mistral, Gemini), voix IA (Vocalis), automatisation (Make, n8n, Zapier), CRM (HubSpot, Salesforce, Pipedrive), conformité RGPD.
+
+## Audience
+
+Dirigeants de PME et ETI francophones cherchant à automatiser leurs processus avec des agents IA sur mesure. DSI, directeurs commerciaux et marketing, responsables opérations.
+
+## Informations clés
+
+- Localisation : Suisse (conformité RGPD garantie)
+- Support en français disponible
+- Démo gratuite sans engagement
+- Disponible en : FR, EN, DE, NL, ES, IT, PT
 
 ## Pages
 
-- Homepage : https://agents-ia.pro
-- Blog : https://agents-ia.pro/blog
+- Accueil : https://agents-ia.pro/
+- Blog FR : https://agents-ia.pro/fr/
+- Blog EN : https://agents-ia.pro/en/
