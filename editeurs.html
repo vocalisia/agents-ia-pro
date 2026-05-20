@@ -192,7 +192,8 @@
                 <div class="pricing-card">
                     <h3>Bronze</h3>
                     <p style="color:var(--text-secondary); font-size:14px;">Idéal pour tester la plateforme</p>
-                    <div class="price">99€<small>/mois</small></div>
+                    <div class="price price-eur">99€<small>/mois</small></div>
+                    <div class="price price-chf" style="display:none;">CHF 99<small>/mois</small></div>
                     <ul>
                         <li><i class="fas fa-check"></i> Fiche agent dans la catégorie dédiée</li>
                         <li><i class="fas fa-check"></i> Badge <strong>"Partenaire Vérifié"</strong></li>
@@ -200,14 +201,15 @@
                         <li><i class="fas fa-check"></i> Mention dans 1 catégorie au choix</li>
                         <li><i class="fas fa-check"></i> Statistiques de clics mensuelles</li>
                     </ul>
-                    <a href="https://buy.stripe.com/14AbJ0670fbq1OsdJYco00N" class="btn-cta" onclick="gtag('event','checkout_click',{plan:'bronze',value:99,currency:'EUR'});">Choisir Bronze</a>
+                    <a href="https://buy.stripe.com/14AbJ0670fbq1OsdJYco00N" class="btn-cta" data-stripe-product="bronze" onclick="gtag('event','checkout_click',{plan:'bronze',currency:document.querySelector('.price-chf').style.display===''?'CHF':'EUR'});">Choisir Bronze</a>
                 </div>
 
                 <!-- SILVER (FEATURED) -->
                 <div class="pricing-card featured">
                     <h3>Silver</h3>
                     <p style="color:var(--text-secondary); font-size:14px;">Meilleur rapport visibilité / prix</p>
-                    <div class="price">299€<small>/mois</small></div>
+                    <div class="price price-eur">299€<small>/mois</small></div>
+                    <div class="price price-chf" style="display:none;">CHF 299<small>/mois</small></div>
                     <ul>
                         <li><i class="fas fa-check"></i> <strong>Top 3 de sa catégorie</strong> (carousel home)</li>
                         <li><i class="fas fa-check"></i> Badge <strong>"Featured"</strong> premium</li>
@@ -217,14 +219,15 @@
                         <li><i class="fas fa-check"></i> Dashboard stats hebdo</li>
                         <li><i class="fas fa-check"></i> Support prioritaire</li>
                     </ul>
-                    <a href="https://buy.stripe.com/fZu7sKfHAbZe0Ko21gco00O" class="btn-cta" onclick="gtag('event','checkout_click',{plan:'silver',value:299,currency:'EUR'});">Choisir Silver</a>
+                    <a href="https://buy.stripe.com/fZu7sKfHAbZe0Ko21gco00O" class="btn-cta" data-stripe-product="silver" onclick="gtag('event','checkout_click',{plan:'silver',currency:document.querySelector('.price-chf').style.display===''?'CHF':'EUR'});">Choisir Silver</a>
                 </div>
 
                 <!-- GOLD -->
                 <div class="pricing-card">
                     <h3>Gold</h3>
                     <p style="color:var(--text-secondary); font-size:14px;">Lancement ou positionnement leader</p>
-                    <div class="price">799€<small>/mois</small></div>
+                    <div class="price price-eur">799€<small>/mois</small></div>
+                    <div class="price price-chf" style="display:none;">CHF 799<small>/mois</small></div>
                     <ul>
                         <li><i class="fas fa-check"></i> <strong>Top 1 permanent</strong> dans sa catégorie</li>
                         <li><i class="fas fa-check"></i> <strong>Bannière homepage</strong> 1 semaine/mois</li>
@@ -235,7 +238,7 @@
                         <li><i class="fas fa-check"></i> Stats détaillées + A/B test copy</li>
                         <li><i class="fas fa-check"></i> Account Manager dédié</li>
                     </ul>
-                    <a href="https://buy.stripe.com/28E5kCangbZe3WAbBQco00P" class="btn-cta" onclick="gtag('event','checkout_click',{plan:'gold',value:799,currency:'EUR'});">Choisir Gold</a>
+                    <a href="https://buy.stripe.com/28E5kCangbZe3WAbBQco00P" class="btn-cta" data-stripe-product="gold" onclick="gtag('event','checkout_click',{plan:'gold',currency:document.querySelector('.price-chf').style.display===''?'CHF':'EUR'});">Choisir Gold</a>
                 </div>
             </div>
 
@@ -310,6 +313,7 @@
 
 <a href="https://wa.me/41799394222" class="whatsapp-widget" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
 <div class="cookie-banner" id="cookieBanner"><div class="cookie-content"><p>🍪 Ce site utilise des cookies. <a href="confidentialite.html" style="color:var(--primary-light);">Politique de confidentialité</a>.</p><div class="cookie-actions"><button class="cookie-btn cookie-accept" id="cookieAccept">Accepter</button><button class="cookie-btn cookie-decline" id="cookieDecline">Refuser</button></div></div></div>
+<script src="/js/stripe-geo.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

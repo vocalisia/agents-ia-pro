@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /secure/
+
+Sitemap: https://agents-ia.pro/sitemap.xml

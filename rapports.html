@@ -173,8 +173,9 @@
                         <li>Roadmap d'implémentation 90 jours</li>
                     </ul>
                     <div class="report-price">
-                        <div class="price-val">499€ HT</div>
-                        <a href="https://buy.stripe.com/9B6bJ0eDw2oEakY8pEco00R" class="btn-buy" onclick="gtag('event','report_checkout',{report:'assurance',value:499,currency:'EUR'});">Acheter le rapport <i class="fas fa-download"></i></a>
+                        <div class="price-val price-eur">499€ HT</div>
+                        <div class="price-val price-chf" style="display:none;">CHF 499</div>
+                        <a href="https://buy.stripe.com/9B6bJ0eDw2oEakY8pEco00R" class="btn-buy" data-stripe-product="rapport_assurance" onclick="gtag('event','report_checkout',{report:'assurance',currency:document.querySelector('.price-chf').style.display===''?'CHF':'EUR'});">Acheter le rapport <i class="fas fa-download"></i></a>
                     </div>
                 </div>
             </div>
@@ -194,8 +195,9 @@
                         <li>Scorecards PDF détaillés par outil</li>
                     </ul>
                     <div class="report-price">
-                        <div class="price-val">299€ HT</div>
-                        <a href="https://buy.stripe.com/00w7sKbrk2oEfFi6hwco00S" class="btn-buy" onclick="gtag('event','report_checkout',{report:'voice',value:299,currency:'EUR'});">Acheter le rapport <i class="fas fa-download"></i></a>
+                        <div class="price-val price-eur">299€ HT</div>
+                        <div class="price-val price-chf" style="display:none;">CHF 299</div>
+                        <a href="https://buy.stripe.com/00w7sKbrk2oEfFi6hwco00S" class="btn-buy" data-stripe-product="rapport_voice" onclick="gtag('event','report_checkout',{report:'voice',currency:document.querySelector('.price-chf').style.display===''?'CHF':'EUR'});">Acheter le rapport <i class="fas fa-download"></i></a>
                     </div>
                 </div>
             </div>
@@ -215,8 +217,9 @@
                         <li>Tableau de classification AI Act (risque minimal/limité/élevé)</li>
                     </ul>
                     <div class="report-price">
-                        <div class="price-val">199€ HT</div>
-                        <a href="https://buy.stripe.com/3cIfZg2UOd3i2SwdJYco00T" class="btn-buy" onclick="gtag('event','report_checkout',{report:'rgpd',value:199,currency:'EUR'});">Acheter le rapport <i class="fas fa-download"></i></a>
+                        <div class="price-val price-eur">199€ HT</div>
+                        <div class="price-val price-chf" style="display:none;">CHF 199</div>
+                        <a href="https://buy.stripe.com/3cIfZg2UOd3i2SwdJYco00T" class="btn-buy" data-stripe-product="rapport_rgpd" onclick="gtag('event','report_checkout',{report:'rgpd',currency:document.querySelector('.price-chf').style.display===''?'CHF':'EUR'});">Acheter le rapport <i class="fas fa-download"></i></a>
                     </div>
                 </div>
             </div>
@@ -225,11 +228,14 @@
             <div class="bundle-box">
                 <span style="display:inline-block; padding:4px 12px; background:rgba(236,72,153,0.2); color:#f9a8d4; border-radius:999px; font-size:11px; font-weight:700; margin-bottom:12px;">BUNDLE -30%</span>
                 <h3 style="margin-bottom:8px;">Les 3 rapports en pack complet</h3>
-                <p style="color:var(--text-secondary); margin-bottom:20px;">
+                <p style="color:var(--text-secondary); margin-bottom:12px;">
                     <strong>Assurance + Voice AI + RGPD</strong> en un seul bundle téléchargeable.
-                    Normalement 997€, aujourd'hui <strong style="color:#f9a8d4;">697€ HT</strong>.
                 </p>
-                <a href="https://buy.stripe.com/5kQ8wO52W1kAeBe8pEco00U" class="btn-buy" style="display:inline-block;" onclick="gtag('event','report_checkout',{report:'bundle',value:697,currency:'EUR'});">Acheter le bundle (697€) <i class="fas fa-download"></i></a>
+                <p style="margin-bottom:20px;">
+                    <span class="price-eur">Normalement 997€, aujourd'hui <strong style="color:#f9a8d4;">697€ HT</strong>.</span>
+                    <span class="price-chf" style="display:none;">Normalement CHF 997, aujourd'hui <strong style="color:#f9a8d4;">CHF 697</strong>.</span>
+                </p>
+                <a href="https://buy.stripe.com/5kQ8wO52W1kAeBe8pEco00U" class="btn-buy" style="display:inline-block;" data-stripe-product="rapport_bundle" onclick="gtag('event','report_checkout',{report:'bundle',currency:document.querySelector('.price-chf').style.display===''?'CHF':'EUR'});"><span class="price-eur">Acheter le bundle (697€)</span><span class="price-chf" style="display:none;">Acheter le bundle (CHF 697)</span> <i class="fas fa-download"></i></a>
             </div>
 
             <!-- TO COME -->
@@ -290,5 +296,6 @@
 <a href="https://wa.me/41799394222" class="whatsapp-widget" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
 <div class="cookie-banner" id="cookieBanner"><div class="cookie-content"><p>🍪 Ce site utilise des cookies. <a href="confidentialite.html" style="color:var(--primary-light);">Politique de confidentialité</a>.</p><div class="cookie-actions"><button class="cookie-btn cookie-accept" id="cookieAccept">Accepter</button><button class="cookie-btn cookie-decline" id="cookieDecline">Refuser</button></div></div></div>
 <script src="js/app.js"></script>
+<script src="/js/stripe-geo.js"></script>
 </body>
 </html>

@@ -72,9 +72,9 @@
                 <div style="padding:20px; background:linear-gradient(135deg, rgba(99,102,241,0.15), rgba(168,85,247,0.1)); border:1px solid rgba(99,102,241,0.35); border-radius:14px; position:relative;">
                     <div style="position:absolute; top:-10px; right:16px; padding:3px 10px; background:linear-gradient(90deg,#6366f1,#a855f7); color:white; font-size:10px; font-weight:700; letter-spacing:1px; border-radius:999px;">RECOMMANDÉ</div>
                     <div style="font-size:11px; font-weight:700; letter-spacing:1px; color:var(--primary-light); margin-bottom:4px;">FAST-TRACK</div>
-                    <div style="font-size:26px; font-weight:800; color:white;">149€ HT</div>
+                    <div style="font-size:26px; font-weight:800; color:white;"><span class="price-eur">149€ HT</span><span class="price-chf" style="display:none;">CHF 149</span></div>
                     <p style="color:var(--text-secondary); font-size:13px; margin:8px 0 12px;">Review prioritaire sous 48h. Publication sous 5 jours ouvrés. Review SEO incluse.</p>
-                    <a href="https://buy.stripe.com/dRm4gy1QKaVa8cQgWaco00Q" style="display:block; text-align:center; padding:10px; background:linear-gradient(90deg,#6366f1,#a855f7); color:white; border-radius:8px; font-size:13px; font-weight:600; text-decoration:none;" onclick="gtag('event','submit_checkout',{plan:'fasttrack',value:149,currency:'EUR'});">Payer 149€ → Fast-track</a>
+                    <a href="https://buy.stripe.com/dRm4gy1QKaVa8cQgWaco00Q" style="display:block; text-align:center; padding:10px; background:linear-gradient(90deg,#6366f1,#a855f7); color:white; border-radius:8px; font-size:13px; font-weight:600; text-decoration:none;" data-stripe-product="submit_fasttrack" onclick="gtag('event','submit_checkout',{plan:'fasttrack',currency:document.querySelector('.price-chf').style.display===''?'CHF':'EUR'});"><span class="price-eur">Payer 149€ → Fast-track</span><span class="price-chf" style="display:none;">Payer CHF 149 → Fast-track</span></a>
                 </div>
                 <div style="padding:20px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:14px;">
                     <div style="font-size:11px; font-weight:700; letter-spacing:1px; color:var(--text-secondary); margin-bottom:4px;">FEATURED LISTING</div>
@@ -173,5 +173,6 @@
 
 <a href="https://wa.me/41799394222?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20vos%20agents%20IA" class="whatsapp-widget" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a><div class="cookie-banner" id="cookieBanner"><div class="cookie-content"><p>🍪 Ce site utilise des cookies. <a href="/confidentialite" style="color:var(--primary-light);">En savoir plus</a>.</p><div class="cookie-actions"><button class="cookie-btn cookie-accept" id="cookieAccept">Accepter</button><button class="cookie-btn cookie-decline" id="cookieDecline">Refuser</button></div></div></div>
 <script src="js/app.js"></script>
+<script src="/js/stripe-geo.js"></script>
 </body>
 </html>
