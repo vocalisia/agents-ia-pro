@@ -381,4 +381,24 @@
   <url><loc>https://agents-ia.pro/pt/agence</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://agents-ia.pro/pt/a-propos</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
+  <url>
+    <loc>https://agents-ia.pro/agent-ia-pme</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/agence-ia-suisse</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/agence-ia-lausanne</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agents-ia.pro/agence-ia-geneve</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
