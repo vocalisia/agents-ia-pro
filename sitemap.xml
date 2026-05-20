@@ -184,7 +184,7 @@
 
   <!-- Page à propos / E-E-A-T -->
   <url>
-    <loc>https://agents-ia.pro/a-propos.html</loc>
+    <loc>https://agents-ia.pro/a-propos</loc>
     <lastmod>2026-04-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -192,7 +192,7 @@
 
   <!-- Page agence done-for-you -->
   <url>
-    <loc>https://agents-ia.pro/agence.html</loc>
+    <loc>https://agents-ia.pro/agence</loc>
     <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -224,7 +224,7 @@
 
   <!-- Pages monétisation -->
   <url>
-    <loc>https://agents-ia.pro/editeurs.html</loc>
+    <loc>https://agents-ia.pro/editeurs</loc>
     <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -234,25 +234,25 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://agents-ia.pro/nl/editeurs.html"/>
   </url>
   <url>
-    <loc>https://agents-ia.pro/en/editeurs.html</loc>
+    <loc>https://agents-ia.pro/en/editeurs</loc>
     <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://agents-ia.pro/de/editeurs.html</loc>
+    <loc>https://agents-ia.pro/de/editeurs</loc>
     <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://agents-ia.pro/nl/editeurs.html</loc>
+    <loc>https://agents-ia.pro/nl/editeurs</loc>
     <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://agents-ia.pro/newsletter.html</loc>
+    <loc>https://agents-ia.pro/newsletter</loc>
     <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -262,25 +262,25 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://agents-ia.pro/nl/newsletter.html"/>
   </url>
   <url>
-    <loc>https://agents-ia.pro/en/newsletter.html</loc>
+    <loc>https://agents-ia.pro/en/newsletter</loc>
     <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://agents-ia.pro/de/newsletter.html</loc>
+    <loc>https://agents-ia.pro/de/newsletter</loc>
     <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://agents-ia.pro/nl/newsletter.html</loc>
+    <loc>https://agents-ia.pro/nl/newsletter</loc>
     <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://agents-ia.pro/rapports.html</loc>
+    <loc>https://agents-ia.pro/rapports</loc>
     <lastmod>2026-04-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -290,19 +290,19 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://agents-ia.pro/nl/rapports.html"/>
   </url>
   <url>
-    <loc>https://agents-ia.pro/en/rapports.html</loc>
+    <loc>https://agents-ia.pro/en/rapports</loc>
     <lastmod>2026-04-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://agents-ia.pro/de/rapports.html</loc>
+    <loc>https://agents-ia.pro/de/rapports</loc>
     <lastmod>2026-04-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://agents-ia.pro/nl/rapports.html</loc>
+    <loc>https://agents-ia.pro/nl/rapports</loc>
     <lastmod>2026-04-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -363,22 +363,22 @@
 
   <!-- ES / IT / PT translations -->
   <url><loc>https://agents-ia.pro/es/</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://agents-ia.pro/es/editeurs.html</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://agents-ia.pro/es/newsletter.html</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://agents-ia.pro/es/rapports.html</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://agents-ia.pro/es/agence.html</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://agents-ia.pro/es/a-propos.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://agents-ia.pro/es/editeurs</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agents-ia.pro/es/newsletter</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agents-ia.pro/es/rapports</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agents-ia.pro/es/agence</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agents-ia.pro/es/a-propos</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://agents-ia.pro/it/</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://agents-ia.pro/it/editeurs.html</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://agents-ia.pro/it/newsletter.html</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://agents-ia.pro/it/rapports.html</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://agents-ia.pro/it/agence.html</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://agents-ia.pro/it/a-propos.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://agents-ia.pro/it/editeurs</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agents-ia.pro/it/newsletter</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agents-ia.pro/it/rapports</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agents-ia.pro/it/agence</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agents-ia.pro/it/a-propos</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://agents-ia.pro/pt/</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://agents-ia.pro/pt/editeurs.html</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://agents-ia.pro/pt/newsletter.html</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://agents-ia.pro/pt/rapports.html</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://agents-ia.pro/pt/agence.html</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://agents-ia.pro/pt/a-propos.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://agents-ia.pro/pt/editeurs</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agents-ia.pro/pt/newsletter</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agents-ia.pro/pt/rapports</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agents-ia.pro/pt/agence</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agents-ia.pro/pt/a-propos</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
 </urlset>

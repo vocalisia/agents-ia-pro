@@ -1,37 +1,65 @@
-# Agents-IA.pro
+# Agents-IA.pro - LLM Access File
+> Marketplace #1 d'agents IA pour PME francophones. 500+ agents IA vérifiés.
+> Fondée par Laurent Duplat, basée en Suisse.
 
-> Agence spécialisée dans le développement et le déploiement d'agents IA autonomes pour entreprises francophones. Conception d'agents IA sur mesure pour automatiser vos processus métier. 500+ solutions testées, 12 840 utilisateurs, 98% de satisfaction.
+## Sitemap complet (59 URLs)
 
-## Ce que fait Agents-IA.pro
-
-Agents-IA.pro conçoit et déploie des agents IA autonomes adaptés aux besoins spécifiques de chaque entreprise : agents de prospection, agents de support, agents de qualification, agents de traitement de données, agents d'analyse et de reporting. Service disponible en France, Belgique, Suisse et Luxembourg.
-
-## Types d'agents déployés
-
-- Agents IA de prospection commerciale (email, LinkedIn, téléphone)
-- Agents IA de support client (chat, email, voix multilingue)
-- Agents IA de qualification de leads et scoring
-- Agents IA d'analyse de données et reporting automatisé
-- Agents IA de traitement documentaire (factures, contrats, RH)
-- Agents IA WhatsApp et messagerie instantanée
-
-## Technologies
-
-LLM (GPT-4, Claude, Mistral, Gemini), voix IA (Vocalis), automatisation (Make, n8n, Zapier), CRM (HubSpot, Salesforce, Pipedrive), conformité RGPD.
-
-## Audience
-
-Dirigeants de PME et ETI francophones cherchant à automatiser leurs processus avec des agents IA sur mesure. DSI, directeurs commerciaux et marketing, responsables opérations.
-
-## Informations clés
-
-- Localisation : Suisse (conformité RGPD garantie)
-- Support en français disponible
-- Démo gratuite sans engagement
-- Disponible en : FR, EN, DE, NL, ES, IT, PT
-
-## Pages
-
-- Accueil : https://agents-ia.pro/
-- Blog FR : https://agents-ia.pro/fr/
-- Blog EN : https://agents-ia.pro/en/
+- https://agents-ia.pro/a-propos
+- https://agents-ia.pro/agence
+- https://agents-ia.pro/agent-assurance
+- https://agents-ia.pro/agent-chatbot
+- https://agents-ia.pro/agent-commercial
+- https://agents-ia.pro/agent-design
+- https://agents-ia.pro/agent-dev
+- https://agents-ia.pro/agent-ecommerce
+- https://agents-ia.pro/agent-email
+- https://agents-ia.pro/agent-finance
+- https://agents-ia.pro/agent-formation
+- https://agents-ia.pro/agent-immobilier
+- https://agents-ia.pro/agent-intelligence-artificielle-pro
+- https://agents-ia.pro/agent-juridique
+- https://agents-ia.pro/agent-logistique
+- https://agents-ia.pro/agent-marketing
+- https://agents-ia.pro/agent-recouvrement
+- https://agents-ia.pro/agent-restauration
+- https://agents-ia.pro/agent-rh
+- https://agents-ia.pro/agent-sante
+- https://agents-ia.pro/agent-seo
+- https://agents-ia.pro/agent-support
+- https://agents-ia.pro/agent
+- https://agents-ia.pro/blog-agent-ia-comptable
+- https://agents-ia.pro/blog-agent-ia-recrutement
+- https://agents-ia.pro/blog-agents-commerciaux-ia
+- https://agents-ia.pro/blog
+- https://agents-ia.pro/categories
+- https://agents-ia.pro/cgu
+- https://agents-ia.pro/confidentialite
+- https://agents-ia.pro/contact
+- https://agents-ia.pro/editeurs
+- https://agents-ia.pro/
+- https://agents-ia.pro/marketplace-agent-ia
+- https://agents-ia.pro/mentions-legales
+- https://agents-ia.pro/merci
+- https://agents-ia.pro/newsletter
+- https://agents-ia.pro/rapports
+- https://agents-ia.pro/submit
+- https://agents-ia.pro/vocalis-pro
+- https://agents-ia.pro/blog/agent-ia-vocal-assurance-cas-usage
+- https://agents-ia.pro/blog/agent-ia-vs-employe
+- https://agents-ia.pro/blog/agent-vocal-cabinet-dentaire
+- https://agents-ia.pro/blog/agents-ia-whatsapp-business-guide-2026
+- https://agents-ia.pro/blog/agents-logiciels-ia-marche-statistiques-2026
+- https://agents-ia.pro/blog/choisir-agent-ia
+- https://agents-ia.pro/blog/claude-code-seo-battre-concurrents-google
+- https://agents-ia.pro/blog/deployer-agent-ia-30-minutes
+- https://agents-ia.pro/blog/gpt5-vs-claude-opus-agents-ia-2026
+- https://agents-ia.pro/blog/prix-agent-ia-2026-tarifs-reels
+- https://agents-ia.pro/blog/rgpd-agents-ia-cnil-2026-checklist
+- https://agents-ia.pro/blog/rgpd-agents-ia
+- https://agents-ia.pro/blog/top-10-agents-ia-mars-2025
+- https://agents-ia.pro/en/
+- https://agents-ia.pro/de/
+- https://agents-ia.pro/nl/
+- https://agents-ia.pro/es/
+- https://agents-ia.pro/it/
+- https://agents-ia.pro/pt/
