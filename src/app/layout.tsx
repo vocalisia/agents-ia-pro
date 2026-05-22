@@ -101,33 +101,19 @@ export default function RootLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         />
 
-        {/* GA4 Consent Mode v2 */}
+        {/* GA4 Consent Mode v2 + dynamic gtag.js loader — tout inline pour forcer ordre RGPD */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
+window.gtag = gtag;
+gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500 });
 var _c = (typeof localStorage !== 'undefined') ? localStorage.getItem('ai_cookies') : null;
-gtag('consent', 'default', {
-  analytics_storage: _c === 'rejected' ? 'denied' : 'granted',
-  ad_storage: 'denied',
-  ad_user_data: 'denied',
-  ad_personalization: 'denied',
-  wait_for_update: 500
-});`,
-          }}
-        />
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
+if (_c === 'accepted') { gtag('consent', 'update', { analytics_storage: 'granted' }); }
+(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=${GA_ID}';document.head.appendChild(s);})();
 gtag('js', new Date());
-gtag('config', '${GA_ID}');`,
+gtag('config', '${GA_ID}', { anonymize_ip: true });`,
           }}
         />
 
