@@ -494,7 +494,15 @@ function initCookieBanner() {
 
     if (!banner) return;
 
-    // Check if already accepted/declined
+    // Migrate legacy 'declined' → 'rejected' and restore disable flag
+    const _existing = localStorage.getItem('ai_cookies');
+    if (_existing === 'declined') {
+        localStorage.setItem('ai_cookies', 'rejected');
+        window['ga-disable-G-B5627RD3TF'] = true;
+        if (typeof gtag === 'function') {
+            gtag('consent', 'update', { analytics_storage: 'denied' });
+        }
+    }
     if (localStorage.getItem('ai_cookies')) {
         banner.classList.add('hidden');
         return;
@@ -504,14 +512,17 @@ function initCookieBanner() {
         localStorage.setItem('ai_cookies', 'accepted');
         banner.classList.add('hidden');
         if (typeof gtag === 'function') {
-            gtag('consent', 'update', { analytics_storage: 'granted' });
+            gtag('consent', 'update', { analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
         }
     });
 
     declineBtn.addEventListener('click', () => {
-        localStorage.setItem('ai_cookies', 'declined');
+        localStorage.setItem('ai_cookies', 'rejected');
         banner.classList.add('hidden');
         window['ga-disable-G-B5627RD3TF'] = true;
+        if (typeof gtag === 'function') {
+            gtag('consent', 'update', { analytics_storage: 'denied' });
+        }
     });
 }
 // ==================== DYNAMIC COUNTS (agents + categories) ====================

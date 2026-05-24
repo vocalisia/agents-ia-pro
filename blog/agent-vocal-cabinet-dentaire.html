@@ -6,12 +6,11 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   window.gtag = gtag;
-  gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500 });
   var _c = (typeof localStorage !== 'undefined') ? localStorage.getItem('ai_cookies') : null;
-  if (_c === 'accepted') { gtag('consent', 'update', { analytics_storage: 'granted' }); }
+  gtag('consent', 'default', { analytics_storage: _c === 'rejected' ? 'denied' : 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500 });
   (function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-B5627RD3TF';document.head.appendChild(s);})();
   gtag('js', new Date());
-  gtag('config', 'G-B5627RD3TF', { anonymize_ip: true });
+  gtag('config', 'G-B5627RD3TF');
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -334,5 +333,7 @@
 
 <script src="../js/app.js"></script>
 <a href="https://wa.me/41799394222?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20vos%20agents%20IA" class="whatsapp-widget" target="_blank" rel="noopener" aria-label="Contactez-nous sur WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<div class="cookie-banner" id="cookieBanner"><div class="cookie-content"><p>🍪 Ce site utilise des cookies pour analyser le trafic. <a href="../confidentialite.html" style="color:var(--primary-light);">Politique de confidentialité</a>.</p><div class="cookie-actions"><button class="cookie-btn cookie-accept" id="cookieAccept">Accepter</button><button class="cookie-btn cookie-decline" id="cookieDecline">Refuser</button></div></div></div>
 </body>
 </html>

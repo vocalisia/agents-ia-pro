@@ -101,19 +101,21 @@ export default function RootLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         />
 
-        {/* GA4 Consent Mode v2 + dynamic gtag.js loader — tout inline pour forcer ordre RGPD */}
+        {/* ⚠️ GA4 CONSENT — VERROUILLÉ — NE PAS MODIFIER
+             OPT-OUT pattern: rejected→denied, sinon granted.
+             INTERDIT de passer analytics_storage à 'denied' par défaut.
+             Bug historique 2026-05-16/23 : opt-in = 0 connexions GA4 pendant 1 semaine. */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 window.gtag = gtag;
-gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500 });
 var _c = (typeof localStorage !== 'undefined') ? localStorage.getItem('ai_cookies') : null;
-if (_c === 'accepted') { gtag('consent', 'update', { analytics_storage: 'granted' }); }
+gtag('consent', 'default', { analytics_storage: _c === 'rejected' ? 'denied' : 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500 });
 (function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=${GA_ID}';document.head.appendChild(s);})();
 gtag('js', new Date());
-gtag('config', '${GA_ID}', { anonymize_ip: true });`,
+gtag('config', '${GA_ID}');`,
           }}
         />
 

@@ -17,7 +17,7 @@ export default async function handler(req, res) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'Agents-IA.pro <onboarding@resend.dev>',
+        from: 'Agents-IA.pro <contact@send.vocalis-ia.pro>',
         to: ['contact@vocalis.pro'],
         reply_to: email,
         subject: `[Contact agents-ia.pro] ${subject || 'Nouveau message'}`,
