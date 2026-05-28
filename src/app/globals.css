@@ -20,7 +20,8 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Inter', system-ui, sans-serif;
+  /* font-family is provided via Next.js next/font (self-hosted Inter) on <body className={inter.className}> */
+  font-family: var(--font-inter), 'Inter', system-ui, -apple-system, sans-serif;
   background: var(--dark);
   color: white;
   line-height: 1.6;

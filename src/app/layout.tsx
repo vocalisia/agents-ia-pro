@@ -1,7 +1,24 @@
 import type { Metadata } from 'next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { Inter } from 'next/font/google'
+import dynamic from 'next/dynamic'
 import './globals.css'
-import CookieBanner from '@/components/CookieBanner'
+
+// Self-hosted Inter via next/font/google — eliminates Google Fonts render-blocking (~825ms)
+// display:swap + automatic preload + zero layout shift
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  display: 'swap',
+  preload: true,
+  variable: '--font-inter',
+})
+
+// Cookie banner is not above-fold — deferred to reduce initial JS
+const CookieBanner = dynamic(() => import('@/components/CookieBanner'), {
+  ssr: false,
+  loading: () => null,
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://agents-ia.pro'),
@@ -84,23 +101,31 @@ export default function RootLayout({
   }
 
   return (
-    <html lang="fr">
+    <html lang="fr" className={inter.variable}>
       <head>
-        {/* Google Fonts */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        {/* Preconnect for tiers tiers used post-paint (GA, FA CDN) */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+
+        {/* Font Awesome — async via media-print trick (no longer render-blocking)
+            Saves ~947ms render-blocking time. Icons appear progressively after first paint.
+            We inject raw HTML so the onload handler is in the SSR markup (React strips string handlers). */}
         <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          rel="stylesheet"
+          rel="preload"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          as="style"
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var l=document.createElement('link');l.rel='stylesheet';l.href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css';l.media='print';l.onload=function(){this.media='all'};document.head.appendChild(l);})();`,
+          }}
+        />
+        <noscript>
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          />
+        </noscript>
 
         {/* ⚠️ GA4 CONSENT — VERROUILLÉ — NE PAS MODIFIER
              OPT-OUT pattern: rejected→denied, sinon granted.
@@ -130,7 +155,7 @@ gtag('config', '${GA_ID}');`,
           dangerouslySetInnerHTML={{ __html: JSON.stringify(founderSchema) }}
         />
       </head>
-      <body>
+      <body className={inter.className}>
         {children}
         <CookieBanner />
         <SpeedInsights />
