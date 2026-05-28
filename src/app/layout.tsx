@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
 import CookieBanner from '@/components/CookieBanner'
 
@@ -132,6 +133,7 @@ gtag('config', '${GA_ID}');`,
       <body>
         {children}
         <CookieBanner />
+        <SpeedInsights />
       </body>
     </html>
   )
