@@ -54,7 +54,7 @@ export default function BlogPostPage({ params }: Props) {
     headline: post.title,
     description: post.description,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.dateModified ?? post.date,
     url: `https://agents-ia.pro/blog/${post.slug}`,
     image: post.image ?? 'https://agents-ia.pro/og-image.png',
     inLanguage: 'fr',
@@ -63,6 +63,10 @@ export default function BlogPostPage({ params }: Props) {
       '@id': 'https://agents-ia.pro/#founder',
       name: post.author,
       url: 'https://agents-ia.pro/a-propos.html',
+      sameAs: [
+        'https://www.linkedin.com/in/vocalisia/',
+        'https://x.com/VocalisAi',
+      ],
     },
     publisher: {
       '@id': 'https://agents-ia.pro/#organization',

@@ -9,6 +9,7 @@ export interface BlogPost {
   title: string
   description: string
   date: string
+  dateModified?: string
   author: string
   category: string
   readTime: string
@@ -71,6 +72,7 @@ export function getPost(slug: string): BlogPost | null {
     title: data.title ?? slug,
     description: data.description ?? '',
     date: data.date ? String(data.date) : '',
+    dateModified: data.dateModified ? String(data.dateModified) : undefined,
     author: data.author ?? 'Laurent Duplat',
     category: data.category ?? 'Guide',
     readTime: data.readTime ?? '5 min de lecture',
