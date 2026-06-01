@@ -23,11 +23,11 @@ const CookieBanner = dynamic(() => import('@/components/CookieBanner'), {
 export const metadata: Metadata = {
   metadataBase: new URL('https://agents-ia.pro'),
   title: {
-    default: 'Agents-IA.pro | La Marketplace #1 d\'Agents IA Francophones',
+    default: 'Agents IA Pro — Agent Chatbot, Code & Automation | Marketplace #1',
     template: '%s | Agents-IA.pro',
   },
   description:
-    'La marketplace #1 d\'agents IA francophones. Trouvez, comparez et déployez +500 agents IA vérifiés pour automatiser votre entreprise.',
+    'Agents-IA.pro : marketplace +500 agents IA vérifiés — agent chatbot, agent code, agent pro, agent support. Trouvez et déployez l\'agent IA parfait pour votre entreprise.',
   robots: { index: true, follow: true },
   alternates: {
     canonical: 'https://agents-ia.pro/',
