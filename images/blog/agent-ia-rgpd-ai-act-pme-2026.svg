@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">Agent IA conforme RGPD et AI Act</title>
+  <desc id="desc">Visualisation abstraite d'un agent IA protege par des controles de donnees, de supervision humaine et de conformite.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#052e2b"/>
+      <stop offset=".5" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#3b0764"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset=".55" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#c084fc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="28" stdDeviation="28" flood-color="#020617" flood-opacity=".48"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="820" rx="44" fill="url(#bg)"/>
+  <circle cx="245" cy="150" r="190" fill="#14b8a6" opacity=".16"/>
+  <circle cx="1115" cy="640" r="240" fill="#a855f7" opacity=".16"/>
+  <g opacity=".18" stroke="#e0f2fe" stroke-width="1.4">
+    <path d="M134 620C272 510 384 535 504 406S774 216 940 294s230 36 326-78"/>
+    <path d="M110 704C288 570 420 620 558 474s302-232 462-146 220 52 302-24"/>
+    <path d="M94 534C244 450 388 448 480 330s248-192 408-138 255 48 390-82"/>
+  </g>
+  <g filter="url(#shadow)">
+    <path d="M700 116l285 104v196c0 169-111 249-285 333-174-84-285-164-285-333V220z" fill="#071827" stroke="url(#shield)" stroke-width="5"/>
+    <path d="M700 168l226 83v158c0 132-84 198-226 270-142-72-226-138-226-270V251z" fill="url(#shield)" opacity=".12"/>
+  </g>
+  <g>
+    <circle cx="700" cy="382" r="98" fill="#0f172a" stroke="#5eead4" stroke-width="5"/>
+    <circle cx="666" cy="358" r="12" fill="#5eead4"/>
+    <circle cx="734" cy="358" r="12" fill="#c084fc"/>
+    <path d="M650 421c34 30 70 30 104 0" fill="none" stroke="#e0f2fe" stroke-width="10" stroke-linecap="round"/>
+    <path d="M700 262v-56M700 558v-56M820 382h58M522 382h58" stroke="#93c5fd" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g>
+    <rect x="132" y="220" width="300" height="96" rx="28" fill="#0f172a" stroke="#2dd4bf" stroke-opacity=".45"/>
+    <rect x="132" y="362" width="300" height="96" rx="28" fill="#0f172a" stroke="#60a5fa" stroke-opacity=".45"/>
+    <rect x="132" y="504" width="300" height="96" rx="28" fill="#0f172a" stroke="#c084fc" stroke-opacity=".45"/>
+    <circle cx="184" cy="268" r="18" fill="#2dd4bf"/>
+    <circle cx="184" cy="410" r="18" fill="#60a5fa"/>
+    <circle cx="184" cy="552" r="18" fill="#c084fc"/>
+    <path d="M228 268h142M228 410h116M228 552h156" stroke="#f8fafc" stroke-width="13" stroke-linecap="round" opacity=".86"/>
+  </g>
+  <g>
+    <rect x="968" y="222" width="300" height="94" rx="28" fill="#0f172a" stroke="#e0f2fe" stroke-opacity=".35"/>
+    <rect x="968" y="364" width="300" height="94" rx="28" fill="#0f172a" stroke="#e0f2fe" stroke-opacity=".35"/>
+    <rect x="968" y="506" width="300" height="94" rx="28" fill="#0f172a" stroke="#e0f2fe" stroke-opacity=".35"/>
+    <path d="M1020 268l24 24 52-58M1020 410l24 24 52-58M1020 552l24 24 52-58" fill="none" stroke="#22c55e" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1132 270h82M1132 412h62M1132 554h98" stroke="#f8fafc" stroke-width="13" stroke-linecap="round" opacity=".86"/>
+  </g>
+</svg>
