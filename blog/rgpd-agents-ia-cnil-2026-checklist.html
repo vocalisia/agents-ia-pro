@@ -5,9 +5,9 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   window.gtag = gtag;
-  var _c = (typeof localStorage !== 'undefined') ? localStorage.getItem('ai_cookies') : null;
-  gtag('consent', 'default', { analytics_storage: _c === 'rejected' ? 'denied' : 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500 });
-  (function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-B5627RD3TF';document.head.appendChild(s);})();
+  var _c = (typeof localStorage !== 'undefined')  localStorage.getItem('ai_cookies') : null;
+  gtag('consent', 'default', { analytics_storage: _c === 'rejected'  'denied' : 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500 });
+  (function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/jsid=G-B5627RD3TF';document.head.appendChild(s);})();
   gtag('js', new Date());
   gtag('config', 'G-B5627RD3TF');
 </script>
@@ -20,7 +20,7 @@
     <meta name="author" content="Laurent Duplat">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2family=Inter:wght@300;400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
     <link rel="canonical" href="https://agents-ia.pro/blog/rgpd-agents-ia-cnil-2026-checklist.html">
     <link rel="alternate" hreflang="fr" href="https://agents-ia.pro/blog/rgpd-agents-ia-cnil-2026-checklist.html">
@@ -94,6 +94,26 @@
 .logo-accent { background: linear-gradient(90deg, #6366f1, #ec4899); -webkit-background-clip: text; background-clip: text; color: transparent; }
 </style>
 <style id="data-perf-sprint5-cls">.cta-row .fas,.cta-row .far,.cta-row .fab,.cta-row [class^='fa-'],.cta-row [class*=' fa-']{display:inline-block;min-width:1em;text-align:center;}.hero-v2 .search-hero i.search-icon{min-width:1em;text-align:center;}.nav-link .fas,.nav-link .far,.btn .fas,.btn .far,a.cta-primary .fas,a.cta-secondary .fas{display:inline-block;min-width:1em;text-align:center;}</style>
+    <script type="application/ld+json" id="schema-howto">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "@id": "https://agents-ia.pro/blog/rgpd-agents-ia-cnil-2026-checklist.html#howto",
+      "name": "Comment verifier la conformite RGPD d'un agent IA",
+      "description": "Checklist operationnelle pour cadrer les donnees, mentions, consentements, DPA, journalisation et supervision d'un agent IA.",
+      "inLanguage": "fr",
+      "mainEntityOfPage": "https://agents-ia.pro/blog/rgpd-agents-ia-cnil-2026-checklist.html",
+      "author": { "@id": "https://agents-ia.pro/#founder" },
+      "publisher": { "@id": "https://agents-ia.pro/#organization" },
+      "step": [
+        { "@type": "HowToStep", "position": 1, "name": "Identifier le responsable du traitement", "text": "Documenter l'entite responsable, le contact DPO et le perimetre exact des traitements effectues par l'agent IA." },
+        { "@type": "HowToStep", "position": 2, "name": "Lister les donnees traitees", "text": "Inventorier les donnees personnelles, donnees sensibles, logs conversationnels et sources de connaissance utilisees." },
+        { "@type": "HowToStep", "position": 3, "name": "Definir la base legale", "text": "Choisir la base legale adaptee a chaque usage et prevoir un consentement explicite lorsque le risque l'exige." },
+        { "@type": "HowToStep", "position": 4, "name": "Mettre en place les droits utilisateurs", "text": "Permettre l'acces, la rectification, l'effacement, l'opposition et l'escalade vers un humain." },
+        { "@type": "HowToStep", "position": 5, "name": "Auditer et journaliser", "text": "Conserver les preuves de consentement, tester les reponses et auditer regulierement les prompts, donnees et sous-traitants." }
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -148,10 +168,10 @@ En 2026, la réglementation européenne sur l’intelligence artificielle (AI Ac
 </p>
 
 <h2>Mentions Obligatoires pour Agents IA : Checklist CNIL 2026</h2>
-<h3>Quelles informations doivent être accessibles à l’utilisateur ?</h3>
+<h3>Quelles informations doivent être accessibles à l’utilisateur </h3>
 <ul>
   <li><strong>Identité du responsable du traitement</strong> : raison sociale, contact DPO.</li>
-  <li><strong>Finalités</strong> du traitement : pourquoi l’agent IA collecte-t-il les données ?</li>
+  <li><strong>Finalités</strong> du traitement : pourquoi l’agent IA collecte-t-il les données </li>
   <li>Nature des données collectées (ex : nom, email, historique conversationnel).</li>
   <li>Base légale du traitement (consentement, intérêt légitime, contrat).</li>
   <li>Durée de conservation des données (<strong>max. 12 mois pour logs conversationnels</strong> selon CNIL 2026).</li>
@@ -164,7 +184,7 @@ Votre conversation est traitée par [Nom de la société], DPO : dpo@exemple.com
 </p>
 
 <h2>Consentement & Paramétrage : Exigences 2026</h2>
-<h3>Quand le consentement est-il obligatoire ?</h3>
+<h3>Quand le consentement est-il obligatoire </h3>
 <ul>
   <li>Données sensibles (santé, orientation, opinions) : <strong>consentement explicite</strong> requis avant tout traitement.</li>
   <li>Enregistrement audio/vidéo des conversations : pop-up consentement obligatoire.</li>
@@ -180,7 +200,7 @@ En 2026, la CNIL exige que <strong>100%</strong> des agents IA pour les PME disp
 </p>
 
 <h2>Contrats & DPA : Comment sécuriser vos fournisseurs IA</h2>
-<h3>Le DPA (Data Processing Agreement) est-il obligatoire ?</h3>
+<h3>Le DPA (Data Processing Agreement) est-il obligatoire </h3>
 <ul>
   <li>Tout fournisseur SaaS IA (ex : API GPT, moteurs conversationnels) doit signer un DPA conforme RGPD.</li>
   <li>Le DPA précise : type de données, durée, mesures de sécurité, sous-traitants, audits possibles.</li>
@@ -304,27 +324,27 @@ Pour automatiser vos rapports RGPD/IA, découvrez les solutions de gestion de co
 
 <h2>FAQ</h2>
 
-<h3>Mon agent IA doit-il afficher une mention RGPD à chaque interaction ?</h3>
+<h3>Mon agent IA doit-il afficher une mention RGPD à chaque interaction </h3>
 <p>
 Oui. La CNIL 2026 exige une mention RGPD visible dès la première interaction et accessible en permanence (ex : bouton « RGPD » dans le menu chatbot).
 </p>
 
-<h3>Un agent IA peut-il traiter des données sensibles sans consentement ?</h3>
+<h3>Un agent IA peut-il traiter des données sensibles sans consentement </h3>
 <p>
 Non. Le consentement explicite est obligatoire pour toute donnée sensible (santé, orientation, opinions). Le refus doit bloquer le traitement automatisé.
 </p>
 
-<h3>Comment prouver la conformité lors d’un contrôle CNIL ?</h3>
+<h3>Comment prouver la conformité lors d’un contrôle CNIL </h3>
 <p>
 Vous devez fournir : registre des traitements, DPA signé, logs de consentement, rapport d’audit IA, documentation technique, logs d’incidents. Toute absence est motif de sanction.
 </p>
 
-<h3>Quelles sanctions en cas de non-conformité RGPD/AI Act ?</h3>
+<h3>Quelles sanctions en cas de non-conformité RGPD/AI Act </h3>
 <p>
 En 2026, la CNIL peut infliger <strong>jusqu’à 1,5% du CA annuel</strong> en cas de manquement grave, cumulable avec les sanctions AI Act (jusqu’à <strong>2% du CA</strong> pour non-signalement d’incident).
 </p>
 
-<h3>Dois-je mettre à jour le DPA à chaque évolution du chatbot ?</h3>
+<h3>Dois-je mettre à jour le DPA à chaque évolution du chatbot </h3>
 <p>
 Oui. Toute modification du traitement, dataset ou fournisseur IA nécessite une mise à jour du DPA et du registre RGPD, sous 30 jours.
 </p>
@@ -339,47 +359,47 @@ Déployer un agent IA conforme RGPD et AI Act en 2026 exige une documentation co
   <li>Automatisez la documentation et la gestion des droits pour gagner du temps.</li>
 </ul>
 <p>
-Besoin d’un audit ou d’une solution de conformité IA ? Contactez un expert sur Vocalis.pro ou SEO-True.com pour sécuriser votre déploiement en 2026.
+Besoin d’un audit ou d’une solution de conformité IA  Contactez un expert sur Vocalis.pro ou SEO-True.com pour sécuriser votre déploiement en 2026.
 </p>
 
-            
+
 <!-- ====== STACK IA RECOMMANDÉE (affiliate) ====== -->
 <div style="margin:48px 0; padding:32px; background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.08); border-radius:16px;">
     <span style="display:inline-block; padding:4px 12px; background:rgba(251,146,60,0.2); color:#fdba74; border-radius:999px; font-size:11px; font-weight:700; letter-spacing:1px; margin-bottom:12px;">💡 STACK RECOMMANDÉE</span>
     <h3 style="margin:0 0 8px;">Les outils IA qu'on utilise réellement chez Agents-IA.pro</h3>
     <p style="color:var(--text-secondary); font-size:14px; margin:0 0 20px;">Sélection personnelle, testée en production. <em>Liens partenaires</em> — le prix pour vous est identique, on touche une commission si vous vous abonnez.</p>
     <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px;">
-        <a href="https://elevenlabs.io/?from=partnerduplat" target="_blank" rel="noopener sponsored" onclick="gtag('event','affiliate_click',{partner:'elevenlabs'});" style="padding:14px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:10px; text-decoration:none; color:white; display:block;">
+        <a href="https://elevenlabs.io/from=partnerduplat" target="_blank" rel="noopener sponsored" onclick="gtag('event','affiliate_click',{partner:'elevenlabs'});" style="padding:14px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:10px; text-decoration:none; color:white; display:block;">
             <div style="font-weight:700; margin-bottom:4px;">🎙️ ElevenLabs</div>
             <div style="font-size:12px; color:var(--text-secondary);">Voix IA multilingues premium</div>
         </a>
-        <a href="https://www.make.com/en/register?pc=duplat" target="_blank" rel="noopener sponsored" onclick="gtag('event','affiliate_click',{partner:'make'});" style="padding:14px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:10px; text-decoration:none; color:white; display:block;">
+        <a href="https://www.make.com/en/registerpc=duplat" target="_blank" rel="noopener sponsored" onclick="gtag('event','affiliate_click',{partner:'make'});" style="padding:14px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:10px; text-decoration:none; color:white; display:block;">
             <div style="font-weight:700; margin-bottom:4px;">⚙️ Make.com</div>
             <div style="font-size:12px; color:var(--text-secondary);">Automatisation no-code</div>
         </a>
-        <a href="https://www.apify.com/sign-up?fpr=duplat" target="_blank" rel="noopener sponsored" onclick="gtag('event','affiliate_click',{partner:'apify'});" style="padding:14px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:10px; text-decoration:none; color:white; display:block;">
+        <a href="https://www.apify.com/sign-upfpr=duplat" target="_blank" rel="noopener sponsored" onclick="gtag('event','affiliate_click',{partner:'apify'});" style="padding:14px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:10px; text-decoration:none; color:white; display:block;">
             <div style="font-weight:700; margin-bottom:4px;">🕷️ Apify</div>
             <div style="font-size:12px; color:var(--text-secondary);">Web scraping + data IA</div>
         </a>
-        <a href="https://www.perplexity.ai/?referral=DUPLAT" target="_blank" rel="noopener sponsored" onclick="gtag('event','affiliate_click',{partner:'perplexity'});" style="padding:14px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:10px; text-decoration:none; color:white; display:block;">
+        <a href="https://www.perplexity.ai/referral=DUPLAT" target="_blank" rel="noopener sponsored" onclick="gtag('event','affiliate_click',{partner:'perplexity'});" style="padding:14px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:10px; text-decoration:none; color:white; display:block;">
             <div style="font-weight:700; margin-bottom:4px;">🔍 Perplexity Pro</div>
             <div style="font-size:12px; color:var(--text-secondary);">Recherche IA sourcée</div>
         </a>
-        <a href="https://www.beehiiv.com/?via=duplat" target="_blank" rel="noopener sponsored" onclick="gtag('event','affiliate_click',{partner:'beehiiv'});" style="padding:14px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:10px; text-decoration:none; color:white; display:block;">
+        <a href="https://www.beehiiv.com/via=duplat" target="_blank" rel="noopener sponsored" onclick="gtag('event','affiliate_click',{partner:'beehiiv'});" style="padding:14px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:10px; text-decoration:none; color:white; display:block;">
             <div style="font-weight:700; margin-bottom:4px;">📬 Beehiiv</div>
             <div style="font-size:12px; color:var(--text-secondary);">Newsletter SaaS pro</div>
         </a>
-        
+
             <div style="font-weight:700; margin-bottom:4px;">🤖 Vocalis.pro</div>
             <div style="font-size:12px; color:var(--text-secondary);">Notre agent vocal IA (interne)</div>
-        
+
     </div>
 </div>
 <!-- ====== /STACK IA RECOMMANDÉE ====== -->
 
 
             <div style="margin-top:48px; padding:32px; background:linear-gradient(135deg, rgba(99,102,241,0.1), rgba(168,85,247,0.1)); border-radius:16px; text-align:center;">
-                <h3 style="margin-bottom:12px;">Besoin d'un agent IA pour votre business ?</h3>
+                <h3 style="margin-bottom:12px;">Besoin d'un agent IA pour votre business </h3>
                 <p style="color:var(--text-secondary); margin-bottom:24px;">Audit gratuit 30 minutes — on regarde votre cas, sans slides marketing.</p>
                 <a href="../index.html#contact" class="btn-login" style="padding:14px 32px; font-size:16px; display:inline-block;">Réserver mon audit <i class="fas fa-arrow-right"></i></a>
             </div>
@@ -429,5 +449,14 @@ Besoin d’un audit ou d’une solution de conformité IA ? Contactez un expert 
 <a href="https://wa.me/41799394222" class="whatsapp-widget" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
 <div class="cookie-banner" id="cookieBanner"><div class="cookie-content"><p>🍪 Ce site utilise des cookies. <a href="../confidentialite.html" style="color:var(--primary-light);">Politique de confidentialité</a>.</p><div class="cookie-actions"><button class="cookie-btn cookie-accept" id="cookieAccept">Accepter</button><button class="cookie-btn cookie-decline" id="cookieDecline">Refuser</button></div></div></div>
 <script src="../js/app.js"></script>
+<script id="ga4-lead-conversion-tracking">
+(function(){if(window.__ga4LeadTrackingInstalled)return;window.__ga4LeadTrackingInstalled=true;function send(n,p){if(typeof window.gtag!=='function')return;window.gtag('event',n,Object.assign({event_category:'lead',event_label:location.pathname,page_location:location.href},p||{}));}document.addEventListener('submit',function(e){var f=e.target;if(!f||f.tagName!=='FORM')return;var id=(f.id||f.getAttribute('name')||f.className||'form').toString();send('qualify_lead',{event_label:id,method:/newsletter/i.test(id)'newsletter':'form'});},true);document.addEventListener('click',function(e){var a=e.target&&e.target.closeste.target.closest('a'):null;if(!a)return;var h=a.getAttribute('href')||'';if(/wa\.me|whatsapp/i.test(h)){send('close_convert_lead',{event_label:'whatsapp_click',method:'whatsapp'});}else if(/^tel:/i.test(h)){send('qualify_lead',{event_label:'phone_click',method:'phone'});}else if(/^mailto:/i.test(h)){send('qualify_lead',{event_label:'email_click',method:'email'});}else if(/contact|rdv|devis|quote|demo|booking|cal\.com|calendly/i.test(h)){send('qualify_lead',{event_label:'contact_click',method:'contact'});}},true);})();
+</script>
+
+  <section class="related-reading">
+    <h2>Pour aller plus loin</h2>
+    <p>Pour approfondir ce sujet, consultez <a href="/blog/agent-ia-rgpd-ai-act-pme-2026">Agent IA, RGPD et AI Act : checklist PME 2026</a>.</p>
+      <p>Pour approfondir ce sujet, consultez <a href="/blog/agents-ia-whatsapp-business-guide-2026">Agents IA WhatsApp Business : guide complet 2026</a>.</p>
+</section>
 </body>
 </html>

@@ -19,9 +19,9 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     window.gtag = gtag;
-    var _c = (typeof localStorage !== 'undefined') ? localStorage.getItem('ai_cookies') : null;
-    gtag('consent', 'default', { analytics_storage: _c === 'rejected' ? 'denied' : 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500 });
-    (function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-B5627RD3TF';document.head.appendChild(s);})();
+    var _c = (typeof localStorage !== 'undefined')  localStorage.getItem('ai_cookies') : null;
+    gtag('consent', 'default', { analytics_storage: _c === 'rejected'  'denied' : 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500 });
+    (function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/jsid=G-B5627RD3TF';document.head.appendChild(s);})();
     gtag('js', new Date());
     gtag('config', 'G-B5627RD3TF');
   </script>
@@ -44,9 +44,9 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type": "Question", "name": "Un agent IA doit-il respecter le RGPD ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, des lors qu'il traite des donnees personnelles. L'entreprise doit limiter les donnees, informer les utilisateurs, securiser les acces et garder une supervision adaptee."}},
-      {"@type": "Question", "name": "L'AI Act interdit-il les agents IA en PME ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. L'AI Act encadre les usages selon le risque. La PME doit identifier les cas sensibles, documenter les controles et eviter les decisions automatisees non supervisees dans les domaines a risque."}},
-      {"@type": "Question", "name": "Quel est le premier controle a faire ?", "acceptedAnswer": {"@type": "Answer", "text": "Le premier controle consiste a lister les donnees accessibles par l'agent IA et a supprimer tout acces qui n'est pas necessaire au cas d'usage."}}
+      {"@type": "Question", "name": "Un agent IA doit-il respecter le RGPD ", "acceptedAnswer": {"@type": "Answer", "text": "Oui, des lors qu'il traite des donnees personnelles. L'entreprise doit limiter les donnees, informer les utilisateurs, securiser les acces et garder une supervision adaptee."}},
+      {"@type": "Question", "name": "L'AI Act interdit-il les agents IA en PME ", "acceptedAnswer": {"@type": "Answer", "text": "Non. L'AI Act encadre les usages selon le risque. La PME doit identifier les cas sensibles, documenter les controles et eviter les decisions automatisees non supervisees dans les domaines a risque."}},
+      {"@type": "Question", "name": "Quel est le premier controle a faire ", "acceptedAnswer": {"@type": "Answer", "text": "Le premier controle consiste a lister les donnees accessibles par l'agent IA et a supprimer tout acces qui n'est pas necessaire au cas d'usage."}}
     ]
   }
   </script>
@@ -123,16 +123,21 @@
     <p>Les ancres doivent rester naturelles: agent IA RGPD, agent IA AI Act, agent IA conforme, agent IA RH, agent IA juridique, agent IA sante. Cela construit une autorite thematique plus solide qu'un article isole.</p>
 
     <h2>FAQ</h2>
-    <h3>Faut-il une analyse d'impact pour chaque agent IA ?</h3>
+    <h3>Faut-il une analyse d'impact pour chaque agent IA </h3>
     <p>Pas forcement pour chaque usage simple. Elle devient importante lorsque l'agent traite des donnees sensibles, influence une decision importante ou manipule un volume eleve de donnees personnelles.</p>
-    <h3>Peut-on utiliser un agent IA avec un CRM ?</h3>
+    <h3>Peut-on utiliser un agent IA avec un CRM </h3>
     <p>Oui, mais seulement avec les droits strictement necessaires. L'agent doit acceder aux donnees utiles au cas d'usage, pas a toute l'histoire client.</p>
-    <h3>Quelle est l'erreur la plus courante ?</h3>
+    <h3>Quelle est l'erreur la plus courante </h3>
     <p>L'erreur la plus courante est de connecter trop de donnees trop vite. Il vaut mieux commencer petit, mesurer, puis etendre le perimetre.</p>
 
     <h2>Conclusion</h2>
     <p>Un agent IA conforme n'est pas un agent bloque. C'est un agent bien cadre: donnees minimales, role clair, supervision humaine et traces exploitables. C'est aussi le type de contenu que Google peut comprendre comme un signal d'expertise.</p>
     <p><a href="../agent-ia-pme.html">Lire le guide agent IA PME</a> ou <a href="../agence-ia-suisse.html">voir les solutions IA en Suisse</a>.</p>
-  </article>
+
+  <section class="related-reading">
+    <h2>Pour aller plus loin</h2>
+    <p>Pour approfondir ce sujet, consultez <a href="/blog/rgpd-agents-ia-cnil-2026-checklist">Agents IA &amp; RGPD : checklist conformité CNIL mise à jour 2026</a>.</p>
+  </section>
+</article>
 </body>
 </html>
