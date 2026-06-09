@@ -50,21 +50,21 @@
 <!-- NAVBAR -->
 <nav class="navbar" id="navbar">
     <div class="nav-container">
-        <a href="index.html" class="nav-logo">
+        <a href="/index" class="nav-logo">
             <span class="logo-icon"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" style="width:32px;height:32px;vertical-align:middle;"><defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366f1"/><stop offset="0.5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#ec4899"/></linearGradient></defs><path d="M20 3 L35 12 L35 28 L20 37 L5 28 L5 12 Z" fill="rgba(139,92,246,0.15)" stroke="url(#lg1)" stroke-width="1.8"/><path d="M12 28 L20 12 L28 28 M15.5 22 L24.5 22" stroke="url(#lg1)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="20" cy="12" r="2.2" fill="url(#lg1)"/><circle cx="12" cy="28" r="1.6" fill="#ec4899"/><circle cx="28" cy="28" r="1.6" fill="#6366f1"/></svg></span>
             <span class="logo-text">agents-ia<span class="logo-accent">.pro</span></span>
         </a>
         <div class="nav-links" id="navLinks">
-            <a href="index.html#explorer" class="nav-link">Explorer</a>
-            <a href="categories.html" class="nav-link">Catégories</a>
-            <a href="index.html#solutions" class="nav-link">Solutions IA</a>
-            <a href="blog.html" class="nav-link">Blog</a>
-            <a href="editeurs.html" class="nav-link">Éditeurs</a>
-            <a href="a-propos.html" class="nav-link">À propos</a>
+            <a href="/index#explorer" class="nav-link">Explorer</a>
+            <a href="/categories" class="nav-link">Catégories</a>
+            <a href="/index#solutions" class="nav-link">Solutions IA</a>
+            <a href="/blog" class="nav-link">Blog</a>
+            <a href="/editeurs" class="nav-link">Éditeurs</a>
+            <a href="/a-propos" class="nav-link">À propos</a>
         </div>
         <div class="nav-actions">
-            <a href="submit.html" class="btn-submit"><i class="fas fa-plus"></i> Soumettre un Agent</a>
-            <a href="index.html#contact" class="btn-login">Démo gratuite</a>
+            <a href="/submit" class="btn-submit"><i class="fas fa-plus"></i> Soumettre un Agent</a>
+            <a href="/index#contact" class="btn-login">Démo gratuite</a>
             <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
         </div>
     </div>
@@ -73,6 +73,7 @@
 <!-- AGENT DETAIL -->
 <section class="section agent-detail">
     <div class="container">
+        <noscript><h1>Détail agent IA</h1></noscript>
         <div class="agent-detail-header">
             <div class="agent-detail-info" id="agentInfo">
                 <!-- Populated by JS -->
@@ -126,15 +127,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Redirect to dedicated pages when they exist
     const dedicatedPages = {
-        'chatbot-pro': 'agent-chatbot.html',
-        'email-genius': 'agent-email.html',
-        'seo-master': 'agent-seo.html',
-        'recruteur-ia': 'agent-rh.html',
-        'compta-bot': 'agent-finance.html',
-        'design-ai': 'agent-design.html',
-        'legal-assistant': 'agent-juridique.html',
-        'social-pilot': 'agent-marketing.html',
-        'code-assistant': 'agent-dev.html'
+        'chatbot-pro': '/agent-chatbot',
+        'email-genius': '/agent-email',
+        'seo-master': '/agent-seo',
+        'recruteur-ia': '/agent-rh',
+        'compta-bot': '/agent-finance',
+        'design-ai': '/agent-design',
+        'legal-assistant': '/agent-juridique',
+        'social-pilot': '/agent-marketing',
+        'code-assistant': '/agent-dev'
     };
     if (dedicatedPages[agentId]) {
         window.location.replace(dedicatedPages[agentId]);
@@ -231,7 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const agent = agentDetails[agentId];
 
     if (!agent) {
-        document.getElementById('agentInfo').innerHTML = '<h1>Agent non trouve</h1><p>Cet agent n\'existe pas ou a ete retire.</p><a href="index.html" class="btn-primary">Retour a l\'accueil</a>';
+        document.getElementById('agentInfo').innerHTML = '<h1>Agent non trouve</h1><p>Cet agent n\'existe pas ou a ete retire.</p><a href="/index" class="btn-primary">Retour a l\'accueil</a>';
         return;
     }
 
@@ -267,7 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <hr style="border-color:var(--glass-border); margin:24px 0;">
         <a href="${agent.link}" target="_blank" class="btn-primary btn-full" style="margin-bottom:12px;">Essayer maintenant</a>
-        <a href="index.html#contact" class="btn-solution" style="background:transparent; border:1px solid var(--glass-border); color:var(--gray-light);">Demander une demo</a>
+        <a href="/index#contact" class="btn-solution" style="background:transparent; border:1px solid var(--glass-border); color:var(--gray-light);">Demander une demo</a>
     `;
 
     document.getElementById('agentFullDesc').textContent = agent.fullDesc;
