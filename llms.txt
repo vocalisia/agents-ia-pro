@@ -1,4 +1,7 @@
 # Agents-IA.pro - LLM Access File
+
+Sitemap: https://agents-ia.pro/sitemap.xml
+Robots: https://agents-ia.pro/robots.txt
 > Marketplace #1 d'agents IA pour PME francophones. 500+ agents IA vérifiés.
 > Fondée par Laurent Duplat, basée en Suisse.
 
