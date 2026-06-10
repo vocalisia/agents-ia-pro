@@ -56,7 +56,6 @@ Robots: https://agents-ia.pro/robots.txt
 - https://agents-ia.pro/blog/claude-code-seo-battre-concurrents-google
 - https://agents-ia.pro/blog/deployer-agent-ia-30-minutes
 - https://agents-ia.pro/blog/gpt5-vs-claude-opus-agents-ia-2026
-- https://agents-ia.pro/blog/prix-agent-ia-2026-tarifs-reels
 - https://agents-ia.pro/blog/rgpd-agents-ia-cnil-2026-checklist
 - https://agents-ia.pro/blog/rgpd-agents-ia
 - https://agents-ia.pro/blog/top-10-agents-ia-mars-2025
@@ -66,3 +65,4 @@ Robots: https://agents-ia.pro/robots.txt
 - https://agents-ia.pro/es/
 - https://agents-ia.pro/it/
 - https://agents-ia.pro/pt/
+
