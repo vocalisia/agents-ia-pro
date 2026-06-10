@@ -101,13 +101,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://agents-ia.pro/agent</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
   <!-- Articles de blog -->
   <url>
     <loc>https://agents-ia.pro/blog/claude-code-seo-battre-concurrents-google</loc>
