@@ -86,7 +86,7 @@ export default function RootLayout({
     name: 'Laurent Duplat',
     jobTitle: 'Fondateur & Directeur de publication',
     worksFor: { '@id': 'https://agents-ia.pro/#organization' },
-    url: 'https://agents-ia.pro/a-propos.html',
+    url: 'https://agents-ia.pro/a-propos',
     email: 'contact@vocalis.pro',
     knowsAbout: [
       'Intelligence artificielle',

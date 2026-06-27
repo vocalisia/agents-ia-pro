@@ -76,8 +76,8 @@ export default function Navbar() {
           {[
             { href: '/#explorer', label: 'Explorer' },
             { href: '/blog', label: 'Blog' },
-            { href: '/agence.html', label: 'Agence' },
-            { href: '/a-propos.html', label: 'À propos' },
+            { href: '/agence', label: 'Agence' },
+            { href: '/a-propos', label: 'À propos' },
           ].map((l) => (
             <Link
               key={l.href}
@@ -92,14 +92,14 @@ export default function Navbar() {
         {/* CTA */}
         <div className="flex items-center gap-3">
           <Link
-            href="/submit.html"
+            href="/submit"
             className="hidden sm:flex items-center gap-2 px-5 py-2 rounded-full text-white text-sm font-semibold no-underline"
             style={{ background: '#6366f1' }}
           >
             + Soumettre
           </Link>
           <Link
-            href="/agence.html"
+            href="/agence"
             className="px-5 py-2 rounded-full text-white text-sm font-semibold no-underline border"
             style={{ borderColor: 'rgba(255,255,255,0.15)' }}
           >

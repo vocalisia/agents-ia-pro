@@ -62,7 +62,7 @@ export default function BlogPostPage({ params }: Props) {
       '@type': 'Person',
       '@id': 'https://agents-ia.pro/#founder',
       name: post.author,
-      url: 'https://agents-ia.pro/a-propos.html',
+      url: 'https://agents-ia.pro/a-propos',
       sameAs: [
         'https://www.linkedin.com/in/vocalisia/',
         'https://x.com/VocalisAi',
@@ -353,7 +353,7 @@ export default function BlogPostPage({ params }: Props) {
               </div>
 
               <Link
-                href="/agence.html"
+                href="/agence"
                 style={{
                   display: 'block',
                   padding: '18px 20px',

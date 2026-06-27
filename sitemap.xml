@@ -5,7 +5,7 @@
   <!-- Page d'accueil -->
   <url>
     <loc>https://agents-ia.pro/</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://agents-ia.pro/" />
@@ -17,19 +17,19 @@
   <!-- Pages principales -->
   <url>
     <loc>https://agents-ia.pro/categories</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/blog</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/submit</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -37,134 +37,134 @@
   <!-- Pages agents par catégorie -->
   <url>
     <loc>https://agents-ia.pro/agent-commercial</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/agent-support</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/agent-email</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/agent-chatbot</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/agent-marketing</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/agent-seo</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/agent-rh</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/agent-finance</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/agent-design</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/agent-juridique</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/agent-dev</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Articles de blog -->
   <url>
     <loc>https://agents-ia.pro/blog/claude-code-seo-battre-concurrents-google</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/blog/gpt5-vs-claude-opus-agents-ia-2026</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/blog/agent-ia-vocal-assurance-cas-usage</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/blog/agents-ia-whatsapp-business-guide-2026</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/blog/rgpd-agents-ia-cnil-2026-checklist</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/blog/choisir-agent-ia</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/blog/agent-vocal-cabinet-dentaire</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/blog/top-10-agents-ia-mars-2025</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/blog/agent-ia-vs-employe</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/blog/rgpd-agents-ia</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/blog/deployer-agent-ia-30-minutes</loc>
-    <lastmod>2026-03-01</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -172,7 +172,7 @@
   <!-- Page à propos / E-E-A-T -->
   <url>
     <loc>https://agents-ia.pro/a-propos</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -180,7 +180,7 @@
   <!-- Page agence done-for-you -->
   <url>
     <loc>https://agents-ia.pro/agence</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -188,7 +188,7 @@
   <!-- Vocalis Pro — agent vocal IA -->
   <url>
     <loc>https://agents-ia.pro/vocalis-pro</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -196,7 +196,7 @@
   <!-- Marketplace Agent IA -->
   <url>
     <loc>https://agents-ia.pro/marketplace-agent-ia</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
@@ -204,7 +204,7 @@
   <!-- Agent Intelligence Artificielle Pro — article guide -->
   <url>
     <loc>https://agents-ia.pro/agent-intelligence-artificielle-pro</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -212,7 +212,7 @@
   <!-- Pages monétisation -->
   <url>
     <loc>https://agents-ia.pro/editeurs</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://agents-ia.pro/editeurs"/>
@@ -222,25 +222,25 @@
   </url>
   <url>
     <loc>https://agents-ia.pro/en/editeurs</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/de/editeurs</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/nl/editeurs</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/newsletter</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://agents-ia.pro/newsletter"/>
@@ -250,25 +250,25 @@
   </url>
   <url>
     <loc>https://agents-ia.pro/en/newsletter</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/de/newsletter</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/nl/newsletter</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/rapports</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://agents-ia.pro/rapports"/>
@@ -278,19 +278,19 @@
   </url>
   <url>
     <loc>https://agents-ia.pro/en/rapports</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/de/rapports</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/nl/rapports</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -298,19 +298,19 @@
   <!-- Pages légales -->
   <url>
     <loc>https://agents-ia.pro/cgu</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/confidentialite</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/mentions-legales</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -318,7 +318,7 @@
   <!-- Pages multilingues -->
   <url>
     <loc>https://agents-ia.pro/en</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://agents-ia.pro/" />
@@ -328,7 +328,7 @@
   </url>
   <url>
     <loc>https://agents-ia.pro/de</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://agents-ia.pro/" />
@@ -338,7 +338,7 @@
   </url>
   <url>
     <loc>https://agents-ia.pro/nl</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://agents-ia.pro/" />
@@ -349,18 +349,18 @@
 
 
   <!-- ES / IT / PT translations -->
-  <url><loc>https://agents-ia.pro/es/</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://agents-ia.pro/es/editeurs</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://agents-ia.pro/es/newsletter</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://agents-ia.pro/es/rapports</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://agents-ia.pro/it/</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://agents-ia.pro/it/editeurs</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://agents-ia.pro/it/newsletter</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://agents-ia.pro/it/rapports</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://agents-ia.pro/pt/</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://agents-ia.pro/pt/editeurs</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://agents-ia.pro/pt/newsletter</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://agents-ia.pro/pt/rapports</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agents-ia.pro/es</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://agents-ia.pro/es/editeurs</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agents-ia.pro/es/newsletter</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agents-ia.pro/es/rapports</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agents-ia.pro/it</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://agents-ia.pro/it/editeurs</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agents-ia.pro/it/newsletter</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agents-ia.pro/it/rapports</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agents-ia.pro/pt</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://agents-ia.pro/pt/editeurs</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agents-ia.pro/pt/newsletter</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agents-ia.pro/pt/rapports</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 
   <url>
     <loc>https://agents-ia.pro/agent-ia-pme</loc>
@@ -384,25 +384,25 @@
   </url>
   <url>
     <loc>https://agents-ia.pro/meilleur-agent-vocal-ia-2026</loc>
-    <lastmod>2026-05-20</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/comparatif-agent-ia-2026</loc>
-    <lastmod>2026-05-20</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/blog/agent-ia-vs-chatbot-entreprise-2026</loc>
-    <lastmod>2026-06-04</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agents-ia.pro/blog/agent-ia-rgpd-ai-act-pme-2026</loc>
-    <lastmod>2026-06-04</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

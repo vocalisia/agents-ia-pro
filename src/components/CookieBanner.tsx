@@ -69,7 +69,7 @@ export default function CookieBanner() {
       >
         <p style={{ margin: 0, fontSize: 14, color: '#94a3b8', flex: '1 1 300px', lineHeight: 1.5 }}>
           Nous utilisons des cookies pour analyser le trafic et améliorer votre expérience.{' '}
-          <a href="/politique-confidentialite.html" style={{ color: '#818cf8', textDecoration: 'underline' }}>
+          <a href="/confidentialite" style={{ color: '#818cf8', textDecoration: 'underline' }}>
             En savoir plus
           </a>
         </p>

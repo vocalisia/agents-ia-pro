@@ -43,8 +43,8 @@ const featuredAgents = [
     tags: ['Vocal', 'Téléphone', 'Autonome'],
     rating: 4.9,
     users: '2.4K',
-    price: 'Essai gratuit',
-    priceClass: 'free',
+    price: 'Sur demande',
+    priceClass: 'private',
     upvotes: 847,
     href: 'https://vocalis.pro',
     gradient: 'linear-gradient(135deg,#667eea,#764ba2)',
@@ -59,8 +59,8 @@ const featuredAgents = [
     tags: ['Vente', 'Analytics', 'Closing'],
     rating: 4.8,
     users: '1.8K',
-    price: 'Dès 49 CHF/mois',
-    priceClass: 'paid',
+    price: 'Sur demande',
+    priceClass: 'private',
     upvotes: 623,
     href: 'https://master-seller.fr',
     gradient: 'linear-gradient(135deg,#f093fb,#f5576c)',
@@ -75,8 +75,8 @@ const featuredAgents = [
     tags: ['Sécurité', 'Avis', 'Rapports'],
     rating: 4.9,
     users: '1.2K',
-    price: 'Gratuit',
-    priceClass: 'free',
+    price: 'Sur demande',
+    priceClass: 'private',
     upvotes: 512,
     href: 'https://trust-vault.com',
     gradient: 'linear-gradient(135deg,#4facfe,#00f2fe)',
@@ -217,7 +217,7 @@ export default function HomePage() {
                 Explorer les 500+ agents <i className="fas fa-arrow-right" />
               </a>
               <Link
-                href="/agence.html"
+                href="/agence"
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -378,8 +378,8 @@ export default function HomePage() {
                       borderRadius: 999,
                       fontSize: 12,
                       fontWeight: 700,
-                      background: agent.priceClass === 'free' ? 'rgba(16,185,129,0.15)' : 'rgba(99,102,241,0.15)',
-                      color: agent.priceClass === 'free' ? '#10b981' : '#818cf8',
+                      background: agent.priceClass === 'legacy_free' ? 'rgba(16,185,129,0.15)' : 'rgba(99,102,241,0.15)',
+                      color: agent.priceClass === 'legacy_free' ? '#10b981' : '#818cf8',
                     }}
                   >
                     {agent.price}
@@ -591,7 +591,7 @@ export default function HomePage() {
             Audit gratuit 30 min avec un expert basé en Suisse. Aucun engagement.
           </p>
           <Link
-            href="/agence.html"
+            href="/agence"
             style={{
               display: 'inline-flex',
               alignItems: 'center',
@@ -658,9 +658,9 @@ export default function HomePage() {
               </div>
               {[
                 { href: '/blog', label: 'Blog IA' },
-                { href: '/categories.html', label: 'Catégories' },
-                { href: '/rapports.html', label: 'Rapports' },
-                { href: '/newsletter.html', label: 'Newsletter' },
+                { href: '/categories', label: 'Catégories' },
+                { href: '/rapports', label: 'Rapports' },
+                { href: '/newsletter', label: 'Newsletter' },
               ].map((l) => (
                 <Link
                   key={l.href}
@@ -676,10 +676,10 @@ export default function HomePage() {
                 ENTREPRISE
               </div>
               {[
-                { href: '/a-propos.html', label: 'À propos' },
-                { href: '/agence.html', label: 'Agence IA' },
-                { href: '/editeurs.html', label: 'Éditeurs' },
-                { href: '/contact.html', label: 'Contact' },
+                { href: '/a-propos', label: 'À propos' },
+                { href: '/agence', label: 'Agence IA' },
+                { href: '/editeurs', label: 'Éditeurs' },
+                { href: '/contact', label: 'Contact' },
               ].map((l) => (
                 <Link
                   key={l.href}
@@ -695,9 +695,9 @@ export default function HomePage() {
                 LÉGAL
               </div>
               {[
-                { href: '/mentions-legales.html', label: 'Mentions légales' },
-                { href: '/confidentialite.html', label: 'Confidentialité' },
-                { href: '/cgu.html', label: 'CGU' },
+                { href: '/mentions-legales', label: 'Mentions légales' },
+                { href: '/confidentialite', label: 'Confidentialité' },
+                { href: '/cgu', label: 'CGU' },
               ].map((l) => (
                 <Link
                   key={l.href}

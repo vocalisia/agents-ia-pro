@@ -114,7 +114,7 @@ function buildEmailHtml(slug, customerName, customerEmail, meta) {
   <div style="background:white;border-radius:16px;padding:32px;">
     <h1 style="color:#6366f1;font-size:24px;margin:0 0 16px;">⚡ Fast-Track activé !</h1>
     <p>${greeting}</p>
-    <p>Votre soumission <strong>Fast-Track</strong> (149€) est activée. Review prioritaire sous <strong>48h</strong>, publication sous <strong>5 jours ouvrés</strong>.</p>
+    <p>Votre soumission <strong>Fast-Track</strong> est activee. Review prioritaire sous <strong>48h</strong>, publication sous <strong>5 jours ouvrés</strong>.</p>
     <p>Pour lancer la review, répondez à cet email avec :</p>
     <ul>
       <li>Lien vers votre agent IA</li>

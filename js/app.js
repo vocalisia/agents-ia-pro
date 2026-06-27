@@ -10,8 +10,8 @@ const agentsData = [
         tags: ['💬 Chat', '🌐 Web', '🤖 Auto'],
         rating: 4.7,
         users: '1.1K',
-        price: 'free',
-        priceLabel: 'Gratuit',
+        price: 'private',
+        priceLabel: 'Sur demande',
         upvotes: 384,
         category: 'support',
         isNew: true
@@ -26,8 +26,8 @@ const agentsData = [
         tags: ['📧 Email', '✍️ Rédaction', '🎯 Outreach'],
         rating: 4.6,
         users: '890',
-        price: 'paid',
-        priceLabel: 'Dès 29CHF/mois',
+        price: 'private',
+        priceLabel: 'Sur demande',
         upvotes: 312,
         category: 'email',
         isNew: false
@@ -42,8 +42,8 @@ const agentsData = [
         tags: ['🔍 SEO', '📝 Contenu', '📊 Analytics'],
         rating: 4.8,
         users: '2.1K',
-        price: 'paid',
-        priceLabel: 'Dès 39CHF/mois',
+        price: 'private',
+        priceLabel: 'Sur demande',
         upvotes: 567,
         category: 'seo',
         isNew: false
@@ -58,8 +58,8 @@ const agentsData = [
         tags: ['👥 RH', '📋 CV', '🤝 Recrutement'],
         rating: 4.5,
         users: '650',
-        price: 'paid',
-        priceLabel: 'Dès 79CHF/mois',
+        price: 'private',
+        priceLabel: 'Sur demande',
         upvotes: 245,
         category: 'rh',
         isNew: true
@@ -74,8 +74,8 @@ const agentsData = [
         tags: ['💼 Finance', '📊 Compta', '🧾 Factures'],
         rating: 4.4,
         users: '430',
-        price: 'paid',
-        priceLabel: 'Dès 49CHF/mois',
+        price: 'private',
+        priceLabel: 'Sur demande',
         upvotes: 198,
         category: 'finance',
         isNew: false
@@ -90,8 +90,8 @@ const agentsData = [
         tags: ['🎨 Design', '🖼️ Visuel', '✨ Créatif'],
         rating: 4.7,
         users: '1.5K',
-        price: 'free',
-        priceLabel: 'Freemium',
+        price: 'private',
+        priceLabel: 'Sur demande',
         upvotes: 423,
         category: 'design',
         isNew: true
@@ -106,8 +106,8 @@ const agentsData = [
         tags: ['⚖️ Juridique', '📄 Contrats', '🔒 Conformité'],
         rating: 4.6,
         users: '320',
-        price: 'paid',
-        priceLabel: 'Dès 99CHF/mois',
+        price: 'private',
+        priceLabel: 'Sur demande',
         upvotes: 276,
         category: 'juridique',
         isNew: false
@@ -122,8 +122,8 @@ const agentsData = [
         tags: ['📱 Social', '📅 Planning', '✍️ Contenu'],
         rating: 4.5,
         users: '980',
-        price: 'free',
-        priceLabel: 'Essai gratuit',
+        price: 'private',
+        priceLabel: 'Sur demande',
         upvotes: 356,
         category: 'marketing',
         isNew: false
@@ -138,8 +138,8 @@ const agentsData = [
         tags: ['💻 Dev', '🐛 Debug', '⚡ Opti'],
         rating: 4.9,
         users: '3.2K',
-        price: 'free',
-        priceLabel: 'Gratuit',
+        price: 'private',
+        priceLabel: 'Sur demande',
         upvotes: 891,
         category: 'dev',
         isNew: true
@@ -154,8 +154,8 @@ const agentsData = [
         tags: ['🌍 Traduction', '📝 Contenu', '🗣️ Multilingue'],
         rating: 4.7,
         users: '1.8K',
-        price: 'paid',
-        priceLabel: 'Dès 19CHF/mois',
+        price: 'private',
+        priceLabel: 'Sur demande',
         upvotes: 445,
         category: 'marketing',
         isNew: false
@@ -170,8 +170,8 @@ const agentsData = [
         tags: ['📊 Data', '📈 Analytics', '🔮 Prédiction'],
         rating: 4.8,
         users: '1.4K',
-        price: 'paid',
-        priceLabel: 'Dès 59CHF/mois',
+        price: 'private',
+        priceLabel: 'Sur demande',
         upvotes: 534,
         category: 'dev',
         isNew: false
@@ -186,8 +186,8 @@ const agentsData = [
         tags: ['🎙️ Vocal', '🎧 Audio', '🎬 Vidéo'],
         rating: 4.6,
         users: '760',
-        price: 'paid',
-        priceLabel: 'Dès 29CHF/mois',
+        price: 'private',
+        priceLabel: 'Sur demande',
         upvotes: 387,
         category: 'vocal',
         isNew: true
@@ -196,6 +196,15 @@ const agentsData = [
 
 let currentFilter = 'all';
 let displayedAgents = 6;
+const agentRoutes = {
+    'vocalis': '/vocalis-pro',
+    'design-ai': '/agent-design',
+    'chatbot-pro': '/agent-chatbot',
+    'seo-master': '/agent-seo',
+    'recruteur-ia': '/agent-rh',
+    'email-genius': '/agent-email',
+    'compta-bot': '/agent-finance'
+};
 
 // ==================== DOM READY ====================
 document.addEventListener('DOMContentLoaded', () => {
@@ -352,12 +361,6 @@ function initAgentsList() {
 function getFilteredAgents() {
     let filtered = [...agentsData];
     switch (currentFilter) {
-        case 'free':
-            filtered = filtered.filter(a => a.price === 'free');
-            break;
-        case 'paid':
-            filtered = filtered.filter(a => a.price === 'paid');
-            break;
         case 'new':
             filtered = filtered.filter(a => a.isNew);
             break;
@@ -390,7 +393,7 @@ function renderAgentsList(agents) {
                     <i class="fas fa-arrow-up"></i>
                     <span class="upvote-count">${agent.upvotes}</span>
                 </button>
-                <a href="agent.html?id=${agent.id}" class="btn-try">
+                <a href="${agentRoutes[agent.id] || '/agent'}" class="btn-try">
                     Voir <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
