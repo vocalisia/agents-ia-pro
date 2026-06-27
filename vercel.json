@@ -206,5 +206,898 @@
         }
       ]
     }
+  ],
+  "routes": [
+    {
+      "src": "/agent",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "vocalis"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/vocalis-pro"
+      }
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/agent",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "vocalis"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/vocalis-pro"
+      }
+    },
+    {
+      "src": "/agent",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "design-ai"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-design"
+      }
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/agent",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "design-ai"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-design"
+      }
+    },
+    {
+      "src": "/agent",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "chatbot-pro"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-chatbot"
+      }
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/agent",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "chatbot-pro"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-chatbot"
+      }
+    },
+    {
+      "src": "/agent",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "seo-master"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-seo"
+      }
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/agent",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "seo-master"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-seo"
+      }
+    },
+    {
+      "src": "/agent",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "recruteur-ia"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-rh"
+      }
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/agent",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "recruteur-ia"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-rh"
+      }
+    },
+    {
+      "src": "/agent",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "email-genius"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-email"
+      }
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/agent",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "email-genius"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-email"
+      }
+    },
+    {
+      "src": "/agent",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "compta-bot"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-finance"
+      }
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/agent",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "compta-bot"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-finance"
+      }
+    },
+    {
+      "src": "/agent",
+      "status": 301,
+      "headers": {
+        "Location": "/agent-chatbot"
+      }
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/agent",
+      "status": 301,
+      "headers": {
+        "Location": "/agent-chatbot"
+      }
+    },
+    {
+      "src": "/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "vocal"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/vocalis-pro"
+      }
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "vocal"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/vocalis-pro"
+      }
+    },
+    {
+      "src": "/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "vente"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-commercial"
+      }
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "vente"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-commercial"
+      }
+    },
+    {
+      "src": "/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "support"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-support"
+      }
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "support"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-support"
+      }
+    },
+    {
+      "src": "/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "marketing"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-marketing"
+      }
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "marketing"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-marketing"
+      }
+    },
+    {
+      "src": "/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "email"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-email"
+      }
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "email"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-email"
+      }
+    },
+    {
+      "src": "/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "seo"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-seo"
+      }
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "seo"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-seo"
+      }
+    },
+    {
+      "src": "/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "rh"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-rh"
+      }
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "rh"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-rh"
+      }
+    },
+    {
+      "src": "/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "finance"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-finance"
+      }
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "finance"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-finance"
+      }
+    },
+    {
+      "src": "/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "dev"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-dev"
+      }
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "dev"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-dev"
+      }
+    },
+    {
+      "src": "/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "design"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-design"
+      }
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "design"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-design"
+      }
+    },
+    {
+      "src": "/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "juridique"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-juridique"
+      }
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "juridique"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-juridique"
+      }
+    },
+    {
+      "src": "/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "custom"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/contact"
+      }
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "custom"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/contact"
+      }
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/categories",
+      "status": 301,
+      "headers": {
+        "Location": "/categories"
+      }
+    },
+    {
+      "src": "/vocalis-pro",
+      "has": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/vocalis-pro"
+      }
+    },
+    {
+      "src": "/vocalis-pro",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/vocalis-pro"
+      }
+    },
+    {
+      "src": "/agent-design",
+      "has": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-design"
+      }
+    },
+    {
+      "src": "/agent-design",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-design"
+      }
+    },
+    {
+      "src": "/agent-chatbot",
+      "has": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-chatbot"
+      }
+    },
+    {
+      "src": "/agent-chatbot",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-chatbot"
+      }
+    },
+    {
+      "src": "/agent-seo",
+      "has": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-seo"
+      }
+    },
+    {
+      "src": "/agent-seo",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-seo"
+      }
+    },
+    {
+      "src": "/agent-rh",
+      "has": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-rh"
+      }
+    },
+    {
+      "src": "/agent-rh",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-rh"
+      }
+    },
+    {
+      "src": "/agent-email",
+      "has": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-email"
+      }
+    },
+    {
+      "src": "/agent-email",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-email"
+      }
+    },
+    {
+      "src": "/agent-finance",
+      "has": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-finance"
+      }
+    },
+    {
+      "src": "/agent-finance",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-finance"
+      }
+    },
+    {
+      "src": "/agent-commercial",
+      "has": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-commercial"
+      }
+    },
+    {
+      "src": "/agent-commercial",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-commercial"
+      }
+    },
+    {
+      "src": "/agent-support",
+      "has": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-support"
+      }
+    },
+    {
+      "src": "/agent-support",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-support"
+      }
+    },
+    {
+      "src": "/agent-marketing",
+      "has": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-marketing"
+      }
+    },
+    {
+      "src": "/agent-marketing",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-marketing"
+      }
+    },
+    {
+      "src": "/agent-dev",
+      "has": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-dev"
+      }
+    },
+    {
+      "src": "/agent-dev",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-dev"
+      }
+    },
+    {
+      "src": "/agent-juridique",
+      "has": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-juridique"
+      }
+    },
+    {
+      "src": "/agent-juridique",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/agent-juridique"
+      }
+    },
+    {
+      "src": "/contact",
+      "has": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/contact"
+      }
+    },
+    {
+      "src": "/contact",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat"
+        }
+      ],
+      "status": 301,
+      "headers": {
+        "Location": "/contact"
+      }
+    }
   ]
 }
