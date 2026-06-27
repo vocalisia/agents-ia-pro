@@ -19,9 +19,6 @@ docs/
 README.md
 *.md
 *.py
-content/
-scripts/
-src/
 secure/
 rapports-pdf/
 *.pdf
