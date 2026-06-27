@@ -219,7 +219,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/vocalis-pro"
+        "Location": "/vocalis-pro?"
       }
     },
     {
@@ -233,7 +233,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/vocalis-pro"
+        "Location": "/vocalis-pro?"
       }
     },
     {
@@ -247,7 +247,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-design"
+        "Location": "/agent-design?"
       }
     },
     {
@@ -261,7 +261,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-design"
+        "Location": "/agent-design?"
       }
     },
     {
@@ -275,7 +275,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-chatbot"
+        "Location": "/agent-chatbot?"
       }
     },
     {
@@ -289,7 +289,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-chatbot"
+        "Location": "/agent-chatbot?"
       }
     },
     {
@@ -303,7 +303,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-seo"
+        "Location": "/agent-seo?"
       }
     },
     {
@@ -317,7 +317,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-seo"
+        "Location": "/agent-seo?"
       }
     },
     {
@@ -331,7 +331,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-rh"
+        "Location": "/agent-rh?"
       }
     },
     {
@@ -345,7 +345,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-rh"
+        "Location": "/agent-rh?"
       }
     },
     {
@@ -359,7 +359,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-email"
+        "Location": "/agent-email?"
       }
     },
     {
@@ -373,7 +373,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-email"
+        "Location": "/agent-email?"
       }
     },
     {
@@ -387,7 +387,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-finance"
+        "Location": "/agent-finance?"
       }
     },
     {
@@ -401,7 +401,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-finance"
+        "Location": "/agent-finance?"
       }
     },
     {
@@ -429,7 +429,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/vocalis-pro"
+        "Location": "/vocalis-pro?"
       }
     },
     {
@@ -443,7 +443,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/vocalis-pro"
+        "Location": "/vocalis-pro?"
       }
     },
     {
@@ -457,7 +457,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-commercial"
+        "Location": "/agent-commercial?"
       }
     },
     {
@@ -471,7 +471,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-commercial"
+        "Location": "/agent-commercial?"
       }
     },
     {
@@ -485,7 +485,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-support"
+        "Location": "/agent-support?"
       }
     },
     {
@@ -499,7 +499,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-support"
+        "Location": "/agent-support?"
       }
     },
     {
@@ -513,7 +513,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-marketing"
+        "Location": "/agent-marketing?"
       }
     },
     {
@@ -527,7 +527,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-marketing"
+        "Location": "/agent-marketing?"
       }
     },
     {
@@ -541,7 +541,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-email"
+        "Location": "/agent-email?"
       }
     },
     {
@@ -555,7 +555,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-email"
+        "Location": "/agent-email?"
       }
     },
     {
@@ -569,7 +569,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-seo"
+        "Location": "/agent-seo?"
       }
     },
     {
@@ -583,7 +583,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-seo"
+        "Location": "/agent-seo?"
       }
     },
     {
@@ -597,7 +597,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-rh"
+        "Location": "/agent-rh?"
       }
     },
     {
@@ -611,7 +611,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-rh"
+        "Location": "/agent-rh?"
       }
     },
     {
@@ -625,7 +625,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-finance"
+        "Location": "/agent-finance?"
       }
     },
     {
@@ -639,7 +639,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-finance"
+        "Location": "/agent-finance?"
       }
     },
     {
@@ -653,7 +653,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-dev"
+        "Location": "/agent-dev?"
       }
     },
     {
@@ -667,7 +667,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-dev"
+        "Location": "/agent-dev?"
       }
     },
     {
@@ -681,7 +681,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-design"
+        "Location": "/agent-design?"
       }
     },
     {
@@ -695,7 +695,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-design"
+        "Location": "/agent-design?"
       }
     },
     {
@@ -709,7 +709,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-juridique"
+        "Location": "/agent-juridique?"
       }
     },
     {
@@ -723,7 +723,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-juridique"
+        "Location": "/agent-juridique?"
       }
     },
     {
@@ -737,7 +737,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/contact"
+        "Location": "/contact?"
       }
     },
     {
@@ -751,14 +751,14 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/contact"
+        "Location": "/contact?"
       }
     },
     {
       "src": "/(en|de|nl|es|it|pt)/categories",
       "status": 301,
       "headers": {
-        "Location": "/categories"
+        "Location": "/categories?"
       }
     },
     {
@@ -771,7 +771,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/vocalis-pro"
+        "Location": "/vocalis-pro?"
       }
     },
     {
@@ -784,7 +784,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/vocalis-pro"
+        "Location": "/vocalis-pro?"
       }
     },
     {
@@ -797,7 +797,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-design"
+        "Location": "/agent-design?"
       }
     },
     {
@@ -810,7 +810,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-design"
+        "Location": "/agent-design?"
       }
     },
     {
@@ -823,7 +823,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-chatbot"
+        "Location": "/agent-chatbot?"
       }
     },
     {
@@ -836,7 +836,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-chatbot"
+        "Location": "/agent-chatbot?"
       }
     },
     {
@@ -849,7 +849,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-seo"
+        "Location": "/agent-seo?"
       }
     },
     {
@@ -862,7 +862,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-seo"
+        "Location": "/agent-seo?"
       }
     },
     {
@@ -875,7 +875,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-rh"
+        "Location": "/agent-rh?"
       }
     },
     {
@@ -888,7 +888,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-rh"
+        "Location": "/agent-rh?"
       }
     },
     {
@@ -901,7 +901,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-email"
+        "Location": "/agent-email?"
       }
     },
     {
@@ -914,7 +914,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-email"
+        "Location": "/agent-email?"
       }
     },
     {
@@ -927,7 +927,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-finance"
+        "Location": "/agent-finance?"
       }
     },
     {
@@ -940,7 +940,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-finance"
+        "Location": "/agent-finance?"
       }
     },
     {
@@ -953,7 +953,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-commercial"
+        "Location": "/agent-commercial?"
       }
     },
     {
@@ -966,7 +966,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-commercial"
+        "Location": "/agent-commercial?"
       }
     },
     {
@@ -979,7 +979,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-support"
+        "Location": "/agent-support?"
       }
     },
     {
@@ -992,7 +992,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-support"
+        "Location": "/agent-support?"
       }
     },
     {
@@ -1005,7 +1005,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-marketing"
+        "Location": "/agent-marketing?"
       }
     },
     {
@@ -1018,7 +1018,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-marketing"
+        "Location": "/agent-marketing?"
       }
     },
     {
@@ -1031,7 +1031,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-dev"
+        "Location": "/agent-dev?"
       }
     },
     {
@@ -1044,7 +1044,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-dev"
+        "Location": "/agent-dev?"
       }
     },
     {
@@ -1057,7 +1057,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-juridique"
+        "Location": "/agent-juridique?"
       }
     },
     {
@@ -1070,7 +1070,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/agent-juridique"
+        "Location": "/agent-juridique?"
       }
     },
     {
@@ -1083,7 +1083,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/contact"
+        "Location": "/contact?"
       }
     },
     {
@@ -1096,7 +1096,7 @@
       ],
       "status": 301,
       "headers": {
-        "Location": "/contact"
+        "Location": "/contact?"
       }
     }
   ]
