@@ -43,7 +43,7 @@ const featuredAgents = [
     tags: ['Vocal', 'Téléphone', 'Autonome'],
     rating: 4.9,
     users: '2.4K',
-    price: 'Sur demande',
+    accessLabel: 'Sur demande',
     priceClass: 'private',
     upvotes: 847,
     href: 'https://vocalis.pro',
@@ -59,7 +59,7 @@ const featuredAgents = [
     tags: ['Vente', 'Analytics', 'Closing'],
     rating: 4.8,
     users: '1.8K',
-    price: 'Sur demande',
+    accessLabel: 'Sur demande',
     priceClass: 'private',
     upvotes: 623,
     href: 'https://master-seller.fr',
@@ -75,7 +75,7 @@ const featuredAgents = [
     tags: ['Sécurité', 'Avis', 'Rapports'],
     rating: 4.9,
     users: '1.2K',
-    price: 'Sur demande',
+    accessLabel: 'Sur demande',
     priceClass: 'private',
     upvotes: 512,
     href: 'https://trust-vault.com',
@@ -382,7 +382,7 @@ export default function HomePage() {
                       color: agent.priceClass === 'legacy_free' ? '#10b981' : '#818cf8',
                     }}
                   >
-                    {agent.price}
+                    {agent.accessLabel}
                   </span>
                 </div>
 
