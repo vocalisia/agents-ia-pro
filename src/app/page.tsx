@@ -7,14 +7,14 @@ import dynamic from 'next/dynamic'
 const NetworkGraph = dynamic(() => import('@/components/NetworkGraph'), { ssr: false })
 
 export const metadata: Metadata = {
-  title: "Agents-IA.pro | La Marketplace #1 d'Agents IA Francophones",
+  title: "Agent IA Pro : solutions IA pour PME francophones",
   description:
-    "La marketplace #1 d'agents IA francophones. Trouvez, comparez et déployez +500 agents IA vérifiés pour automatiser votre entreprise. 98% de satisfaction, 12 840+ utilisateurs.",
+    "Agents-IA.pro aide les PME à trouver, comparer et cadrer des agents IA pour appels, vente, support, conformité et automatisation métier.",
   // canonical defined in layout.tsx — removing here to prevent duplicate <link rel="canonical">
   openGraph: {
-    title: "Agents-IA.pro | La Marketplace #1 d'Agents IA Francophones",
+    title: "Agent IA Pro : solutions IA pour PME francophones",
     description:
-      'Trouvez, comparez et déployez les meilleurs agents IA pour votre business.',
+      'Trouvez, comparez et cadrez des agents IA francophones pour votre PME.',
     url: 'https://agents-ia.pro/',
     type: 'website',
   },
@@ -36,15 +36,15 @@ const websiteSchema = {
 const featuredAgents = [
   {
     id: 1,
-    badge: '#1 Vocal',
+    badge: 'Agent vocal',
     name: 'Vocalis AI',
     creator: 'par Vocalis.pro',
     desc: 'Agent vocal IA qui gère vos appels téléphoniques 24/7. Prise de RDV, qualification de leads, support client automatisé.',
     tags: ['Vocal', 'Téléphone', 'Autonome'],
     rating: 4.9,
-    users: '2.4K',
+    users: 'PME',
     accessLabel: 'Sur demande',
-    priceClass: 'private',
+    accessClass: 'private',
     upvotes: 847,
     href: 'https://vocalis.pro',
     gradient: 'linear-gradient(135deg,#667eea,#764ba2)',
@@ -52,15 +52,15 @@ const featuredAgents = [
   },
   {
     id: 2,
-    badge: '#1 Vente',
+    badge: 'Agent vente',
     name: 'Master Seller AI',
     creator: 'par Master-Seller.fr',
     desc: "Agent IA de vente qui analyse vos prospects, génère des scripts de vente personnalisés et automatise votre closing.",
     tags: ['Vente', 'Analytics', 'Closing'],
     rating: 4.8,
-    users: '1.8K',
+    users: 'Equipes',
     accessLabel: 'Sur demande',
-    priceClass: 'private',
+    accessClass: 'private',
     upvotes: 623,
     href: 'https://master-seller.fr',
     gradient: 'linear-gradient(135deg,#f093fb,#f5576c)',
@@ -68,15 +68,15 @@ const featuredAgents = [
   },
   {
     id: 3,
-    badge: '#1 Confiance',
+    badge: 'Agent confiance',
     name: 'Trust Vault AI',
     creator: 'par Trust-Vault.com',
     desc: "Agent IA qui vérifie la fiabilité des entreprises, collecte des avis vérifiés et génère des rapports de confiance.",
     tags: ['Sécurité', 'Avis', 'Rapports'],
     rating: 4.9,
-    users: '1.2K',
+    users: 'Avis',
     accessLabel: 'Sur demande',
-    priceClass: 'private',
+    accessClass: 'private',
     upvotes: 512,
     href: 'https://trust-vault.com',
     gradient: 'linear-gradient(135deg,#4facfe,#00f2fe)',
@@ -153,7 +153,7 @@ export default function HomePage() {
                   flexShrink: 0,
                 }}
               />
-              +500 agents IA vérifiés · 12 840+ utilisateurs
+              Agents IA vérifiés · cas d&apos;usage PME · accompagnement francophone
             </div>
 
             <h1
@@ -181,7 +181,7 @@ export default function HomePage() {
               <br />
               qui bosse pour votre PME
               <br />
-              en moins de 30 jours.
+              avec un cadrage clair.
             </h1>
 
             <p
@@ -194,7 +194,7 @@ export default function HomePage() {
               }}
             >
               Comparez, testez et activez les meilleurs agents IA francophones.
-              Sans commission, sans engagement, avec le support d&apos;une équipe basée en Suisse.
+              Repérez les bons cas d&apos;usage, comparez les solutions et préparez un déploiement IA utile avec une équipe basée en Suisse.
             </p>
 
             <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: 32 }}>
@@ -214,7 +214,7 @@ export default function HomePage() {
                   boxShadow: '0 10px 30px rgba(99,102,241,0.3)',
                 }}
               >
-                Explorer les 500+ agents <i className="fas fa-arrow-right" />
+                Explorer les agents IA <i className="fas fa-arrow-right" />
               </a>
               <Link
                 href="/agence"
@@ -246,10 +246,10 @@ export default function HomePage() {
               }}
             >
               {[
-                { big: '500+', label: 'agents' },
+                { big: 'IA', label: 'agents' },
                 { big: '4', label: 'langues' },
                 { big: '🇨🇭', label: 'Basé en Suisse' },
-                { big: '0%', label: 'commission' },
+                { big: 'PME', label: 'cadrage' },
               ].map((s) => (
                 <div key={s.label} style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#cbd5e1', fontSize: 13 }}>
                   <span style={{ fontSize: 22, fontWeight: 800, color: 'white' }}>{s.big}</span> {s.label}
@@ -378,8 +378,8 @@ export default function HomePage() {
                       borderRadius: 999,
                       fontSize: 12,
                       fontWeight: 700,
-                      background: agent.priceClass === 'legacy_free' ? 'rgba(16,185,129,0.15)' : 'rgba(99,102,241,0.15)',
-                      color: agent.priceClass === 'legacy_free' ? '#10b981' : '#818cf8',
+                      background: agent.accessClass === 'highlighted' ? 'rgba(16,185,129,0.15)' : 'rgba(99,102,241,0.15)',
+                      color: agent.accessClass === 'highlighted' ? '#10b981' : '#818cf8',
                     }}
                   >
                     {agent.accessLabel}
@@ -649,7 +649,7 @@ export default function HomePage() {
                 </span>
               </div>
               <p style={{ color: '#64748b', fontSize: 13, lineHeight: 1.6 }}>
-                La marketplace #1 d&apos;agents IA francophones. Basée en Suisse.
+                La marketplace d&apos;agents IA francophones. Basée en Suisse.
               </p>
             </div>
             <div>
