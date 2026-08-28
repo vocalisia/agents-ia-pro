@@ -6,9 +6,9 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   window.gtag = gtag;
-  var _c = (typeof localStorage !== 'undefined')  localStorage.getItem('ai_cookies') : null;
-  gtag('consent', 'default', { analytics_storage: _c === 'rejected'  'denied' : 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500 });
-  (function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/jsid=G-B5627RD3TF';document.head.appendChild(s);})();
+  var _c = (typeof localStorage !== 'undefined') ? localStorage.getItem('ai_cookies') : null;
+  gtag('consent', 'default', { analytics_storage: _c === 'rejected' ? 'denied' : 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500 });
+  (function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-B5627RD3TF';document.head.appendChild(s);})();
   gtag('js', new Date());
   gtag('config', 'G-B5627RD3TF');
 </script>
@@ -18,7 +18,7 @@
     <meta name="description" content="Claude Code rend l'optimisation SEO accessible à tous. Rapport SEO complet, mots-clés gagnants identifiés par 5 agents IA, plan d'action automatisé — en moins de 3 minutes, sans payer une agence.">
     <meta name="keywords" content="Claude Code SEO, optimisation SEO IA, agent IA SEO, SEO automatisé, battre concurrents Google, audit SEO Claude Code, SEO sans agence">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2family=Inter:wght@300;400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
     <link rel="canonical" href="https://agents-ia.pro/blog/claude-code-seo-battre-concurrents-google">
     <meta property="og:type" content="article">
@@ -332,7 +332,7 @@
 
 <div class="cookie-banner" id="cookieBanner"><div class="cookie-content"><p>🍪 Ce site utilise des cookies pour analyser le trafic. <a href="/confidentialite" style="color:var(--primary-light);">Politique de confidentialité</a>.</p><div class="cookie-actions"><button class="cookie-btn cookie-accept" id="cookieAccept">Accepter</button><button class="cookie-btn cookie-decline" id="cookieDecline">Refuser</button></div></div></div>
 <script id="ga4-lead-conversion-tracking">
-(function(){if(window.__ga4LeadTrackingInstalled)return;window.__ga4LeadTrackingInstalled=true;function send(n,p){if(typeof window.gtag!=='function')return;window.gtag('event',n,Object.assign({event_category:'lead',event_label:location.pathname,page_location:location.href},p||{}));}document.addEventListener('submit',function(e){var f=e.target;if(!f||f.tagName!=='FORM')return;var id=(f.id||f.getAttribute('name')||f.className||'form').toString();send('qualify_lead',{event_label:id,method:/newsletter/i.test(id)'newsletter':'form'});},true);document.addEventListener('click',function(e){var a=e.target&&e.target.closeste.target.closest('a'):null;if(!a)return;var h=a.getAttribute('href')||'';if(/wa\.me|whatsapp/i.test(h)){send('close_convert_lead',{event_label:'whatsapp_click',method:'whatsapp'});}else if(/^tel:/i.test(h)){send('qualify_lead',{event_label:'phone_click',method:'phone'});}else if(/^mailto:/i.test(h)){send('qualify_lead',{event_label:'email_click',method:'email'});}else if(/contact|rdv|devis|quote|demo|booking|cal\.com|calendly/i.test(h)){send('qualify_lead',{event_label:'contact_click',method:'contact'});}},true);})();
+(function(){if(window.__ga4LeadTrackingInstalled)return;window.__ga4LeadTrackingInstalled=true;function send(n,p){if(typeof window.gtag!=='function')return;window.gtag('event',n,Object.assign({event_category:'lead',event_label:location.pathname,page_location:location.href},p||{}));}document.addEventListener('submit',function(e){var f=e.target;if(!f||f.tagName!=='FORM')return;var id=(f.id||f.getAttribute('name')||f.className||'form').toString();send('qualify_lead',{event_label:id,method:/newsletter/i.test(id) ? 'newsletter':'form'});},true);document.addEventListener('click',function(e){var a=e.target&&e.target.closest ? e.target.closest('a'):null;if(!a)return;var h=a.getAttribute('href')||'';if(/wa\.me|whatsapp/i.test(h)){send('close_convert_lead',{event_label:'whatsapp_click',method:'whatsapp'});}else if(/^tel:/i.test(h)){send('qualify_lead',{event_label:'phone_click',method:'phone'});}else if(/^mailto:/i.test(h)){send('qualify_lead',{event_label:'email_click',method:'email'});}else if(/contact|rdv|devis|quote|demo|booking|cal\.com|calendly/i.test(h)){send('qualify_lead',{event_label:'contact_click',method:'contact'});}},true);})();
 </script>
 
   <section class="related-reading">
