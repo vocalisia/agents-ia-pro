@@ -210,6 +210,54 @@
   "routes": [
     {
       "src": "/agent",
+      "dest": "/api/legacy-redirect?source=agent"
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/agent",
+      "dest": "/api/legacy-redirect?source=agent"
+    },
+    {
+      "src": "/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat"
+        }
+      ],
+      "dest": "/api/legacy-redirect?source=categories"
+    },
+    {
+      "src": "/(en|de|nl|es|it|pt)/categories",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat"
+        }
+      ],
+      "dest": "/api/legacy-redirect?source=categories"
+    },
+    {
+      "src": "/(vocalis-pro|agent-design|agent-chatbot|agent-seo|agent-rh|agent-email|agent-finance|agent-commercial|agent-support|agent-marketing|agent-dev|agent-juridique|contact)",
+      "has": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ],
+      "dest": "/api/legacy-redirect?source=target&target=$1"
+    },
+    {
+      "src": "/(vocalis-pro|agent-design|agent-chatbot|agent-seo|agent-rh|agent-email|agent-finance|agent-commercial|agent-support|agent-marketing|agent-dev|agent-juridique|contact)",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat"
+        }
+      ],
+      "dest": "/api/legacy-redirect?source=target&target=$1"
+    },
+    {
+      "src": "/agent",
       "has": [
         {
           "type": "query",
