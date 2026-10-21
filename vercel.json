@@ -46,6 +46,15 @@
       ],
       "destination": "https://agents-ai.pro/:path*",
       "permanent": true
+    },    {
+      "source": "/blog/ia-agentique-donnees-personnelles-pme",
+      "destination": "/blog/agent-ia-rgpd-ai-act-pme-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/mesurer-agent-ia-support-qualite",
+      "destination": "/blog/agent-ia-support-preparer-connaissances",
+      "statusCode": 301
     },
     {
       "source": "/tarifs",
